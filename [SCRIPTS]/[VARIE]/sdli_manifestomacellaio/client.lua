@@ -44,7 +44,7 @@ Citizen.CreateThread(function()
 		local coords = GetEntityCoords(playerPed)
         local betweencoords = GetDistanceBetweenCoords(coords, x, y, z, true)
         if betweencoords < 1.0 then
-            DrawTxt("Premi G per leggere il prezzario del macellaio", 0.50, 0.90, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Presiona G para leer la lista de precios", 0.50, 0.90, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustPressed(2, 0x760A9C6F) then
                 ToggleBacheca()
             end

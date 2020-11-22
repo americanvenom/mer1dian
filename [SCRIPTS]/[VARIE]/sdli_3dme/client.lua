@@ -1,6 +1,6 @@
 local time = 7000
 
-RegisterCommand('me', function(source, args)
+RegisterCommand('ame', function(source, args)
     local text = ''
     for i = 1,#args do
         text = text .. ' ' .. args[i]

@@ -94,15 +94,15 @@ AddEventHandler("Telegram:SendMessage", function(firstname, lastname, message, p
 						if receiver == firstname .. " " .. lastname then 
 							--TriggerClientEvent("vorp:Tip", v, "Hai ricevuto un telegramma.", 3000)
 							--TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Telegramma", "Hai ricevuto un telegramma.", "generic_textures", "tick", 3000)
-							TriggerClientEvent("vorp:NotifyLeft", tonumber(v), "~t6~Telegramma", "Hai ricevuto un telegramma.", "generic_textures", "tick", 3000)
+							TriggerClientEvent("vorp:NotifyLeft", tonumber(v), "~t6~Telegrama", "Has recibido un telegrama.", "generic_textures", "tick", 3000)
 						end
 					end
 				end)
 				--TriggerClientEvent("vorp:Tip", _source, "Il tuo telegramma è stato inviato!", 3000)
-				TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Telegramma", "Il tuo telegramma è stato inviato!", "generic_textures", "tick", 3000)
+				TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Telegramma", "Tu telegrama ha sido enviado!", "generic_textures", "tick", 3000)
 			else 
 			--	TriggerClientEvent("vorp:Tip", _source, "Impossibile inviare il telegramma. Nome o cognome errati", 3000)
-				TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Impossibile inviare il telegramma. Nome o cognome errati", "menu_textures", "cross", 3000)
+				TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Imposible enviar el telegrama. Nombre o apellido incorrecto", "menu_textures", "cross", 3000)
 			end
 			
 		end)
@@ -120,7 +120,7 @@ AddEventHandler("Telegram:DeleteMessage", function(id)
 			else
 				--TriggerClientEvent("redemrp_notification:start", _source, "Impossibile eliminare il telegramma. Riprova piu tardi", 3)
 			--	TriggerClientEvent(source, "vorp:Tip", "Impossibile eliminare il telegramma. Riprova piu tardi", 3000)
-			TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Impossibile inviare il telegramma. Nome o cognome errati", "menu_textures", "cross", 3000)
+			TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Imposible enviar el telegrama. Nombre o apellido incorrecto", "menu_textures", "cross", 3000)
 			end
 		end)
 	else 

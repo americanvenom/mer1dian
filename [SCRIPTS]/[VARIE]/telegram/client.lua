@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
         local blip = N_0x554d9d53f696d002(1664425300, info.x, info.y, info.z)
         SetBlipSprite(blip, -1656531561, 1)
         SetBlipScale(blip, 0.2)
-        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Stazione del telegrafo")
+        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Estación de telégrafo")
     end 
 end)
 
@@ -32,7 +32,7 @@ AddEventHandler("Telegram:ReturnMessages", function(data)
 
     if next(telegrams) == nil then
         SetNuiFocus(true, true)
-        SendNUIMessage({ message = "Nessun telegramma da visionare." })
+        SendNUIMessage({ message = "No hay telegramas para leer." })
     else
         SetNuiFocus(true, true)
         SendNUIMessage({ sender = telegrams[index].sender, message = telegrams[index].message })
@@ -46,7 +46,7 @@ Citizen.CreateThread(function()
         for key, value in pairs(locations) do
            if IsPlayerNearCoords(value.x, value.y, value.z) then
                 if not menu then
-                    DrawText("Premi G per visionare i telegrammi.", 0.5, 0.88)
+                    DrawText("Pulsa G para ver el telegrama.", 0.5, 0.88)
                     if IsControlJustReleased(0, 0x760A9C6F) then
                         menu = true
                         TriggerServerEvent("Telegram:GetMessages")
@@ -110,7 +110,7 @@ RegisterNUICallback('delete', function()
 end)
 
 function GetFirstname()
-    AddTextEntry("FMMC_KEY_TIP8", "Nome del destinatario: ")
+    AddTextEntry("FMMC_KEY_TIP8", "Nombre del destinatario: ")
     DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP8", "", "", "", "", "", 30)
 
     while (UpdateOnscreenKeyboard() == 0) do
@@ -135,7 +135,7 @@ function GetFirstname()
 end
 
 function GetLastname(firstname)
-    AddTextEntry("FMMC_KEY_TIP8", "Cognome del destinatario: ")
+    AddTextEntry("FMMC_KEY_TIP8", "Apellido del destinatario: ")
     DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP8", "", "", "", "", "", 30)
 
     while (UpdateOnscreenKeyboard() == 0) do
@@ -161,7 +161,7 @@ end
 
 function GetMessage(firstname, lastname)
    
-    TriggerEvent("vorpinputs:getInput", "Invia", "Scrivi il messaggio...", function(cb)
+    TriggerEvent("vorpinputs:getInput", "Enviar", "Escribe el mensaje...", function(cb)
         
         if cb ~= close and cb ~= nil then
             TriggerServerEvent("Telegram:SendMessage", firstname, lastname, cb, GetPlayerServerIds())
