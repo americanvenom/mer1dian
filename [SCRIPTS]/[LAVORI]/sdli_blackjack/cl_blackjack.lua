@@ -73,7 +73,7 @@ Citizen.CreateThread(function() --Marker
         if IsPlayerNearCoords(-237.6,768.0,117.1) then
             TriggerServerEvent("bj:checkgroupsv")
             if isBJ then
-                DrawTxt("( Valentine Gambling ) Premi G per aprire il menu", 0.50, 0.90, 0.7, 0.7, true, 255, 255, 255, 255, true)
+                DrawTxt("( Valentine Gambling ) Pulsa G para abrir el menú", 0.50, 0.90, 0.7, 0.7, true, 255, 255, 255, 255, true)
                 if IsControlJustReleased(2, 0x760A9C6F) then
                     WarMenu.OpenMenu('blackjack')
                 end    
@@ -92,7 +92,7 @@ Citizen.CreateThread(function()
         if WarMenu.IsMenuOpened('blackjack') then
             if WarMenu.Button("Compra fiches ($0.80)","") then
 
-                AddTextEntry("FMMC_MPM_TYP8", "Quante fiches vuoi comprare?")
+                AddTextEntry("FMMC_MPM_TYP8", "Cuantas fichas quieres comprar?")
                 DisplayOnscreenKeyboard(1, "FMMC_MPM_TYP8", "", "", "", "", "", 30)
                 
 		        while (UpdateOnscreenKeyboard() == 0) do
@@ -126,14 +126,14 @@ Citizen.CreateThread(function()
             Citizen.Wait(0)    
 
             if not inTable then
-                local text = "Premi G per giocare"
+                local text = "Pulsa G para jugar"
                 if IsControlJustPressed(0, 0x760A9C6F) then
                     startPlay()
                 end  
                 DrawScaleText(text, 0.5, 0.925, 1.0)
             elseif inTable then
                 -- Premi E per uscire\nPremi SPAZIO per la selezionare la puntata \nPremi G per giocare ancora
-                local testo1 = "G per uscire"
+                local testo1 = "Pulsa G para salir"
                 if IsControlJustPressed(0, 0x760A9C6F) then
                     stopPlay()
                 end
@@ -150,14 +150,14 @@ Citizen.CreateThread(function()
                 stopPlay()
             end
             if inTable and waiting and not alreadyPressed then
-                local text1 = "Premi SPAZIO per chiamare, attendi per stare"
+                local text1 = "Pulsa ESPACIO para apostar, de lo contrario no pulses nada"
                 if IsControlJustPressed(0, 0xD9D0E1C0) and waiting then
                     TriggerServerEvent('vorp_blackjack:Choice', true)
                     alreadyPressed = true
                 end
                 DrawScaleText(text1, 0.5, 0.9, 0.8)
             elseif (inTable and not alreadyPressed and cardsGiven) then
-                DrawScaleText("Attendi il tuo turno", 0.5, 0.9, 0.8)
+                DrawScaleText("Espera a tu turno", 0.5, 0.9, 0.8)
             end
             if not IsPlayerNearCoords(-243.72,771.26,118.22) then
                 stopPlay()
@@ -192,13 +192,13 @@ Citizen.CreateThread(function()
         while IsPlayerNearCoords(-243.72,771.26,118.22) do
             Citizen.Wait(0)
             if (inTable and cardsGiven) then 
-                DrawScaleText("Le tue carte sono:" .. playerCardsText, 0.5, 0.8, 0.8) --player text
-                DrawScaleText("Somma: " .. playerCount, 0.5, 0.85, 0.8) --player text
-                DrawScaleText("Le carte del banco sono:" .. dealerCardsText, 0.5, 0.0, 0.8) --dealer text
-                DrawScaleText("Somma: " .. dealerCount, 0.5, 0.05, 0.8) --dealer text
+                DrawScaleText("Tus cartas son:" .. playerCardsText, 0.5, 0.8, 0.8) --player text
+                DrawScaleText("Suma: " .. playerCount, 0.5, 0.85, 0.8) --player text
+                DrawScaleText("Las cartas del banco son:" .. dealerCardsText, 0.5, 0.0, 0.8) --dealer text
+                DrawScaleText("Suma: " .. dealerCount, 0.5, 0.05, 0.8) --dealer text
                 DrawScaleText(textWinLosePush, 0.5, 0.5, 1.0) 
             elseif (inTable) then
-                DrawScaleText("Attendi l'inizio della mano" .. playerCardsText, 0.5, 0.9, 0.8) --player text
+                DrawScaleText("Espera a que comienice la mano" .. playerCardsText, 0.5, 0.9, 0.8) --player text
             end
         end
     end    

@@ -35,11 +35,11 @@ AddEventHandler( 'elrp:buyboat', function ( args )
         if #result > 0 then
             local Parameters = { ['identifier'] = u_identifier, ['charid'] = u_charid, ['boat'] = _model }
             exports.ghmattimysql:executeSync("UPDATE boates SET boat = @boat WHERE identifier = @identifier AND charid = @charid ", Parameters)
-            TriggerClientEvent( 'UI:DrawNotification', _src, 'Hai comprato una nuova barca!' )
+            TriggerClientEvent( 'UI:DrawNotification', _src, 'Has comprado una nueva barca!' )
         else
             local Parameters = { ['identifier'] = u_identifier, ['charid'] = u_charid, ['boat'] = _model }
             exports.ghmattimysql:executeSync("INSERT INTO boates ( `identifier`, `charid`, `boat` ) VALUES ( @identifier, @charid, @boat )", Parameters)
-            TriggerClientEvent( 'UI:DrawNotification', _src, 'Hai comprato una nuova barca!' )
+            TriggerClientEvent( 'UI:DrawNotification', _src, 'Has comprado una nueva barca!' )
         end
     end)
 

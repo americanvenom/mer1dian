@@ -15,7 +15,7 @@ AddEventHandler("vane_banchiere:checkjob", function()
     if Character.job == 'Banchiere' then
         TriggerClientEvent('vane_banchiere:open', _source)
 	else
-		TriggerClientEvent("vorp:Tip", _source, 'Non hai le chiavi', 4000)
+		TriggerClientEvent("vorp:Tip", _source, 'No tienes las llaves', 4000)
     end
     
 end)
@@ -28,8 +28,8 @@ AddEventHandler('vane_vendi:pepita', function(n)
 		if count >= n then 
 			VorpInv.subItem(_source, 'goldnugget',n)
 			TriggerEvent("vorp:addMoney", _source, 0, n*5);
-			TriggerClientEvent("vorp:TipRight", source, "Hai spedito " .. tostring(n) .. " pepite!", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Has vendido " .. tostring(n) .. " pepita(s)!", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Non hai abbastanza pepite", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "No tienes suficientes pepitas", 4000)
 		end
 end)

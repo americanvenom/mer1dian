@@ -1,27 +1,27 @@
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('perso', 'Banchiere')
-	WarMenu.CreateSubMenu('ca', 'perso', 'Cambia')
-	WarMenu.CreateSubMenu('ve', 'perso', 'Spedisci')
-	WarMenu.CreateSubMenu('so', 'perso', 'Gestione Società')
-	WarMenu.CreateSubMenu('as', 'so', 'Aggiungi Società')
-	WarMenu.CreateSubMenu('rs', 'so', 'Rimuovi Società')
-	WarMenu.CreateSubMenu('ms', 'so', 'Mostra Società')
+    WarMenu.CreateMenu('perso', 'Banquero')
+	WarMenu.CreateSubMenu('ca', 'perso', 'Cambio')
+	WarMenu.CreateSubMenu('ve', 'perso', 'Vender')
+	WarMenu.CreateSubMenu('so', 'perso', 'Administrar sociedad')
+	WarMenu.CreateSubMenu('as', 'so', 'Agregar sociedad')
+	WarMenu.CreateSubMenu('rs', 'so', 'Eliminar sociedad')
+	WarMenu.CreateSubMenu('ms', 'so', 'Mostrar sociedad')
 	 while true do
         local ped = GetPlayerPed()
         local coords = GetEntityCoords(PlayerPedId())
 		--print(Vdist(coords.x, coords.y, coords.z, 2644.1, -1300.0, 167.5))
 
 		if WarMenu.IsMenuOpened('ve') then
-			if WarMenu.Button('Pepite') then
+			if WarMenu.Button('Pepita') then
 
-				TriggerEvent("vorpinputs:getInput", "Deposita", "Quantita", function(cb)
+				TriggerEvent("vorpinputs:getInput", "Depositar", "Cantidad", function(cb)
 				
 					TriggerServerEvent('vane_vendi:pepita', tonumber(cb))
 				end)
 
 			end	
 		
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				WarMenu.CloseMenu()
 			end	
 		
@@ -40,7 +40,7 @@ RegisterNetEvent("enter:banca")
   AddEventHandler("enter:banca", function()
     SetTextScale(0.5, 0.5)
     --SetTextFontForCurrentCommand(1)
-    local msg = '[G] Per aprire vendere le pepite'
+    local msg = '[G] Para vender las pepitas'
     local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
 
     Citizen.InvokeNative(0xFA233F8FE190514C, str)

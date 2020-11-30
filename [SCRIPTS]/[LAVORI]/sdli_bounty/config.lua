@@ -1,9 +1,9 @@
 Config = {}
 
-Config.HuntingMessage = 'Premi [INVIO] per ricevere una taglia'
-Config.KillingMessage = 'Uccidi gli obiettivi per avere la tua ricompensa'
-Config.ObjectivesKilledMessage = 'Hai ucciso tutti gli obiettivi'
-Config.DeadMessage = "La tua taglia è fuggita"
+Config.HuntingMessage = 'Presiona [ENTER] para recibir la recompensa'
+Config.KillingMessage = 'Mata a los objetivos para obtener tu recompensa'
+Config.ObjectivesKilledMessage = 'Has matado a todos los objetivos'
+Config.DeadMessage = "El criminal se ha fugado"
 Config.Price = 1.5
 Config.Xp = 0
 

@@ -33,6 +33,6 @@ AddEventHandler("vane:checkjob", function()
 
     else
         -- print('not authorized')
-        TriggerClientEvent("vorp:Tip", _source, "Non hai una licenza da Cacciatore di Taglie", 4000) -- from server side
+        TriggerClientEvent("vorp:Tip", _source, "No tienes licencia de cazarrecompensas", 4000) -- from server side
     end
 end)

@@ -49,7 +49,7 @@ Citizen.CreateThread(function()
         local blip = N_0x554d9d53f696d002(1664425300, info.x, info.y, info.z)
         SetBlipSprite(blip, 778811758, 1)
 		SetBlipScale(blip, 0.2)
-		Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Forze dell'ordine")
+		Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Sheriff")
     end  
 end)
 
@@ -98,7 +98,7 @@ Citizen.CreateThread(function()
                     
                 end
             
-            elseif WarMenu.Button("Manda in cella") and firsttime then
+            elseif WarMenu.Button("Meter en la celda") and firsttime then
                 local closestPlayer, closestDistance = GetClosestPlayer()
                 local playerCoords = GetEntityCoords(PlayerPedId(), true,true)
 

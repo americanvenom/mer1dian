@@ -152,7 +152,7 @@ local function ShowNotification( _message )
 end
 
 Citizen.CreateThread( function()
-	WarMenu.CreateMenu('id_boat', 'Negozio Barche')
+	WarMenu.CreateMenu('id_boat', 'Negocio barcas')
 	while true do
 		if WarMenu.IsMenuOpened('id_boat') then
 			for i = 1, #boates do
@@ -241,11 +241,11 @@ RegisterCommand("barca", function(source, args, raw)
 				recentlySpawned = 60 --3600
 				TriggerServerEvent('elrp:dropboat')
 			else
-				TriggerEvent('chat:systemMessage', 'Devi aspettare ' .. recentlySpawned .. ' secondi prima di mettere in acqua la tua barca.')
+				TriggerEvent('chat:systemMessage', 'Debes esperar ' .. recentlySpawned .. ' segundos antes de poner tu bote en el agua.')
 				TriggerEvent('chat:addMessage', {
 					color = { 171, 59, 36 },
 					multiline = true,
-					args = {"Anti-Spam", 'Devi aspettare ' .. recentlySpawned .. ' secondi prima di mettere in acqua la tua barca.'}
+					args = {"Anti-Spam", 'Debes esperar ' .. recentlySpawned .. ' segundos antes de poner tu bote en el agua.'}
 				})
 			end
    end)
@@ -260,7 +260,7 @@ Citizen.CreateThread(function()
 end)
 
 local boatshopblips = {
-    {["ShopName"] = "Negozio Barche", x = 2802.51, y = -1407.3, z = 45.44, ["HasRares"] = false}
+    {["ShopName"] = "Negocio barcas", x = 2802.51, y = -1407.3, z = 45.44, ["HasRares"] = false}
 }
 
 Citizen.CreateThread(function()

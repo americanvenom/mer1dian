@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
     if (Vdist(coords.x, coords.y, coords.z, -1866.8, -1726.4, 86.1) < 1.0) then  --YOUR CHORDS FOR MENU HERE
-            DrawTxt("Premi [~e~G~q~] per accedere al Bar del Bordello.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Pulsa [~e~G~q~] para acceder al bar de Bordello.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("saloon:open")
                 TriggerServerEvent('bordello:checkgroup')
@@ -40,10 +40,10 @@ Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
     WarMenu.CreateMenu('menu', "Bar Bordello")
-    WarMenu.SetSubTitle('menu', 'Ricette')
+    WarMenu.SetSubTitle('menu', 'Recetas')
 	
-    WarMenu.CreateSubMenu('hgmake', 'menu', 'Bevande')
-	WarMenu.CreateSubMenu('hgmake2', 'menu', 'Cibi')
+    WarMenu.CreateSubMenu('hgmake', 'menu', 'Bebidas')
+	WarMenu.CreateSubMenu('hgmake2', 'menu', 'Alimentos')
 
 
     while true do
@@ -55,8 +55,8 @@ Citizen.CreateThread(function()
         if WarMenu.IsMenuOpened('menu') then
 
             
-            if WarMenu.MenuButton('Bevande', 'hgmake') then end
-            if WarMenu.MenuButton('Cibi', 'hgmake2') then end	
+            if WarMenu.MenuButton('Bebidas', 'hgmake') then end
+            if WarMenu.MenuButton('Alimentos', 'hgmake2') then end	
 
             WarMenu.Display()
 
@@ -88,7 +88,7 @@ Citizen.CreateThread(function()
 			
         elseif WarMenu.IsMenuOpened('hgmake2') then
             
-            if WarMenu.Button('Attualmente non ci sono cibi nel menú') then
+            if WarMenu.Button('Actualmente no hay alimentos en el menú') then
                 
                 TriggerServerEvent("bd_")
             end

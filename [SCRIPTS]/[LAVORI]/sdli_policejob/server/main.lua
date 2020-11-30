@@ -85,9 +85,9 @@ AddEventHandler("vanelicenze:cacciatoreditaglie", function(target)
 	local count = VorpInv.getItemCount(source, "licenzataglie")
 		if count == 0 then
 			VorpInv.addItem(_source, 'licenzataglie',1)
-			TriggerClientEvent("vorp:TipRight", _source, "Hai ritirato una Licenza da Cacciatore di Taglie", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Has retirado una licencia de cazarrecompensas", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", _source, "Ne hai gia uno", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Ya tienes una", 4000)
 		end
 end)
 
@@ -109,8 +109,8 @@ AddEventHandler("vanelicenze:cacciatore", function(target)
 	local count = VorpInv.getItemCount(source, "licenzacaccia")
 		if count == 0 then
 			VorpInv.addItem(_source, 'licenzacaccia',1)
-			TriggerClientEvent("vorp:TipRight", _source, "Hai ritirato una Licenza da Cacciatore", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Has retirado una licencia de cazador", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", _source, "Ne hai gia uno", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Ya tienes una", 4000)
 		end
 end)

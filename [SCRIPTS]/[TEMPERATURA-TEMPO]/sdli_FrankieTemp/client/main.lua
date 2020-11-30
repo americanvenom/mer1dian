@@ -43,14 +43,14 @@ Citizen.CreateThread(function()
 
 		if tonumber(roundtemp) <= -8 then
 			--TriggerEvent("redemrp_notification:start", "Stai congelando copriti al più pesto,altrimenti è la fine!", 5, "error")
-			TriggerEvent("vorp:NotifyLeft", "~t7~Temperatura", "Stai congelando copriti al più pesto, altrimenti è la fine!", "rpg_textures", "rpg_cold", 4000)
+			TriggerEvent("vorp:NotifyLeft", "~t7~Temperatura", "Te estás congelando, ponte algo más de ropa!", "rpg_textures", "rpg_cold", 4000)
 			--TriggerClientEvent("vorp:NotifyLeft", _source, "~t7~Temperatura", "Stai congelando copriti al più pesto,altrimenti è la fine!", "menu_textures", "cross", 3000)
 		elseif tonumber(roundtemp) <= -6 then 
 			--TriggerEvent("redemrp_notification:start", "Hai freddo, dovresti coprirti!", 5, "error")
-			TriggerEvent("vorp:NotifyLeft", "~pa~Temperatura", "Hai freddo, dovresti coprirti!", "rpg_textures", "rpg_cold", 4000)
+			TriggerEvent("vorp:NotifyLeft", "~pa~Temperatura", "Tienes frío, ¡deberías cubrirte!", "rpg_textures", "rpg_cold", 4000)
 		elseif tonumber(roundtemp) <= -4 then 
 		--.	TriggerEvent("redemrp_notification:start", "Stai sentendo molto freddo, dovresti coprirti di più!", 5, "error")
-			TriggerEvent("vorp:NotifyLeft", "~t3~Temperatura", "Stai sentendo molto freddo, dovresti coprirti di più!", "rpg_textures", "rpg_cold", 4000)
+			TriggerEvent("vorp:NotifyLeft", "~t3~Temperatura", "Tienes mucho frío, ¡deberías cubrirte más!", "rpg_textures", "rpg_cold", 4000)
 	--	elseif tonumber(roundtemp) <= 20 then 
 	--		TriggerEvent("vorp:NotifyLeft", "~o~Temperatura", "Stai sentendo caldo, dissetati spesso!", "rpg_textures", "rpg_hot", 3000)
 	--	elseif tonumber(roundtemp) <= 25 then 

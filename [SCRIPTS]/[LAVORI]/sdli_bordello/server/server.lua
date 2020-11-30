@@ -33,11 +33,11 @@ AddEventHandler('bd_daiquiri', function()
 
         VORP.addItem(_source, "daiquiri", 2)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato un Daiquiri', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un Daiquiri', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti serve 1 rum e 1 zucchero.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 ron y 1 azúcar.', 4500)
     end      
 end)
 
@@ -68,11 +68,11 @@ AddEventHandler('bd_old', function()
 
         VORP.addItem(_source, "oldfashioned", 2)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato un Old Fashioned', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un Old Fashioned', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti serve 1 Whiskey e 1 zucchero.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 Whiskey y 1 azúcar.', 4500)
     end      
 end)
 
@@ -105,11 +105,11 @@ AddEventHandler('bd_planter', function()
 
         VORP.addItem(_source, "planterspunch", 2)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato un Planter\'s Punch', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un Planter\'s Punch', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti serve 1 rum, 1 zucchero e 1 pesca.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 ron, 1 azúcar y 1 pescado.', 4500)
     end      
 end)
 
@@ -138,11 +138,11 @@ AddEventHandler('bd_vodkam', function()
 
         VORP.addItem(_source, "vodkamartini", 2)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato un Vodka Martini', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un Vodka Martini', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti serve 1 vodka.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 vodka.', 4500)
     end      
 end)
 
@@ -173,11 +173,11 @@ AddEventHandler('bd_mojito', function()
 
         VORP.addItem(_source, "mojito", 2)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato un Mojito', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un Mojito', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti serve 1 rum e 1 zucchero.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 ron y 1 azúcar.', 4500)
     end      
 end)
 

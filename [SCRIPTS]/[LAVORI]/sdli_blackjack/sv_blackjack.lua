@@ -122,16 +122,16 @@ function startGame()
                     --print("Somma carte tavolo: " .. countDealerCards)
                 if (v.isInTable) then
                     if v.countPlayerCards > 21 and v.isInTable then
-                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Il banco ha vinto")
+                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Gana la banca")
                         payBet(v.playerId, v.betAmount, "lose")
                     elseif countDealerCards > 21 and v.isInTable then
-                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Hai vinto")
+                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Has ganado")
                         payBet(v.playerId, v.betAmount, "win")
                     elseif countDealerCards > v.countPlayerCards and v.isInTable then
-                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Il banco ha vinto")
+                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Gana la banca")
                         payBet(v.playerId, v.betAmount, "lose")
                     elseif countDealerCards < v.countPlayerCards and v.isInTable then
-                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Hai Vinto")
+                        TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Has ganado")
                         payBet(v.playerId, v.betAmount, "win")
                     elseif countDealerCards == v.countPlayerCards and v.isInTable then
                         TriggerClientEvent('vorp_blackjack:ReceiveWin', v.playerId, "Push")
@@ -303,7 +303,7 @@ AddEventHandler("bj:buyfiches", function(fiches)
             local fichesadded = VorpInv.getItemCount(_source,"fiche") - currentfiches
 
             if fichesadded < fiches then 
-                TriggerClientEvent("vorp:TipBottom", _source, "Inventario pieno!", 5000)
+                TriggerClientEvent("vorp:TipBottom", _source, "Inventario lleno!", 5000)
             end
             VORP.removeMoney(_source, 0, fichesadded*0.8) 
             --TriggerClientEvent("vorp_notification:start", source, "Hai comprato " .. tostring(fiches) .. " fiches!", 3, "success")
