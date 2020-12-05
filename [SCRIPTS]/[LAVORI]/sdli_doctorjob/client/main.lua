@@ -16,21 +16,21 @@ Citizen.CreateThread(function()
 
         if WarMenu.IsMenuOpened('perso') then
             
-            if WarMenu.Button("Rianima persona") then
+            if WarMenu.Button("Reanimar persona") then
                 local closestPlayer, closestDistance = GetClosestPlayer()
                 if closestPlayer ~= -1 and closestDistance <= 3.0 and IsEntityDead(GetPlayerPed(closestPlayer)) then 
                     TriggerServerEvent("vorp_ml_doctorjob:reviveplayer", GetPlayerServerId(closestPlayer))
                         
                 end	
                         
-            elseif WarMenu.Button("Cura persona") then
+            elseif WarMenu.Button("Curar persona") then
 
                 local closestPlayer, closestDistance = GetClosestPlayer()
                 if closestPlayer ~= -1 and closestDistance <= 3.0 then
                     TriggerServerEvent("vorp_ml_doctorjob:healplayer", GetPlayerServerId(closestPlayer))
                 end
             
-            elseif WarMenu.Button("Chiudi") then 
+            elseif WarMenu.Button("Salir") then 
                 WarMenu.CloseMenu() 
             end
             WarMenu.Display()
@@ -207,7 +207,7 @@ Citizen.CreateThread(function()
         local pos = GetEntityCoords(PlayerPedId())
         local distance = GetDistanceBetweenCoords(pos.x,pos.y,pos.z,-291.2,816.3,119.4,true)
         if distance < 1.0 then 
-            local msg = "Premi [G] per accedere al ricettario"
+            local msg = "Pulsa [G] para acceder al libro de recetas"
             local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
         
             Citizen.InvokeNative(0xFA233F8FE190514C, str)
@@ -244,18 +244,18 @@ Citizen.CreateThread(function()
         Wait(0)
         if WarMenu.IsMenuOpened('medic') then 
             
-            if WarMenu.Button("Prepara Tonico Vita") then 
+            if WarMenu.Button("Peparar tónico vital") then 
                 TriggerServerEvent('doctor:tonicovita')
-            elseif WarMenu.Button("Prepara Tonico Vita+") then
+            elseif WarMenu.Button("Peparar tónico vital+") then
                 TriggerServerEvent('doctor:tonicovita1')
-            elseif WarMenu.Button("Prepara Elysir Energia") then
+            elseif WarMenu.Button("Preparar elixir de energia") then
                 TriggerServerEvent('doctor:elysirenergia')
-            elseif WarMenu.Button("Prepara Elysir Energia+") then
+            elseif WarMenu.Button("Preparar elixir de energia+") then
                 TriggerServerEvent('doctor:elysirenergia1')
-            elseif WarMenu.Button("Prepara Estratto di veleno") then
+            elseif WarMenu.Button("Preparar extracto de veneno") then
                 TriggerServerEvent('doctor:estrattoveleno')
-            elseif WarMenu.Button("Acquista siringhe") then
-                local siringhe = tonumber(textEntry("Quante siringhe vuoi acquistare?"))
+            elseif WarMenu.Button("Comprar jeringuillas") then
+                local siringhe = tonumber(textEntry("Cuantas jeringuillas quieres comprar?"))
                 TriggerServerEvent('doctor:buysiringhe', siringhe)
             end
             WarMenu.Display()

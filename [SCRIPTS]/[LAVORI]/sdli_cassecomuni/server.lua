@@ -109,11 +109,11 @@ AddEventHandler("sdli_casse:DepositaItem", function (idhouse, k,qt,b)
 							if not isAWeapon(k) then
 								TriggerEvent("vorpinventory:getLabelFromId", k, function(name) 
 								
-									TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..name, 4000)
+									TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..name, 4000)
 
 								end)
 							else
-								TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..k, 4000)
+								TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..k, 4000)
 							end
 							TriggerClientEvent('cassecomuni:refreshmenu',_source,k,tonumber(qt))
 						else
@@ -121,11 +121,11 @@ AddEventHandler("sdli_casse:DepositaItem", function (idhouse, k,qt,b)
 							if string.sub(k,1,1) ~= "[" then
 								TriggerEvent("vorpinventory:getLabelFromId", k, function(name) 
 								
-									TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..name, 4000)
+									TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..name, 4000)
 
 								end)
 							else
-								TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..k, 4000)
+								TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..k, 4000)
 							end
 							TriggerClientEvent('cassecomuni:refreshmenu',_source,k,tonumber(qt))
 						end
@@ -134,15 +134,15 @@ AddEventHandler("sdli_casse:DepositaItem", function (idhouse, k,qt,b)
 						if string.sub(k,1,1) ~= "[" then
 								TriggerEvent("vorpinventory:getLabelFromId", k, function(name) 
 								
-									TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..name, 4000)
+									TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..name, 4000)
 
 								end)
 							else
-								TriggerClientEvent("vorp:TipRight", _source, "hai depositato "..qt.." "..k, 4000)
+								TriggerClientEvent("vorp:TipRight", _source, "has depositado "..qt.." "..k, 4000)
 							end
 						TriggerClientEvent('cassecomuni:refreshmenu',_source,k,tonumber(qt))
 					else
-						TriggerClientEvent("vorp:TipRight", _source, "Non c'è abbastanza spazio, limite massimo item: " .. tostring(inret[1].maxitems) , 4000)
+						TriggerClientEvent("vorp:TipRight", _source, "No hay suficiente espacio, límite máximo de artículos: " .. tostring(inret[1].maxitems) , 4000)
 					end
 
 					exports.ghmattimysql:execute('UPDATE casse SET inventory = @inventory WHERE id = @idhouse', {
@@ -152,7 +152,7 @@ AddEventHandler("sdli_casse:DepositaItem", function (idhouse, k,qt,b)
 					
 					end)	
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Quantità non valida", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Cantidad inválida", 4000)
 		end
 end) 
 
@@ -177,7 +177,7 @@ AddEventHandler("sdli_casse:PrelevaItem", function(k, a,qt,v)
 	else
 		VorpInv.addItem(_source,a,qt)
 	end
-		TriggerClientEvent("vorp:TipRight", _source, "hai prelevato x"..qt.." di "..a, 4000)
+		TriggerClientEvent("vorp:TipRight", _source, "has cogido x"..qt.." de "..a, 4000)
 		TriggerClientEvent('cassecomuni:refreshmenu', _source)
 		exports.ghmattimysql:execute('SELECT inventory FROM casse WHERE id = @id AND permission = @group', {
 			['@id'] = {k},

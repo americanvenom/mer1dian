@@ -11,9 +11,9 @@ end
 function formattime(timer)
 
 	if (timer >= 60) then
-		return string.format("%.1f", tostring(timer / 60)) .. " minuti"
+		return string.format("%.1f", tostring(timer / 60)) .. " minutos"
 	else
-		return tostring(timer) .. " secondi"
+		return tostring(timer) .. " segundos"
 	end
 
 end
@@ -119,7 +119,7 @@ Citizen.CreateThread(function()
 
 			else
 
-				DrawTxt("Sei in prigione - " .. formattime(timer) .. " rimanenti", 0.5, 0.9, 0.5, 0.5, 255, 255, 255, 255, true)
+				DrawTxt("Estás en la cárcel - " .. formattime(timer) .. " restante", 0.5, 0.9, 0.5, 0.5, 255, 255, 255, 255, true)
 
 			end
 

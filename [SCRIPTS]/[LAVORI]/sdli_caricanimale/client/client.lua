@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
 		if isModelValid(model) then
 			local animal = Citizen.InvokeNative(0xD806CD2A4F2C2996, ped)
 			if animal ~= false then
-				DrawText3D(cartcoords.x,cartcoords.y,cartcoords.z,"Permi G per caricare l'animale")
+				DrawText3D(cartcoords.x,cartcoords.y,cartcoords.z,"Pulsa G para cargar el animal")
 				
 				if IsControlJustReleased(0,0x760A9C6F) then
 					animalcheck = Citizen.InvokeNative(0xD806CD2A4F2C2996, ped)

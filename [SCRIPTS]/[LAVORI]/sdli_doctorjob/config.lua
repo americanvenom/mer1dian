@@ -1,6 +1,6 @@
 Config = {}	
 
-Config.Locale = "en"
+Config.Locale = "es"
 
 Config.Horses = {
     "A_C_HORSE_GANG_KIERAN",

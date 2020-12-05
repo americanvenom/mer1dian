@@ -29,22 +29,22 @@ Config.AnimDict = "script_re@gold_panner@gold_success"
 Config.PanObject = "p_miningpan01x"
 Config.Bone = "PH_L_Hand"
 
-Config.StartPan = "Prova a cercare"
-Config.PanNotFound = "Hai bisogno di un setaccio per cercare dell'oro!"
-Config.GoldNotFound = "Non hai trovato pepite d'oro!"
-Config.Found = function(gold) return "Hai trovato "..gold.." pepite d'oro!" end
-Config.DiamFound = function(gold) return "Hai trovato "..gold.." diamante!" end
-Config.NuggetsNotFound = "Non hai abbastanza pepite da processare!"
-Config.TooFar = "Ti sei allontanato troppo!"
+Config.StartPan = "Intenta buscar"
+Config.PanNotFound = "Necesitas un colador para buscar oro!"
+Config.GoldNotFound = "No has encontrado ninguna pepita de oro!"
+Config.Found = function(gold) return "Has encontrado "..gold.." pepita de oro!" end
+Config.DiamFound = function(gold) return "Has encontrado "..gold.." diamante!" end
+Config.NuggetsNotFound = "No tienes suficientes pepitas para procesar!"
+Config.TooFar = "Te has alejado demasiado!"
 
 Config.PanControl = 0xE8342FF2 --ALT
 
 -- DA 0 A 10000
 Config.Probability = 2700 --% of obtaining gold
 
-Config.ProcessText = "Processo oro"
+Config.ProcessText = "Proceso de oro"
 Config.ProcessLocations = { 
-	{ name = 'Processo Oro', sprite = 2107754879,  x = 1414.9, y = 279.2, z = 89.5 },
+	{ name = 'Proceso de oro', sprite = 2107754879,  x = 1414.9, y = 279.2, z = 89.5 },
 }
 
 Config.NuggetsAmount = 60

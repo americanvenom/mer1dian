@@ -37,11 +37,11 @@ AddEventHandler('wc_tonico_aug', function()
 
         VORP.addItem(_source, "tonico_aug", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato Estratto della terra.', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado extracto de la tierra.', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 4 acqua, 5 oppio, 4 belladonna. ', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 4 agua, 5 opio, 4 belladonna. ', 4500)
         print('noitemsrequired')
     end      
 end)
@@ -75,11 +75,11 @@ AddEventHandler('wc_arcofreccebase', function()
 
         VORP.createWeapon(_source, "WEAPON_BOW", ammoList, compsList)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato 40 frecce ed un arco.', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado 40 flechas y un arco.', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 piume, 2 ceppi di pino, 2 ferro.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 plumas, 2 troncos de pino, 2 de hierro', 4500)--Ti servono 5 piume, 2 ceppi di pino, 2 ferro
         print('noitemsrequired')
     end      
 end)
@@ -115,11 +115,11 @@ AddEventHandler('wc_arcofrecceavvelenate', function()
 
         VORP.createWeapon(_source, "WEAPON_BOW", ammoList, compsList)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato 8 frecce avvelenate ed un arco.', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado 8 flechas venenosas y un arco.', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 3 piume, 2 ceppi di pino, 2 ferro, 1 estratto di veleno.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 3 plumas, 2 troncos de pino, 2 de hierro, 1 extracto de veneno.', 4500)--Ti servono 3 piume, 2 ceppi di pino, 2 ferro, 1 estratto di veleno.
         print('noitemsrequired')
     end      
 end)
@@ -191,11 +191,11 @@ AddEventHandler('wc_tomahawk', function()
 
         VORP.createWeapon(_source, "WEAPON_THROWN_TOMAHAWK", ammoList, compsList)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai creato un tomahawk.', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has creado un tomahawk.', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 1 ceppo di pino, 3 acciaio e 2 ferro.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 1 tronco de pino, 3 de acero y 2 de hierro.', 4500)--Ti servono 1 ceppo di pino, 3 acciaio e 2 ferro
         print('noitemsrequired')
     end      
 end)

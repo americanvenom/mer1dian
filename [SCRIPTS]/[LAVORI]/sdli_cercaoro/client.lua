@@ -35,7 +35,7 @@ function playSuccessAnim()
 			RequestModel(Config.PanObject)
 			Citizen.Wait(1)
 			end
-			exports['progressBars']:startUI(10000, "Setacciando...")
+			exports['progressBars']:startUI(10000, "Buscando...")
 			local object = CreateObject(Config.PanObject, x, y, z, true, true, true)
 			AttachEntityToEntity(object, PlayerPedId(), GetEntityBoneIndexByName(PlayerPedId(), Config.Bone), 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0, 1, 0, 0, 1)
 			TaskPlayAnim(PlayerPedId(), Config.AnimDict, "search0"..tostring(math.random(1,4)), 1.0, 8.0, -1, 1, 0, false, false, false)
@@ -90,7 +90,7 @@ Citizen.CreateThread(function()
 				local distance = GetDistanceBetweenCoords(v["x"],v["y"],v["z"],coords.x,coords.y,coords.z, true)
 				if Water == Config.PanningLocations[k]["waterhash"] and IsEntityInWater(player) and IsPedOnFoot(player) and distance < v["radius"] then
 					--TriggerEvent("redemrp_notification:start", "prova!", 1, "error")
-					TriggerEvent("vorp:TipBottom", "~o~Vedi qualcosa brillare nell'acqua!", 3000)
+					TriggerEvent("vorp:TipBottom", "~o~Se ve algo que brilla en el agua!", 3000)
 					isInMarker  = true
 					currentZone = k
 					lastZone    = k

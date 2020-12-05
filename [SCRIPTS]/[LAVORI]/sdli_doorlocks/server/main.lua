@@ -15,7 +15,8 @@ AddEventHandler('vorp_doorlocks:updatedoorsv', function(source, doorID, cb)
 	local Character = User.getUsedCharacter
 
 	if not IsAuthorized(Character.job, Config.DoorList[doorID]) then
-		TriggerClientEvent('chatMessage', source, "", {0, 0, 200}, "^1Non hai la chiave!^0")
+		TriggerClientEvent("vorp:TipBottom", source, "No tienes la llave", 5000) 
+		--TriggerClientEvent('chatMessage', source, "", {0, 0, 200}, "No tienes la llave")
         return
     else 
         TriggerClientEvent('vorp_doorlocks:changedoor', _source, doorID)

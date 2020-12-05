@@ -90,7 +90,7 @@ Citizen.CreateThread(function()
     while true do 
         Wait(0)
         if WarMenu.IsMenuOpened('blackjack') then
-            if WarMenu.Button("Compra fiches ($0.80)","") then
+            if WarMenu.Button("Compra fichas ($0.80)","") then
 
                 AddTextEntry("FMMC_MPM_TYP8", "Cuantas fichas quieres comprar?")
                 DisplayOnscreenKeyboard(1, "FMMC_MPM_TYP8", "", "", "", "", "", 30)
@@ -298,7 +298,7 @@ RegisterNetEvent('vorp_blackjack:Bet')
 AddEventHandler('vorp_blackjack:Bet', function(max)
     local x = true
     while x do
-        AddTextEntry("FMMC_KEY_TIP8", "Inserisci la scommessa(max:"..max..")")
+        AddTextEntry("FMMC_KEY_TIP8", "Ingrese su apuesta(max:"..max..")")
         DisplayOnscreenKeyboard(1, "FMMC_KEY_TIP8", "", "", "", "", "", 3)
 
         while (UpdateOnscreenKeyboard() == 0) do

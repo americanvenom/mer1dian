@@ -43,7 +43,7 @@ AddEventHandler( "vorp_ml_doctorjob:reviveplayer", function(target)
 		TriggerClientEvent('ml_doctorjob:revived', _target)
 	
 	else
-		TriggerClientEvent("redemrp_notification:start", _source, "Non hai la siringa!", 3, "warning")
+		TriggerClientEvent("redemrp_notification:start", _source, "No tienes una jeringuilla!", 3, "warning")
 	end
 	
 end)

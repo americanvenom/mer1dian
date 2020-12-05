@@ -4,7 +4,7 @@ local timeHeld = 0
 
 function SetupOpenPrompt()
     Citizen.CreateThread(function()
-        local str = 'Apri / Chiudi'
+        local str = 'Abrir / Cerrar'
         OpenPrompt = PromptRegisterBegin()
         PromptSetControlAction(OpenPrompt, 0xE8342FF2)
         str = CreateVarString(10, 'LITERAL_STRING', str)
@@ -56,7 +56,7 @@ Citizen.CreateThread(function()
 				distance = #(playerCoords - doorID.objCoords)
 			end
 
-			local maxDistance, displayText = 1.25, 'sbloccata'
+			local maxDistance, displayText = 1.25, 'Desbloqueado'
 
 			if doorID.distance then
 				maxDistance = doorID.distance
@@ -89,7 +89,7 @@ Citizen.CreateThread(function()
 			if distance < maxDistance then
 
 				if doorID.locked then
-					displayText = 'bloccata'
+					displayText = 'Bloqueado'
 				end
 
 				DrawText3D(doorID.textCoords.x, doorID.textCoords.y, doorID.textCoords.z, displayText)

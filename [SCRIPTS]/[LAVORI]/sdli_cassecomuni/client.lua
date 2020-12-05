@@ -2,9 +2,9 @@ local inv = {}
 local houseinv = {}
 --- WAR MENU --------
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('perso', 'Cassa comune')
-	WarMenu.CreateSubMenu('do', 'perso', 'Deposita Oggetti')
-	WarMenu.CreateSubMenu('po', 'perso', 'preleva Oggetti')
+    WarMenu.CreateMenu('perso', 'Casa común')
+	WarMenu.CreateSubMenu('do', 'perso', 'Depositar objeto')
+	WarMenu.CreateSubMenu('po', 'perso', 'Recoger objeto')
 
 	 while true do
 
@@ -14,11 +14,11 @@ Citizen.CreateThread(function()
     if WarMenu.IsMenuOpened('perso') then
 		--Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, true)
 --		
-		if WarMenu.MenuButton('Deposita Oggetti', 'do') then
+		if WarMenu.MenuButton('Depositar objeto', 'do') then
 		end
-		if WarMenu.MenuButton('Preleva Oggetti', 'po') then
+		if WarMenu.MenuButton('Recoger objeto', 'po') then
 		end
-		if WarMenu.Button('Chiudi') then
+		if WarMenu.Button('Salir') then
 			--Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 			WarMenu.CloseMenu()
 		end
@@ -31,7 +31,7 @@ Citizen.CreateThread(function()
 						local coords = GetEntityCoords(PlayerPedId())
 						if (Vdist(coords.x, coords.y, coords.z, b.x, b.y, b.z) < 1.3) and v ~= 0 then
 							if WarMenu.Button(v.Label.." x"..v.Quantity) then
-								TriggerEvent("vorpinputs:getInput", "Deposita", "Quantita", function(cb)
+								TriggerEvent("vorpinputs:getInput", "Depositar", "Cantidad", function(cb)
 									local qt = tonumber(cb)
 									--table.remove(inv,k)
 									if qt ~= nil then
@@ -44,7 +44,7 @@ Citizen.CreateThread(function()
 					end	
 				end
 
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				--Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 				WarMenu.CloseMenu()
 			end	
@@ -59,12 +59,12 @@ Citizen.CreateThread(function()
 								
 							if b["Quantity"] ~= 0 then
 								if WarMenu.Button(b["Name"].." x"..b["Quantity"]) then 
-									TriggerEvent("vorpinputs:getInput", "Preleva", "Quantita", function(cb)
+									TriggerEvent("vorpinputs:getInput", "Retirar", "Cantidad", function(cb)
 										local qt = tonumber(cb)
 										if qt ~= nil and b["Quantity"] >= qt then
 											TriggerServerEvent("sdli_casse:PrelevaItem", k, b["Id"], qt,v)
 										else
-											TriggerEvent("vorp:TipRight", "Non ce ne sono cosi tanti", 5000)
+											TriggerEvent("vorp:TipRight", "No hay tantos", 5000)
 										end
 									end)
 								end
@@ -73,7 +73,7 @@ Citizen.CreateThread(function()
 						end
 					end	
 				end	
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				--Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 				WarMenu.CloseMenu()
 			end	
@@ -91,7 +91,7 @@ RegisterNetEvent("enter:house")
 AddEventHandler("enter:house", function()
     SetTextScale(0.5, 0.5)
     --SetTextFontForCurrentCommand(1)
-    local msg = 'Premi [G] Per aprire la cassa'
+    local msg = 'Presiona [G] para abrir el cofre'
     local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
 
     Citizen.InvokeNative(0xFA233F8FE190514C, str)

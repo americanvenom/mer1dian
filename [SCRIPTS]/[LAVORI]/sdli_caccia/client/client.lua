@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
                         local isIllegal = shops[a]["illegal"]
                         local dst = Vdist(shopV, myV)
                         if dst < 2 and not Animal[i]["illegal"] then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then -- VENDITA LEGALE CARCASSE
 								
@@ -31,21 +31,21 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
                                     TriggerEvent('dangy_stress:modify', 0.6)
-                                    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                               
                             end
                         elseif not shops[a]["illegal"] and dst < 2 then
                             Wait(50)
-                            TriggerEvent("hunting:showprompt", "Macellaio: Non accettiamo queste pelli o carcasse qui!")
+                            TriggerEvent("hunting:showprompt", "Carnicero: ¡No aceptamos estas pieles o cadáveres aquí!")
                         elseif dst < 1 then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then 
 
@@ -60,13 +60,13 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                   -- TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                   -- TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                    TriggerEvent('dangy_stress:modify', 0.6)
-                                   TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                   TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                              
@@ -79,7 +79,7 @@ Citizen.CreateThread(function()
                         local shopV = vector3(shops[a]["x"], shops[a]["y"], shops[a]["z"])
                         local dst = Vdist(shopV, myV)
                         if dst < 2 and not Animal[i]["illegal"] then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
 
@@ -93,22 +93,22 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*0.9)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                    --TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                    --TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                     TriggerEvent('dangy_stress:modify', 0.6)
-                                    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                              
                             end
                         elseif dst < 2 and not shops[a]["illegal"] then
                             Wait(50)
-                            TriggerEvent("hunting:showprompt", "Macellaio: Non accettiamo queste pelli qui!")
+                            TriggerEvent("hunting:showprompt", "Carnicero: ¡No aceptamos estas pieles o cadáveres aquí!")
                         elseif dst < 1 then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
 
@@ -122,13 +122,13 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*0.9)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                  --  TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                  --  TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                     TriggerEvent('dangy_stress:modify', 0.6)
-                                    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                                 
@@ -141,7 +141,7 @@ Citizen.CreateThread(function()
                         local shopV = vector3(shops[a]["x"], shops[a]["y"], shops[a]["z"])
                         local dst = Vdist(shopV, myV)
                         if dst < 2 and not Animal[i]["illegal"] then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
 
@@ -155,21 +155,21 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*1.5)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                               --    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                               --    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                TriggerEvent('dangy_stress:modify', 0.6)
-                               TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                               TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                             end
                         elseif dst < 2 and not shops[a]["illegal"] then
                             Wait(50)
-                            TriggerEvent("hunting:showprompt", "Macellaio: Non accettiamo queste pelli qui!")
+                            TriggerEvent("hunting:showprompt", "Carnicero: ¡No aceptamos estas pieles o cadáveres aquí!")
                         elseif dst < 1 then 
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
 
@@ -183,13 +183,13 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*1.5)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                   -- TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                 --   TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                   -- TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                 --   TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                  TriggerEvent('dangy_stress:modify', 0.6)
-                                 TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                 TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                             
@@ -202,7 +202,7 @@ Citizen.CreateThread(function()
                         local shopV = vector3(shops[a]["x"], shops[a]["y"], shops[a]["z"])
                         local dst = Vdist(shopV, myV)
                         if dst < 2 and not Animal[i]["illegal"] then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
                                 
@@ -216,23 +216,23 @@ Citizen.CreateThread(function()
 									TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*2.5)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                --	TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                --    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                --	TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                --    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                 TriggerEvent('dangy_stress:modify', 0.6)
-                                TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                               
                             end
                         elseif dst < 2 and not shops[a]["illegal"] then
                             Wait(50)
-                            TriggerEvent("hunting:showprompt", "Macellaio: Non accettiamo queste pelli qui!")
+                            TriggerEvent("hunting:showprompt", "Carnicero: ¡No aceptamos estas pieles o cadáveres aquí!")
                         elseif dst < 1 then
-                            TriggerEvent("hunting:showprompt", "Premi [G] per vendere la carcassa/la pelle al macellaio.")
+                            TriggerEvent("hunting:showprompt", "Presiona [G] para vender la carcasa / piel al carnicero")
                             entity = holding
                             if IsControlJustReleased(0, 0x760A9C6F) then
 
@@ -246,13 +246,13 @@ Citizen.CreateThread(function()
 									--TriggerServerEvent("hunting:add", Animal[i]["item"])
 									TriggerServerEvent("hunting:money", endpiece*2.5)
 									TriggerServerEvent("hunting:xp", endpiece)
-                                    --TriggerEvent("redemrp_notification:start", "Hai venduto il tuo "..Animal[i]["name"], 2, "success")
-                                --    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"], 2000)
+                                    --TriggerEvent("redemrp_notification:start", "Has vendido tu "..Animal[i]["name"], 2, "success")
+                                --    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"], 2000)
                                 TriggerEvent('dangy_stress:modify', 0.6)
-                                    TriggerEvent("vorp:Tip", "Hai venduto il tuo "..Animal[i]["name"].." per ~t6~$"..Animal[i]["reward"], 2000)
+                                    TriggerEvent("vorp:Tip", "Has vendido tu "..Animal[i]["name"].." por ~t6~$"..Animal[i]["reward"], 2000)
 									Wait(500)
 								else
-									TriggerEvent("hunting:showprompt", "Macellaio: Non ci serve altra merce, torni più tardi!")
+									TriggerEvent("hunting:showprompt", "Carnicero: No necesitamos más productos, ¡vuelve más tarde!")
 									Wait(5000)
 								end
                             
@@ -267,7 +267,7 @@ Citizen.CreateThread(function()
                 local shopV = vector3(shops[a]["x"], shops[a]["y"], shops[a]["z"])
                 local dst = Vdist(shopV, myV)
                 if dst < 1 then
-                    TriggerEvent("hunting:showprompt", "Non hai nessuna pelle o carcassa.")
+                    TriggerEvent("hunting:showprompt", "No tienes piel ni carcasa.")
                 else
                     Wait(50)
                 end

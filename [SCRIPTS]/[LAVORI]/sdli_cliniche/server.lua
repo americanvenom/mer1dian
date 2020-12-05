@@ -17,7 +17,7 @@ AddEventHandler("clinics:pay", function()
         TriggerEvent("vorp:removeMoney", _source, 0, price)
         TriggerClientEvent("clinics:heal", _source)
     else
-        TriggerClientEvent("redemrp_notification:start", _source,  "Non hai abbastanza soldi (" .. tostring(price) .. "$)", 3, "error")
+        TriggerClientEvent("redemrp_notification:start", _source,  "No tienes suficiente dinero (" .. tostring(price) .. "$)", 3, "error")
     end
     
 end)
@@ -36,7 +36,7 @@ AddEventHandler("clinics:pay:revive", function(closestPlayer)
         TriggerClientEvent('ml_doctorjob:animation', _source)
         TriggerClientEvent('ml_doctorjob:revived', _closestPlayer)
     else
-        TriggerClientEvent("redemrp_notification:start", _source,  "Non hai abbastanza soldi (" .. tostring(price) .. "$)", 3, "error")
+        TriggerClientEvent("redemrp_notification:start", _source,  "No tienes suficiente dinero (" .. tostring(price) .. "$)", 3, "error")
     end
     
 end)

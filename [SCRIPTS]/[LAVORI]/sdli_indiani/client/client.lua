@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
     if (Vdist(coords.x, coords.y, coords.z, 465.4, 2249.8, 248.3) < 1.0) then  --YOUR CHORDS FOR MENU HERE
-            DrawTxt("Premi [~e~G~q~] per iniziare a creare.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Pulsa [~e~G~q~] para comenzar a elaborar.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("indiani:open")
                 TriggerServerEvent('indiani:checkgroup')
@@ -27,10 +27,10 @@ Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
     WarMenu.CreateMenu('menu', "Wapiti")
-    WarMenu.SetSubTitle('menu', 'Creazione')
+    WarMenu.SetSubTitle('menu', 'Creaciones')
 	
-    WarMenu.CreateSubMenu('hgmake', 'menu', 'Tonici')
-    WarMenu.CreateSubMenu('hgmake2', 'menu', 'Frecce')
+    WarMenu.CreateSubMenu('hgmake', 'menu', 'Tónico')
+    WarMenu.CreateSubMenu('hgmake2', 'menu', 'Flechas')
     
     WarMenu.SetMenuY('menu', 0.2)
 
@@ -45,16 +45,16 @@ Citizen.CreateThread(function()
 
            WarMenu.Display()
 
-            if WarMenu.MenuButton('Tonici', 'hgmake') then
+            if WarMenu.MenuButton('Tónicos', 'hgmake') then
                 end
-            if WarMenu.MenuButton('Armi', 'hgmake2') then
+            if WarMenu.MenuButton('Armas', 'hgmake2') then
                 end	
 
 
         
         elseif WarMenu.IsMenuOpened('hgmake') then
 
-            if WarMenu.Button('Estratto della terra') then
+            if WarMenu.Button('Extracto de la tierra') then
 		
 		        TriggerServerEvent("wc_tonico_aug")
 
@@ -64,11 +64,11 @@ Citizen.CreateThread(function()
 			
         elseif WarMenu.IsMenuOpened('hgmake2') then
             
-            if WarMenu.Button('Arco e Frecce') then
+            if WarMenu.Button('Arco y Flechas') then
                 
 		        TriggerServerEvent("wc_arcofreccebase")
 		
-            elseif WarMenu.Button('Arco e Frecce Avvelenate') then
+            elseif WarMenu.Button('Arco y Flechas evenenadas') then
             
 		        TriggerServerEvent("wc_arcofrecceavvelenate")
         
