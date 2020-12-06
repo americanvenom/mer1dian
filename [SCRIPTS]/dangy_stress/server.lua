@@ -41,6 +41,7 @@ AddEventHandler('dangy_stress:requestStress', function()
         ['@id'] = identifier,
 
     }, function(ret) 
+        print(ret)
         TriggerClientEvent('dangy_stress:modify', _source, tonumber(ret[1].stress))
     end)
 end)

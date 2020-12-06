@@ -1,5 +1,5 @@
 Config = {}
-Config.lang = 'it'
+Config.lang = 'es'
 Config.Zonas = {
     ['init'] = { x = 2786.2, y = 1339.1, z = 71.4 },  
     ['Miniera1'] = { x = 2760.95, y = 1310.22, z = 70.04 },

@@ -22,27 +22,27 @@ AddEventHandler('vorp:itemreward', function()
 	elseif rng > 1 and rng < 10 then
 		local count = VorpInv.getItemCount(source, "rocks")
 		if count >= 30 then
-			TriggerClientEvent("vorp:TipRight", source, "Non hai abbastanza spazio", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "No tienes suficiente espacio", 5000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Hai trovato della Pietra Sedimentaria", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "Encontraste alguna piedra sedimentaria", 5000)
 			VorpInv.addItem(_source, 'rocks', math.random(3,5) )
 		end
 						
 	elseif rng >= 10 and rng < 15 then
 		local count = VorpInv.getItemCount(source, "magnetite")
 		if count >= 20 then
-			TriggerClientEvent("vorp:TipRight", source, "Non hai abbastanza spazio", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "No tienes suficiente espacio", 5000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Hai trovato della Magnetite", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "Encontraste algo de magnetita", 5000)
 			VorpInv.addItem(_source, 'magnetite', math.random(1,3))
 		end
 					
 	elseif rng >= 15 and rng <= 20 then
 		local count = VorpInv.getItemCount(source, "grafite")
 		if count >= 20 then
-			TriggerClientEvent("vorp:TipRight", source, "Non hai abbastanza spazio", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "No tienes suficiente espacio", 5000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Hai trovato della Grafite ", 5000)
+			TriggerClientEvent("vorp:TipRight", source, "Encontraste algo de grafito", 5000)
 			VorpInv.addItem(_source, 'grafite', math.random(1,3) )
 		end
 	end
@@ -59,7 +59,7 @@ AddEventHandler("minatore:checkjob", function()
 		if Character.job ~= "Armaiolo" and stress < 100 then
 			TriggerClientEvent("minatore:updatejob", _source)
 		else
-			TriggerClientEvent("vorp:TipRight", _source, "Sei affaticato! Torna quando ti sarai riposato", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "¡Te has esforzado mucho! Vuelve cuando hayas descansado", 4000)
 		end
 	end)
 	
@@ -74,9 +74,9 @@ AddEventHandler("vane_processa:pietra", function()
 		if count > 0 and VorpInv.getItemCount(_source, "carbone") + count*2 <= 40 and VorpInv.canCarryItems(_source, count) and stress < 100 then 
 			VorpInv.subItem(_source, "rocks", count)
 			VorpInv.addItem(_source, "carbone", count*2)
-			TriggerClientEvent("vorp:TipRight", source, "Hai processato le pietre", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Procesaste las piedras", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Sei troppo stanco o non possiedi abbastanza materiale", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Estás demasiado cansado o no tienes suficiente material", 4000)
 		end
 	end)
 end)
@@ -96,9 +96,9 @@ AddEventHandler("vane_processa:ferro", function()
 			VorpInv.addItem(_source, "ferro", 3)
 			VorpInv.addItem(_source, "acciaio", 3)
 			
-			TriggerClientEvent("vorp:TipRight", source, "Hai processato del ferro", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Procesaste algo de hierro", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Sei troppo stanco o non possiedi abbastanza materiale", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Estás demasiado cansado o no tienes suficiente material", 4000)
 		end
 	end)
 end)
@@ -113,7 +113,7 @@ AddEventHandler("weaponsmith:checkp2", function()
     if Character.job == 'Armaiolo' or Character.job == "CapoArmaiolo" then
 	    TriggerClientEvent('weaponsmith:openp2',_source)
 	else
-		TriggerClientEvent("vorp:TipRight", _source, 'Non sei armaiolo', 4000)
+		TriggerClientEvent("vorp:TipRight", _source, 'No eres armero', 4000)
 	end	
 		
 end)
@@ -135,10 +135,10 @@ AddEventHandler('miniera:processoarmaiolo', function(acciaio, ferro, item)
 
         VorpInv.addItem(_source, item, 1)
 
-        TriggerClientEvent("vorp:TipRight", _source, 'Materiale processato!', 5000)
+        TriggerClientEvent("vorp:TipRight", _source, 'Material procesado!', 5000)
 
     else
-        TriggerClientEvent("vorp:TipRight", _source, 'Non ha abbastanza materiali!', 5000)
+        TriggerClientEvent("vorp:TipRight", _source, 'No tiene suficientes materiales!', 5000)
         --NON ABBASTANZA MATERIALI
     end
 

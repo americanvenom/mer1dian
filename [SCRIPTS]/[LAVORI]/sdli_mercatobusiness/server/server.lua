@@ -23,11 +23,11 @@ AddEventHandler('ms_vodka', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 vodka', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 vodka', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 vodka.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 vodka.', 850)
     end      
 end)
 
@@ -43,11 +43,11 @@ AddEventHandler('ms_whisky', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 whisky', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 whisky', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 whisky.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 whisky.', 850)
     end      
 end)
 
@@ -63,11 +63,11 @@ AddEventHandler('ms_birra', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 birra', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 birra', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 birra.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 birra.', 850)
     end      
 end)
 
@@ -83,11 +83,11 @@ AddEventHandler('ms_rum', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 rum', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 rum', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 rum.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 rum.', 850)
     end      
 end)
 
@@ -103,11 +103,11 @@ AddEventHandler('ms_sidro', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 sidro', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 sidro', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 sidro.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 sidro.', 850)
     end      
 end)
 
@@ -127,11 +127,11 @@ AddEventHandler('ms_daiquiri', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 Daiquiri', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 Daiquiri', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 Daiquiri.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 Daiquiri.', 850)
     end      
 end)
 
@@ -147,11 +147,11 @@ AddEventHandler('ms_of', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 Old Fashioned', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 Old Fashioned', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 Old Fashioned.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 Old Fashioned.', 850)
     end      
 end)
 
@@ -167,11 +167,11 @@ AddEventHandler('ms_pp', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 planter\'s punch', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 planter\'s punch', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 planter\'s punch.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 planter\'s punch.', 850)
     end      
 end)
 
@@ -187,11 +187,11 @@ AddEventHandler('ms_vm', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 vodkamartini', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 vodkamartini', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 vodkamartini.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 vodkamartini.', 850)
     end      
 end)
 
@@ -207,11 +207,11 @@ AddEventHandler('ms_mojito', function()
 
         TriggerEvent("vorp:addMoney", _source, 0, 8)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai venduto 5 mojito', 500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has vendido 5 mojito', 500)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 5 mojito.', 850)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas 5 mojito.', 850)
     end      
 end)
 

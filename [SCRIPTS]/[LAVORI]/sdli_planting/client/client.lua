@@ -5,7 +5,7 @@ local PlantPrompt
 
 function SetupDelPrompt()
     Citizen.CreateThread(function()
-        local str = 'Cancella pianta'
+        local str = 'Eliminar planta'
         DelPrompt = PromptRegisterBegin()
         PromptSetControlAction(DelPrompt, 0xE8342FF2)
         str = CreateVarString(10, 'LITERAL_STRING', str)
@@ -20,7 +20,7 @@ end
 
 function SetupPlantPrompt()
     Citizen.CreateThread(function()
-        local str = 'Pianta'
+        local str = 'Planta'
         PlantPrompt = PromptRegisterBegin()
         PromptSetControlAction(PlantPrompt, 0x07CE1E61)
         str = CreateVarString(10, 'LITERAL_STRING', str)
@@ -188,8 +188,8 @@ AddEventHandler('poke_planting:fin2', function(object2, x, y, z, key, hash1, has
     
    -- TriggerEvent("redemrp_notification:start", 'La tua pianta è cresciuta!', 5)
   -- TriggerEvent("vorp:NotifyLeft", "", Language.translate[Config.lang]['goto'], "inventory_items", "provision_rf_wood_cobalt", 2700)
-   exports['sdli_fraNotify']:DisplayLeftNotification("~t6~Agricoltura",
-   "La tua pianta è cresciuta!",
+   exports['sdli_fraNotify']:DisplayLeftNotification("~t6~Agricultura",
+   "Tu planta ha crecido!",
    'satchel_textures',
    'satchel_nav_herbs',
    5000)
@@ -215,7 +215,7 @@ end)
 
 function harvestPlant(key)
 	TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 10000, true, false, false, false)
-    exports['progressBars']:startUI(10000, 'Stai raccogliendo...')
+    exports['progressBars']:startUI(10000, 'Estás recolectando...')
     Wait(10000)
     ClearPedTasksImmediately(PlayerPedId())
 	DeleteObject(myPlants[key].object)
@@ -284,13 +284,13 @@ Citizen.CreateThread(function()
 			for k, v in ipairs(myPlants) do
 				if GetDistanceBetweenCoords(v.x, v.y, v.z, pos.x, pos.y, pos.z, true) < 7.0 then
 					if v.stage == 1 then
-						DrawText3D(v.x, v.y, v.z, 'Ha bisogno di acqua!')
+						DrawText3D(v.x, v.y, v.z, 'Necesita agua!')
 					end
 					if v.stage == 2 then
-						DrawText3D(v.x, v.y, v.z, 'In crescita: ' .. v.timer)
+						DrawText3D(v.x, v.y, v.z, 'Creciendo: ' .. v.timer)
 					end
 					if v.stage == 3 then
-						DrawText3D(v.x, v.y, v.z, 'Pronta per essere raccolta! [E]')
+						DrawText3D(v.x, v.y, v.z, 'Lista para ser recogida! [E]')
 					end
 					if v.prompt then
 						if Citizen.InvokeNative(0x91AEF906BCA88877, 0, 0xCEFD9220) then
@@ -312,12 +312,12 @@ function animacion()
 	PromptSetEnabled(prompt, true)
 	PromptSetVisible(prompt, true)
 	TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_FARMER_RAKE'), 10000, true, false, false, false)
-    exports['progressBars']:startUI(10000, 'Rastrellando...')
+    exports['progressBars']:startUI(10000, 'Rastrillando...')
     Wait(10000)
     ClearPedTasksImmediately(PlayerPedId())
 	Wait(1000)
     TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 20000, true, false, false, false)
-    exports['progressBars']:startUI(20000, 'Piantando...')
+    exports['progressBars']:startUI(20000, 'Plantando...')
     Wait(20000)
     ClearPedTasksImmediately(PlayerPedId())
 	PromptSetEnabled(prompt, false)
@@ -326,7 +326,7 @@ end
 
 function animacion2()
 	TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_BUCKET_POUR_LOW'), 7000, true, false, false, false)
-    exports['progressBars']:startUI(7000, 'Innaffiando...')
+    exports['progressBars']:startUI(7000, 'Regando...')
     Wait(7000)
     ClearPedTasksImmediately(PlayerPedId())
 end

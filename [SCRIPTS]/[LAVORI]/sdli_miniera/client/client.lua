@@ -93,9 +93,9 @@ function CreateVarString(p0, p1, variadic)
 end
 ----------------------------------- PROCESSO ----------------------------------------------
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('perso', 'Processo Minerali')
-	WarMenu.CreateSubMenu('pp', 'perso', 'Processo Pietra')
-	WarMenu.CreateSubMenu('pf', 'perso', 'Processo Ferro')
+    WarMenu.CreateMenu('perso', 'Procesado de minerales')
+	WarMenu.CreateSubMenu('pp', 'perso', 'Procesado de piedra')
+	WarMenu.CreateSubMenu('pf', 'perso', 'Procesado de hierro')
 	 while true do
 
         local ped = GetPlayerPed()
@@ -103,56 +103,56 @@ Citizen.CreateThread(function()
 -- Open
      if WarMenu.IsMenuOpened('perso') then
 --	1 layer
-		if WarMenu.MenuButton('Processa la Pietra Sedimentaria', 'pp') then
+		if WarMenu.MenuButton('Procesar piedra sedimentaria', 'pp') then
 		end
-		if WarMenu.MenuButton('Processa la Magnetite e la Grafite', 'pf') then
+		if WarMenu.MenuButton('Procesar magnetita y grafito', 'pf') then
 		end
-		if WarMenu.Button('Chiudi') then
+		if WarMenu.Button('Salir') then
 			Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 			WarMenu.CloseMenu()
 		end	
 --	1.1 layer	
 		WarMenu.Display()
 		elseif WarMenu.IsMenuOpened('pp') then
-			if WarMenu.Button('Processa') then
+			if WarMenu.Button('Procesar') then
 				TriggerServerEvent('vane_processa:pietra')
 				animacion()
 			end
-			if WarMenu.Button('Indietro') then
+			if WarMenu.Button('Atrás') then
 				WarMenu.CloseMenu()
 				WarMenu.OpenMenu('perso')
 			end	
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 				WarMenu.CloseMenu()
 			end	
 --- 1.2 layer			
 				WarMenu.Display()
 		elseif WarMenu.IsMenuOpened('pf') then
-			if WarMenu.Button('Processa') then
+			if WarMenu.Button('Procesar') then
 				TriggerServerEvent('vane_processa:ferro')
 				animacion()
 			end
-			if WarMenu.Button('Indietro') then
+			if WarMenu.Button('Atrás') then
 				WarMenu.CloseMenu()
 				WarMenu.OpenMenu('perso')
 			end	
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 				WarMenu.CloseMenu()
 			end	
 -- 1.3 layer		
 		WarMenu.Display()
 		elseif WarMenu.IsMenuOpened('pd') then
-			if WarMenu.Button('Processa') then
+			if WarMenu.Button('Procesar') then
 				TriggerServerEvent('vane_processa:diamante')
 				animacion()
 			end
-			if WarMenu.Button('Indietro') then
+			if WarMenu.Button('Atrás') then
 				WarMenu.CloseMenu()
 				WarMenu.OpenMenu('perso')
 			end	
-			if WarMenu.Button('Chiudi') then
+			if WarMenu.Button('Salir') then
 				Citizen.InvokeNative(0x7D9EFB7AD6B19754, ped, false)
 				WarMenu.CloseMenu()
 			end
@@ -174,7 +174,7 @@ RegisterNetEvent("enter:processominerali")
   AddEventHandler("enter:processominerali", function()
     SetTextScale(0.5, 0.5)
     --SetTextFontForCurrentCommand(1)
-    local msg = 'Premi [G] per lavorare'
+    local msg = 'Pulsa [G] para trabajar'
     local str = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", msg, Citizen.ResultAsLong())
 
     Citizen.InvokeNative(0xFA233F8FE190514C, str)
@@ -207,7 +207,7 @@ end
 Citizen.CreateThread(function()
     local blip = N_0x554d9d53f696d002(1664425300, 2950.5, 1378.9, 56.3)
     SetBlipSprite(blip, 2107754879, 1)
-        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Processo Minatore") 
+        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Procesado minería") 
 end)
 
 ---PROCESSO MINERALI ARMAIOLO---
@@ -218,7 +218,7 @@ Citizen.CreateThread(function()
         Citizen.InvokeNative(0x2A32FAA57B937173, 0x07DCE236, 2951.1, 1316.2, 44.8 - 1.0, 0, 0, 0, 0, 0, 0, 4.0, 4.0, 1.5, 255, 23, 23, 155, 0, 0, 2, 0, 0, 0, 0)
         local pos = GetEntityCoords(PlayerPedId())
         if (Vdist(pos.x, pos.y, pos.z, 2951.1, 1316.2, 44.8) < 1.0) then
-            DrawTxt("Premi [INVIO] per aprire il processo miniera", 0.3, 0.95, 0.4, 0.4, true, 255, 255, 255, 150, false)
+            DrawTxt("Pulsa [ENTER] para abrir menú fabricación de armas", 0.3, 0.95, 0.4, 0.4, true, 255, 255, 255, 150, false)
             if IsControlJustReleased(0, 0xC7B5340A) then
                 Wait(50)
                 TriggerServerEvent('weaponsmith:checkp2')
@@ -236,32 +236,32 @@ end)
 
 Citizen.CreateThread(function() 
 
-    WarMenu.CreateMenu("processom", "Processo Miniera")
+    WarMenu.CreateMenu("processom", "Fabricación de armas")
     
     while true do
         Wait(0)
         if WarMenu.IsMenuOpened('processom') then
 
-            if WarMenu.Button("Crea corpo fucile") then
+            if WarMenu.Button("Crear partes de escopeta") then
 
                 TriggerServerEvent('miniera:processoarmaiolo', 8, 15, "corpofucile")
 
-            elseif WarMenu.Button("Crea corpo pistola") then
+            elseif WarMenu.Button("Crear partes de pistola") then
 
                 TriggerServerEvent('miniera:processoarmaiolo', 5, 10, "corpopistola")
 
 
-            elseif WarMenu.Button("Crea canna fucile") then
+            elseif WarMenu.Button("Crear cañón de escopeta") then
 
                 TriggerServerEvent('miniera:processoarmaiolo', 15, 5, "cannafucile")
 
 
-            elseif WarMenu.Button("Crea canna pistola") then 
+            elseif WarMenu.Button("Crear cañón de pistola") then 
 
                 TriggerServerEvent('miniera:processoarmaiolo', 10, 5, "cannapistola")
 
                 
-            elseif WarMenu.Button("Chiudi") then
+            elseif WarMenu.Button("Salir") then
                 WarMenu.CloseMenu()
             end
             WarMenu.Display()

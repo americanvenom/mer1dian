@@ -7,8 +7,8 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
-    if (Vdist(coords.x, coords.y, coords.z, 2455.4, -1548.2, 46.0) < 1.0) then  --YOUR CHORDS FOR MENU HERE
-            DrawTxt("Premi [~e~G~q~] per vendere Alcoolici.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+    if (Vdist(coords.x, coords.y, coords.z, 3028.259, 562.6426, 46.05696) < 1.0) then  --YOUR CHORDS FOR MENU HERE
+            DrawTxt("Presiona [~e~G~q~] para vender Alcohol.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("indiani:open")
                 TriggerServerEvent('mercatobusiness:checkgroup')
@@ -26,8 +26,8 @@ end)
 Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
-    WarMenu.CreateMenu('menu', "Mercato Attivitá")
-    WarMenu.SetSubTitle('menu', 'Vendita Alcolici')
+    WarMenu.CreateMenu('menu', "Mercado de actividades")
+    WarMenu.SetSubTitle('menu', 'Venta de alcohol')
 
     WarMenu.CreateSubMenu('men1', 'menu', 'Saloon')
 	WarMenu.CreateSubMenu('men2', 'menu', 'Bordello')
