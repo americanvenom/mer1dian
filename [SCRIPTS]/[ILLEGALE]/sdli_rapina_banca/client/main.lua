@@ -3,7 +3,7 @@ local robbing = false
 
 RegisterNetEvent("policenotification")
 AddEventHandler("policenotification", function(coords, bank)
-	TriggerEvent("vorp:TipBottom", 'Telegramma dalla Banca di '..getNearestBank(coords)..': RAPINA IN CORSO', 5000)
+	TriggerEvent("vorp:TipBottom", 'Telegrama del Banco de '..getNearestBank(coords)..': SE ESTÁ PRODUCIENDO UN ATRACO', 5000)
 	local blip = Citizen.InvokeNative(0x45f13b7e0a15c880, -1282792512, coords.x, coords.y, coords.z, 50.0)
 	Wait(60000)--Timer del blip per gli sceriffi
 	RemoveBlip(blip)
@@ -31,7 +31,7 @@ AddEventHandler('StartRobbing', function()
             TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), -1, true, false, false, false)
 			robbing = true
 			TriggerServerEvent("policenotify", GetPlayers(), coords)
-		   	exports['progressBars']:startUI(180000, "Prendendo i soldi...")
+		   	exports['progressBars']:startUI(180000, "Cogiendo el dinero...")
             Citizen.Wait(180000)
 			ClearPedSecondaryTask(PlayerPedId())
 			robbing = false

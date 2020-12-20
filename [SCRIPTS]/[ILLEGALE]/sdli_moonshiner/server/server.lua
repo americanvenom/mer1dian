@@ -22,7 +22,8 @@ AddEventHandler("ranch:moonshineoriginal", function(name, weapon)
             
     else
         --TriggerClientEvent("redemrp_notification:start", _source, 'Suggerimento: credo che tu stia sbagliando la ricetta.', 3, "warning")
-        TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Suggerimento: credo che tu stia sbagliando la ricetta.", "menu_textures", "cross", 3000)
+        TriggerClientEvent("vorp:TipBottom", source, "Pista: creo que te estás equivocando con la receta", 3000)
+        --TriggerClientEvent("vorp:TipBottom", _source, "~e~Errore!", "Pista: creo que te estás equivocando con la receta", "menu_textures", "cross", 3000)
     end
 end)
 
@@ -33,7 +34,7 @@ AddEventHandler("ranch:givemoonshineoriginal", function()
     local _source = source
     Inventory.addItem(_source,"moonshine_original", 4)
    -- TriggerClientEvent("redemrp_notification:start", _source, "Moonshine cucinato!", 2, "success")
-    TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Moonshine", "Moonshine cucinato!", "generic_textures", "tick", 2000)
+    TriggerClientEvent("vorp:TipBottom", _source, "~t6~Moonshine", "Moonshine preparado!", "generic_textures", "tick", 2000)
 end)
 
 RegisterServerEvent('ranch:moonshinered')
@@ -54,7 +55,7 @@ AddEventHandler("ranch:moonshinered", function(name, weapon)
             
     else
      --   TriggerClientEvent("redemrp_notification:start", _source, 'Suggerimento: credo che tu stia sbagliando la ricetta.', 3, "warning")
-        TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Suggerimento: credo che tu stia sbagliando la ricetta.", "menu_textures", "cross", 3000)
+        TriggerClientEvent("vorp:TipBottom", _source, "~e~Errore!", "Pista: creo que te estás equivocando con la receta", "menu_textures", "cross", 3000)
     end
 end)
 
@@ -64,7 +65,7 @@ AddEventHandler("ranch:givemoonshinered", function()
     local _source = source
     Inventory.addItem(_source,"moonshine_red", 3)
    -- TriggerClientEvent("redemrp_notification:start", _source, "Moonshine cucinato!", 2, "success")
-    TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Moonshine", "Moonshine cucinato!", "generic_textures", "tick", 2000)
+    TriggerClientEvent("vorp:TipBottom", _source, "~t6~Moonshine", "Moonshine preparado!", "generic_textures", "tick", 2000)
 end)
 
 RegisterServerEvent('ranch:moonshineblue')
@@ -85,7 +86,7 @@ AddEventHandler("ranch:moonshineblue", function(name, weapon)
             
     else
     --    TriggerClientEvent("redemrp_notification:start", _source, 'Suggerimento: credo che tu stia sbagliando la ricetta.', 3, "warning")
-        TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Suggerimento: credo che tu stia sbagliando la ricetta.", "menu_textures", "cross", 3000)
+        TriggerClientEvent("vorp:TipBottom", _source, "~e~Errore!", "Pista: creo que te estás equivocando con la receta", "menu_textures", "cross", 3000)
     end
 end)
 
@@ -96,5 +97,5 @@ AddEventHandler("ranch:givemoonshineblueflame", function()
     local _source = source
     Inventory.addItem(_source,"moonshine_blueflame", 2)
    -- TriggerClientEvent("redemrp_notification:start", _source, "Moonshine cucinato!", 2, "success")
-    TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Moonshine", "Moonshine cucinato!", "generic_textures", "tick", 2000)
+    TriggerClientEvent("vorp:TipBottom", _source, "~t6~Moonshine", "Moonshine preparado!", "generic_textures", "tick", 2000)
 end)

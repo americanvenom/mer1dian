@@ -2,7 +2,7 @@ local inv = {}
 local houseinv = {}
 --- WAR MENU --------
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('perso', 'Casa común')
+    WarMenu.CreateMenu('perso', 'Caja común')
 	WarMenu.CreateSubMenu('do', 'perso', 'Depositar objeto')
 	WarMenu.CreateSubMenu('po', 'perso', 'Recoger objeto')
 

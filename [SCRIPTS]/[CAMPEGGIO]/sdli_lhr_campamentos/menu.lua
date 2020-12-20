@@ -14,9 +14,9 @@ Citizen.CreateThread(function()
     WarMenu.CreateMenu('ml', "Campeggio")
     WarMenu.SetSubTitle('ml', 'Menu')
 	
-    WarMenu.CreateSubMenu('inv1', 'ml', 'Colloca')
-    WarMenu.CreateSubMenu('inv2', 'ml', 'Smonta')
-	WarMenu.CreateSubMenu('inv3', 'ml', 'Smonta Tutto')
+    WarMenu.CreateSubMenu('inv1', 'ml', 'Montar')
+    WarMenu.CreateSubMenu('inv2', 'ml', 'Desmontar')
+	WarMenu.CreateSubMenu('inv3', 'ml', 'Desmontar todo')
 
 
     while true do
@@ -27,49 +27,49 @@ Citizen.CreateThread(function()
 		
         if WarMenu.IsMenuOpened('ml') then
             
-            if WarMenu.MenuButton('Piazza Oggetti', 'inv1') then
+            if WarMenu.MenuButton('Colocar objetos', 'inv1') then
             end
-            if WarMenu.MenuButton('Smonta Oggetti', 'inv2') then
+            if WarMenu.MenuButton('Desmontar objetos', 'inv2') then
             end	
-            if WarMenu.MenuButton('Smonta Tutto', 'inv3') then
+            if WarMenu.MenuButton('Desmontar todo', 'inv3') then
             end	
 
-            if WarMenu.Button("Raccogli acqua sporca") then TriggerEvent("ml_camping:Getwater") end
+            if WarMenu.Button("Recoger agua sucia") then TriggerEvent("ml_camping:Getwater") end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('inv1') then
 
-            if WarMenu.Button('Piazza Fuoco da Campo') then
+            if WarMenu.Button('Preparar fogata') then
             TriggerEvent("ml_camping:setcampfire")
             
-            elseif WarMenu.Button('Piazza Tenda') then
+            elseif WarMenu.Button('Montar tienda') then
             TriggerEvent("ml_camping:settent")
             
-            elseif WarMenu.Button('Piazza Tenda 2') then
+            elseif WarMenu.Button('Montar tienda 2') then
             TriggerEvent("ml_camping:settent2")
             
-            elseif WarMenu.Button('Piazza Tenda 3') then
+            elseif WarMenu.Button('Montar tienda 3') then
             TriggerEvent("ml_camping:settent3")
             
-            elseif WarMenu.Button('Piazza Tenda Indiana') then
+            elseif WarMenu.Button('Montar tienda india') then
             TriggerEvent("ml_camping:settentindi")
             
-            elseif WarMenu.Button('Piazza Tenda Indiana 2') then
+            elseif WarMenu.Button('Montar tienda india 2') then
             TriggerEvent("ml_camping:settentindi2")
             
-            elseif WarMenu.Button('Piazza Tenda Indiana 3') then
+            elseif WarMenu.Button('Montar tienda india 3') then
             TriggerEvent("ml_camping:settentindi3")
             
-            elseif WarMenu.Button('Piazza Calderone') then 
+            elseif WarMenu.Button('Colocar caldera') then 
             TriggerEvent("ml_camping:setcauldron")
             
-            elseif WarMenu.Button('Piazza Paletto') then
+            elseif WarMenu.Button('Colocar enganche') then
             TriggerEvent("ml_camping:sethitch")
             
-            elseif WarMenu.Button('Piazza Tavolo') then
+            elseif WarMenu.Button('Colocar mesa') then
             TriggerEvent("ml_camping:settable")
             
-            elseif WarMenu.Button('Piazza Sedia') then
+            elseif WarMenu.Button('Colocar silla') then
                 TriggerEvent("ml_camping:setchair")
         
             
@@ -79,37 +79,37 @@ Citizen.CreateThread(function()
             WarMenu.Display()
                 
         elseif WarMenu.IsMenuOpened('inv2') then
-            if WarMenu.Button('Togli Fuoco da Campo') then
+            if WarMenu.Button('Desmontar fogata') then
                 TriggerEvent("ml_camping:delcampfire")
             
-            elseif WarMenu.Button('Togli Tenda') then
+            elseif WarMenu.Button('Desmontar Tenda') then
                 TriggerEvent("ml_camping:deltent")
             
-            elseif WarMenu.Button('Togli Tenda 2') then
+            elseif WarMenu.Button('Desmontar tienda 2') then
                 TriggerEvent("ml_camping:deltent2")
             
-            elseif WarMenu.Button('Togli Tenda 3') then
+            elseif WarMenu.Button('Desmontar tienda 3') then
                 TriggerEvent("ml_camping:deltent3")
             
-            elseif WarMenu.Button('Togli Tenda Indiana') then
+            elseif WarMenu.Button('Desmontar tienda Indiana') then
                 TriggerEvent("ml_camping:deltentindi")
             
-            elseif WarMenu.Button('Togli Tenda Indiana 2') then
+            elseif WarMenu.Button('Desmontar tienda Indiana 2') then
                 TriggerEvent("ml_camping:deltentindi2")
             
-            elseif WarMenu.Button('Togli Tenda Indiana 3') then
+            elseif WarMenu.Button('Desmontar tienda Indiana 3') then
                 TriggerEvent("ml_camping:deltentindi3")
             
-            elseif WarMenu.Button('Togli Calderone') then 
+            elseif WarMenu.Button('Desmontar Calderone') then 
                 TriggerEvent("ml_camping:delcauldron")
             
-            elseif WarMenu.Button('Togli Paletto') then
+            elseif WarMenu.Button('Desmontar Paletto') then
                 TriggerEvent("ml_camping:delhitch")
             
-            elseif WarMenu.Button('Togli Tavolo') then
+            elseif WarMenu.Button('Desmontar mesa') then
                 TriggerEvent("ml_camping:deltable")
             
-            elseif WarMenu.Button('Togli Sedia') then
+            elseif WarMenu.Button('Desmontar silla') then
                 TriggerEvent("ml_camping:delchair")
             
         
@@ -118,7 +118,7 @@ Citizen.CreateThread(function()
             WarMenu.Display()
                 
         elseif WarMenu.IsMenuOpened('inv3') then
-                if WarMenu.Button('Smonta Tutto') then
+                if WarMenu.Button('Desmontar todo') then
                     TriggerEvent("ml_camping:delfullcamp")
                 end
 
@@ -143,7 +143,7 @@ if campfire ~= 0 then
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Campo da Fuoco...")
+    exports['progressBars']:startUI(30000, "Colocando fogata...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -163,7 +163,7 @@ AddEventHandler('ml_camping:settent', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda...")
+    exports['progressBars']:startUI(30000, "Colocando tienda...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -183,7 +183,7 @@ AddEventHandler('ml_camping:settent2', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda...")
+    exports['progressBars']:startUI(30000, "Colocando tienda...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -203,7 +203,7 @@ AddEventHandler('ml_camping:settent3', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda...")
+    exports['progressBars']:startUI(30000, "Colocando tienda...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -223,7 +223,7 @@ AddEventHandler('ml_camping:settentindi', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda Indiana...")
+    exports['progressBars']:startUI(30000, "Colocando tienda india...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -243,7 +243,7 @@ AddEventHandler('ml_camping:settentindi2', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda Indiana...")
+    exports['progressBars']:startUI(30000, "Colocando tienda india...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -263,7 +263,7 @@ AddEventHandler('ml_camping:settentindi3', function()
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tenda Indiana...")
+    exports['progressBars']:startUI(30000, "Colocando tienda india...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -283,7 +283,7 @@ if cauldron ~= 0 then
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Calderone...")
+    exports['progressBars']:startUI(30000, "Colocando caldera...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -303,7 +303,7 @@ if hitch ~= 0 then
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Paletto...")
+    exports['progressBars']:startUI(30000, "Colocando Paletto...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -323,7 +323,7 @@ if Table ~= 0 then
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Tavolo...")
+    exports['progressBars']:startUI(30000, "Colocando mesa...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))
@@ -343,7 +343,7 @@ if chair ~= 0 then
     end
     local playerPed = PlayerPedId()
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-    exports['progressBars']:startUI(30000, "Piazzando Sedia...")
+    exports['progressBars']:startUI(30000, "Colocando silla...")
     Citizen.Wait(30000)
     ClearPedTasksImmediately(PlayerPedId())
     local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(PlayerPedId(), 0.0, 2.0, -1.55))

@@ -17,7 +17,7 @@ AddEventHandler("dar:galletta", function()
         PlaySoundFrontend("Core_Fill_Up", "Consumption_Sounds", true, 0)
 			else
 				TriggerServerEvent("devolver:galletta")
-				TriggerEvent("vorp:TipBottom", "Devi essere a cavallo per nutrirlo!", 5000)
+				TriggerEvent("vorp:TipBottom", "¡Tienes que ir a caballo para alimentarlo!", 5000)
 			end
 end)
 
@@ -40,7 +40,7 @@ AddEventHandler("dar:mela", function()
         PlaySoundFrontend("Core_Fill_Up", "Consumption_Sounds", true, 0)
 			else
 				TriggerServerEvent("devolver:mela")
-				TriggerEvent("vorp:TipBottom", "Devi essere a cavallo per nutrirlo!", 5000)
+				TriggerEvent("vorp:TipBottom", "¡Tienes que ir a caballo para alimentarlo!", 5000)
 			end
 end)
 
@@ -62,7 +62,7 @@ AddEventHandler("dar:carote", function()
         PlaySoundFrontend("Core_Fill_Up", "Consumption_Sounds", true, 0)
 			else
 				TriggerServerEvent("devolver:carote")
-				TriggerEvent("vorp:TipBottom", "Devi essere a cavallo per nutrirlo!", 5000)
+				TriggerEvent("vorp:TipBottom", "¡Tienes que ir a caballo para alimentarlo!", 5000)
 			end
 end)
 
@@ -82,6 +82,6 @@ AddEventHandler("dar:sugar", function()
         PlaySoundFrontend("Core_Fill_Up", "Consumption_Sounds", true, 0)
 			else
 				TriggerServerEvent("devolver:sugar")
-				TriggerEvent("vorp:TipBottom", "Devi essere a cavallo per nutrirlo!", 5000)
+				TriggerEvent("vorp:TipBottom", "¡Tienes que ir a caballo para alimentarlo!", 5000)
 			end
 end)

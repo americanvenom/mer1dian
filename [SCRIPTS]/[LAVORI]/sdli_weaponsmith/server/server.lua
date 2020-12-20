@@ -51,11 +51,11 @@ AddEventHandler('wc_cattlemanmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai creato una Revolver Cattleman', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado una Revolver Cattleman', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai bisogno: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Cattleman', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Necesitas: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Cattleman', 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -100,11 +100,11 @@ AddEventHandler('wc_lematmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Revolver Lemat', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Revolver Lemat', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Revolver Lemat", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Revolver Lemat", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -149,11 +149,11 @@ AddEventHandler('wc_schofieldmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Revolver Schofield', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Revolver Schofield', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Revolver Schofield", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Pistola Standard, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Revolver Schofield", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -199,11 +199,11 @@ AddEventHandler('wc_m1899make', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Pistola M1899', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Pistola M1899', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Pistola M1899", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Pistola M1899", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -248,11 +248,11 @@ AddEventHandler('wc_semiautomake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Pistola Semi-Automatica', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Pistola Semi-Automatica', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Pistola Semi-Auto", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Pistola Semi-Auto", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -297,11 +297,11 @@ AddEventHandler('wc_volcanicmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Pistola Volcanic', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Pistola Volcanic', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Volcanic", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Pistola Migliorato, 2 Corpo Pistola, 1 Canna Pistola, 1 Progetto Volcanic", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -347,11 +347,11 @@ AddEventHandler('wc_doublebarrelmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Doppietta', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado escopeta doble', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Doppietta", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Doppietta", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -397,11 +397,11 @@ AddEventHandler('wc_henrymake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Ripetitore Henry', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Repetidora Henry', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Ripetitore Henry", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Ripetitore Henry", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -446,11 +446,11 @@ AddEventHandler('wc_carabinemake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Carabina a Ripetizione', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Carabina de repetiicón', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Carabina Ripetizione", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Fucile Standard, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Carabina Ripetizione", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -495,11 +495,11 @@ AddEventHandler('wc_winchestermake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Winchester', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Winchester', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Fucile Migliorato, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Winchester", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Fucile Migliorato, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Winchester", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -544,11 +544,11 @@ AddEventHandler('wc_boltmake', function()
 
         --Wait(200)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai costruito Bolt Action', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has fabricado Bolt Action', 2000)
         
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, "Hai bisogno: 1 Calcio Fucile Migliorato, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Bolt Action", 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, "Necesitas: 1 Calcio Fucile Migliorato, 2 Corpo Fucile, 1 Canna Fucile, 1 Progetto Bolt Action", 4500)
         --print('noitemsrequired')
     end      
 end)
@@ -562,7 +562,7 @@ AddEventHandler("weaponsmith:check", function()
     if Character.job == 'Armaiolo' or Character.job == "CapoArmaiolo" then
 	    TriggerClientEvent('weaponsmith:open',_source)
 	else
-		TriggerClientEvent("vorp:TipRight", _source, 'Non sei armaiolo', 4000)
+		TriggerClientEvent("vorp:TipRight", _source, 'No eres armero', 4000)
 	end	
 		
 end)

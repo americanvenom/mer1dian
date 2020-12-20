@@ -21,9 +21,9 @@ AddEventHandler("def_cookfood:pork", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_cinghiale", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "Hai cucinato la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Hai bisogno della carne cruda", "menu_textures", "cross", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
         end
     end)
 
@@ -41,9 +41,9 @@ AddEventHandler("def_cookfood:tacchino", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_tacchino", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "Hai cucinato la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Hai bisogno della carne cruda", "menu_textures", "cross", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
         end
     end)
 
@@ -61,9 +61,9 @@ AddEventHandler("def_cookfood:alce", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_alce", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "Hai cucinato la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Hai bisogno della carne cruda", "menu_textures", "cross", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
         end
     end)
 
@@ -81,9 +81,9 @@ AddEventHandler("def_cookfood:bluegill", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_bluegill", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "Hai cucinato la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Hai bisogno della carne cruda", "menu_textures", "cross", 3000)
+            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
         end
     end)
 --end)

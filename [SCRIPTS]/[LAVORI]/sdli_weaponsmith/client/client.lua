@@ -23,7 +23,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
 		local coords = GetEntityCoords(PlayerPedId())
     if (Vdist(coords.x, coords.y, coords.z, -277.2, 779.3, 119.5) < 2.0) then
-            DrawTxt("Premi [~e~G~q~] per aprire l'armaiolo.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Pulsa [~e~G~q~] para abrir el armero.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 TriggerServerEvent("weaponsmith:check")
 
@@ -37,14 +37,14 @@ end)
 Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
-    WarMenu.CreateMenu('menu', "Armaiolo")
-    WarMenu.SetSubTitle('menu', 'Costruisci Armi')
+    WarMenu.CreateMenu('menu', "Armero")
+    WarMenu.SetSubTitle('menu', 'Fabricar arma')
 	
     --WarMenu.CreateSubMenu('hgmake', 'menu', 'Armi Corpo a Corpo')
 	WarMenu.CreateSubMenu('hgmake2', 'menu', 'Revolver')
-    WarMenu.CreateSubMenu('hgmake3', 'menu', 'Pistole')
-    WarMenu.CreateSubMenu('hgmake4', 'menu', 'Fucili a Pompa')
-    WarMenu.CreateSubMenu('hgmake5', 'menu', 'Fucili')
+    WarMenu.CreateSubMenu('hgmake3', 'menu', 'Pistola')
+    WarMenu.CreateSubMenu('hgmake4', 'menu', 'Escopetas')
+    WarMenu.CreateSubMenu('hgmake5', 'menu', 'Fusiles')
 
 
     while true do
@@ -59,11 +59,11 @@ Citizen.CreateThread(function()
        --     end
 		if WarMenu.MenuButton('Revolver', 'hgmake2') then
             end	
-		if WarMenu.MenuButton('Pistole', 'hgmake3') then
+		if WarMenu.MenuButton('Pistola', 'hgmake3') then
             end
-        if WarMenu.MenuButton('Fucili a Pompa', 'hgmake4') then
+        if WarMenu.MenuButton('Escopetas', 'hgmake4') then
             end	
-        if WarMenu.MenuButton('Fucili', 'hgmake5') then
+        if WarMenu.MenuButton('Fusiles', 'hgmake5') then
             end
 
             WarMenu.Display()
@@ -86,15 +86,15 @@ Citizen.CreateThread(function()
 			
 	elseif WarMenu.IsMenuOpened('hgmake2') then
 		
-        if WarMenu.Button('Costruisci Revolver Cattleman') then
+        if WarMenu.Button('Fabricar Revolver Cattleman') then
 		
             TriggerServerEvent("wc_cattlemanmake")
                 
-        elseif WarMenu.Button('Costruisci Revolver Lemat') then
+        elseif WarMenu.Button('Fabricar Revolver Lemat') then
             
             TriggerServerEvent("wc_lematmake")
             
-        elseif WarMenu.Button('Costruisci Revolver Schofield') then
+        elseif WarMenu.Button('Fabricar Revolver Schofield') then
             
             TriggerServerEvent("wc_schofieldmake")
 		end
@@ -103,15 +103,15 @@ Citizen.CreateThread(function()
 			
 	elseif WarMenu.IsMenuOpened('hgmake3') then
         
-        if WarMenu.Button('Costruisci Pistola M1899') then
+        if WarMenu.Button('Fabricar Pistola M1899') then
 		
             TriggerServerEvent("wc_m1899make")
         
-        elseif WarMenu.Button('Costruisci Pistola Semi-Auto') then
+        elseif WarMenu.Button('Fabricar Pistola Semi-Auto') then
 		
             TriggerServerEvent("wc_semiautomake")
         
-        elseif WarMenu.Button('Costruisci Pistola Volcanic') then
+        elseif WarMenu.Button('Fabricar Pistola Volcanic') then
 		
 		    TriggerServerEvent("wc_volcanicmake")
         end
@@ -120,7 +120,7 @@ Citizen.CreateThread(function()
 
     elseif WarMenu.IsMenuOpened('hgmake4') then
 
-        if WarMenu.Button('Costruisci Doppietta') then
+        if WarMenu.Button('Fabricar Doppietta') then
             TriggerServerEvent("wc_doublebarrelmake")
         end
 
@@ -128,17 +128,17 @@ Citizen.CreateThread(function()
 
     elseif WarMenu.IsMenuOpened('hgmake5') then
 
-        if WarMenu.Button('Costruisci Ripetitore Henry') then
+        if WarMenu.Button('Fabricar Ripetitore Henry') then
             
             TriggerServerEvent("wc_henrymake")
 
-        elseif WarMenu.Button('Costruisci Carabina a Ripetizione') then
+        elseif WarMenu.Button('Fabricar Carabina a Ripetizione') then
             TriggerServerEvent("wc_carabinemake")
 
-        elseif WarMenu.Button('Costruisci Winchester') then
+        elseif WarMenu.Button('Fabricar Winchester') then
             TriggerServerEvent("wc_winchestermake")
 
-        elseif WarMenu.Button('Costruisci Bolt Action') then
+        elseif WarMenu.Button('Fabricar Bolt Action') then
             TriggerServerEvent("wc_boltmake")
         end
 
@@ -201,7 +201,7 @@ AddEventHandler('progressbar:start', function()
     local playerPed = PlayerPedId()
     --TaskStartScenarioInPlace(playerPed, GetHashKey('PROP_HUMAN_SEAT_BENCH_FIDDLE'), 27000, true, false, false, false) --WORLD_HUMAN_HAMMER_TABLE, WORLD_HUMAN_CROUCH_INSPECT
     --TaskPlayAnim(PlayerPedId(), "amb_camp@prop_camp_micah_seat_chair@clean_gun@male_a@base", "base", 1.0, 8.0, -1, 1, 0, false, 0, false, 0, false)
-    exports['progressBars']:startUI(20000, "Costruendo...")
+    exports['progressBars']:startUI(20000, "Fabricando...")
     animazioneconprop()
     Citizen.Wait(20000)
     ClearPedTasksImmediately(PlayerPedId())

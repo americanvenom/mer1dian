@@ -37,7 +37,7 @@ AddEventHandler('wc_vodka', function()
 
         VORP.addItem(_source, "vodka", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato della Vodka', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un poco de Vodka', 2000)
         
     
     else
@@ -73,7 +73,7 @@ AddEventHandler('wc_wiskey', function()
 
         VORP.addItem(_source, "whisky", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato del Whiskey', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un poco de Whiskey', 2000)
         
     
     else
@@ -109,7 +109,7 @@ AddEventHandler('wc_birra', function()
 
         VORP.addItem(_source, "birra", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato della Birra', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un poco de cerveza', 2000)
         
     
     else
@@ -145,7 +145,7 @@ AddEventHandler('wc_rhum', function()
 
         VORP.addItem(_source, "rum", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato del Rum', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un poco de Ron', 2000)
         
     
     else
@@ -182,7 +182,7 @@ AddEventHandler('wc_sidro', function()
 
         VORP.addItem(_source, "sidro", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato del Sidro di Mele', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un poco de Sidra de manzana', 2000)
         
     
     else
@@ -219,7 +219,7 @@ AddEventHandler('wc_stufatodicervo', function()
 
         VORP.addItem(_source, "stufatodicarne", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato dello Stufato di Carne', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un estofado de carne', 2000)
         
     
     else
@@ -256,7 +256,7 @@ AddEventHandler('wc_stufatodipesce', function()
 
         VORP.addItem(_source, "stufatodipesce", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai preparato dello Stufato di Pesce', 2000)
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has preparado un estofado de pescado', 2000)
         
     
     else

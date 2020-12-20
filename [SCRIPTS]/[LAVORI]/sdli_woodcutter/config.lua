@@ -1,5 +1,5 @@
 Config = {}
-Config.lang = 'en'
+Config.lang = 'es'
 
 Config.Vehiculo = 'CART06'
 

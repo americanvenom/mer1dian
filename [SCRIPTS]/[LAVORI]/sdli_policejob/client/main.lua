@@ -141,7 +141,7 @@ AddEventHandler("jail:getMinutesInput", function(closestPlayer, jailName, jailCo
     local _jailCoords = jailCoords
     local _relLoc = relLoc
     local minutes = 0
-    TriggerEvent("vorpinputs:getInput", "Manda in cella", "Scrivi i minuti", function(cb)
+    TriggerEvent("vorpinputs:getInput", "Meter en la celda", "Introduce los minutos", function(cb)
         minutes = cb
         if tonumber(minutes) ~= nil and tonumber(minutes) <= 30 then
             TriggerServerEvent("jail:SetJail", _closestPlayer, _jailName, tonumber(minutes)*60, _jailCoords, _relLoc)
@@ -182,7 +182,7 @@ Citizen.CreateThread(function()
 
 
 			if WarMenu.Button(_U('poner_skin')) then
-				TriggerServerEvent("vanelicenze:documento")       	
+				TriggerServerEvent("vanelicenze:documenti")  -- no hace na     	
 			 
 			elseif WarMenu.Button(_U('poner_skin2')) then
 				TriggerServerEvent("vanelicenze:cacciatoreditaglie")

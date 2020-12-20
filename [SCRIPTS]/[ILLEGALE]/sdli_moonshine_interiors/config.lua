@@ -8,8 +8,8 @@ Config.Blips = false --true
 
 Config.Shacks = {
 
-    ['lemoyne'] = {
-        ['outside'] = vector3(-314.6, 815.0, 119.0),
+    ['lemoyne'] = { --Saloon Valentine
+        ['outside'] = vector3(0,0,0),--vector3(-314.6, 815.0, 119.0),
         ['inside'] = vector3(1785.01,-821.53,191.01),
         ['interior'] = 77313,
         ['interior_sets'] = {
@@ -84,8 +84,8 @@ Config.Shacks = {
         },
     },
 
-    ['manzanita_post'] = {
-        ['outside'] = vector3(2639.1, -1230.4, 53.4),
+    ['manzanita_post'] = { --Costello Sant Dennis
+        ['outside'] =vector3(2, 2, 2),-- vector3(2639.1, -1230.4, 53.4),
         ['inside'] = vector3(-1861.7, -1722.17, 88.35),
         ['interior'] = 77825,
         ['interior_sets'] = {

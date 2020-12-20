@@ -8,7 +8,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
     if (Vdist(coords.x, coords.y, coords.z, -334.8, -365.7, 88.1) < 1.0) then  --YOUR CHORDS FOR MENU HERE
-            DrawTxt("Premi [~e~G~q~] per comprare i progetti.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Pulsa [~e~G~q~] para comprar los planos.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("indiani:open")
                 TriggerServerEvent('blueprint:checkgroup')
@@ -26,8 +26,8 @@ end)
 Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
-    WarMenu.CreateMenu('menu', "Armaiolo")
-    WarMenu.SetSubTitle('menu', 'Acquisto progetti')
+    WarMenu.CreateMenu('menu', "Armero")
+    WarMenu.SetSubTitle('menu', 'Adquirir planos')
     
     while true do
 
@@ -37,51 +37,51 @@ Citizen.CreateThread(function()
         
         if WarMenu.IsMenuOpened('menu') then
             
-        if WarMenu.Button('Parti e progetto Cattleman - 33$') then
+        if WarMenu.Button('Piezas y proyecto Cattleman - 33$') then
                 
 		TriggerServerEvent("wc_cattlemanbp")
 		
-        elseif WarMenu.Button('Parti e progetto Lemat - 51$') then
+        elseif WarMenu.Button('Piezas y proyecto Lemat - 51$') then
             
 		TriggerServerEvent("wc_lematbp")
         
-        elseif WarMenu.Button('Parti e progetto Schofield - 66$') then
+        elseif WarMenu.Button('Piezas y proyecto Schofield - 66$') then
             
         TriggerServerEvent("wc_schofieldbp")
         
-    elseif WarMenu.Button('Parti e progetto M1899 - 66,25$') then
+    elseif WarMenu.Button('Piezas y proyecto M1899 - 66,25$') then
             
         TriggerServerEvent("wc_m1899bp")
         
-    elseif WarMenu.Button('Parti e progetto Semi Auto - 55,25$') then
+    elseif WarMenu.Button('Piezas y proyecto Semi Auto - 55,25$') then
             
         TriggerServerEvent("wc_semiautobp")
         
-    elseif WarMenu.Button('Parti e progetto Volcanic - 75,25$') then
+    elseif WarMenu.Button('Piezas y proyecto Volcanic - 75,25$') then
             
         TriggerServerEvent("wc_volcanicbp")
         
-    elseif WarMenu.Button('Parti e progetto Double Barrel - 86,70$') then
+    elseif WarMenu.Button('Piezas y proyecto Double Barrel - 86,70$') then
             
         TriggerServerEvent("wc_doublebarrelcbp")
         
-    elseif WarMenu.Button('Parti e progetto Henry - 161,70$') then
+    elseif WarMenu.Button('Piezas y proyecto Henry - 161,70$') then
             
         TriggerServerEvent("wc_henrybp")
         
-    elseif WarMenu.Button('Parti e progetto Carabina - 101,70$') then
+    elseif WarMenu.Button('Piezas y proyecto Carabina - 101,70$') then
             
         TriggerServerEvent("wc_carabinebp")
         
-    elseif WarMenu.Button('Parti e progetto Winchester - 166,15$') then
+    elseif WarMenu.Button('Piezas y proyecto Winchester - 166,15$') then
             
         TriggerServerEvent("wc_winchesterbp")
         
-    elseif WarMenu.Button('Parti e progetto Bolt Action - 215,15$') then
+    elseif WarMenu.Button('Piezas y proyecto Bolt Action - 215,15$') then
             
         TriggerServerEvent("wc_boltbp")
 
-    elseif WarMenu.Button('Olio per armi - 0.05$') then
+    elseif WarMenu.Button('Aceite para armas - 0.05$') then
             
 		TriggerServerEvent("wc_olioarmi")
         

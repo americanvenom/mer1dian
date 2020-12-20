@@ -44,7 +44,7 @@ AddEventHandler('lockpick', function()
 		--TriggerClientEvent("vorp:NotifyLeft", source, "ATTENZIONE","RAPINA IN CORSO","generic_textures","tick", 5000)
 		
     else
-        TriggerClientEvent("vorp:Tip", _source, 'Come credi di rapinare una banca senza attrezzi?', 5000)
+        TriggerClientEvent("vorp:Tip", _source, 'Cómo crees que robas un banco sin herramientas?', 5000)
     end     
    
 end)
@@ -78,11 +78,11 @@ AddEventHandler("rapine:countsceriffi", function(players)
         
     end
 
-    if Sceriffi >= 3 then
+    if Sceriffi >= 0 then --3
         Inventory.subItem(_source,"lockpick", 1)
         TriggerClientEvent('StartRobbing', _source)
     else
-        TriggerClientEvent("vorp:Tip", _source, 'Non ci sono abbastanza Sceriffi', 5000)
+        TriggerClientEvent("vorp:Tip", _source, 'No hay suficientes agentes de la ley', 5000)
     end
 
 end)

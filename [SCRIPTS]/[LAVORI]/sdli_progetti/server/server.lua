@@ -23,10 +23,10 @@ AddEventHandler('wc_cattlemanbp', function()
 
         VORP.addItem(_source, "cattleblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Revolver Cattleman.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Revolver Cattleman.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 33$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 33$.', 4500)
     end      
 end)
 
@@ -46,10 +46,10 @@ AddEventHandler('wc_lematbp', function()
 
         VORP.addItem(_source, "lematblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Revolver Lemat.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Revolver Lemat.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 51$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 51$.', 4500)
     end      
 end)
 
@@ -69,10 +69,10 @@ AddEventHandler('wc_schofieldbp', function()
 
         VORP.addItem(_source, "schofieldblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Revolver Schofield.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Revolver Schofield.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 66$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 66$.', 4500)
     end      
 end)
 
@@ -92,10 +92,10 @@ AddEventHandler('wc_m1899bp', function()
 
         VORP.addItem(_source, "m1899blueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Pistola M1899.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Pistola M1899.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 66,25$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 66,25$.', 4500)
     end      
 end)
 
@@ -115,10 +115,10 @@ AddEventHandler('wc_semiautobp', function()
 
         VORP.addItem(_source, "semiautoblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Pistola Semi Auto.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Pistola Semi Auto.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 55,25$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 55,25$.', 4500)
     end      
 end)
 
@@ -138,10 +138,10 @@ AddEventHandler('wc_volcanicbp', function()
 
         VORP.addItem(_source, "volcanicblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Pistola Volcanic.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Pistola Volcanic.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 75,25$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 75,25$.', 4500)
     end      
 end)
 
@@ -161,10 +161,10 @@ AddEventHandler('wc_doublebarrelbp', function()
 
         VORP.addItem(_source, "doublebarrelblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Doppietta.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Doppietta.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 86.7$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 86.7$.', 4500)
     end      
 end)
 
@@ -184,10 +184,10 @@ AddEventHandler('wc_henrybp', function()
 
         VORP.addItem(_source, "henryblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Henry.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Henry.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 161,70$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 161,70$.', 4500)
     end      
 end)
 
@@ -207,10 +207,10 @@ AddEventHandler('wc_carabinebp', function()
 
         VORP.addItem(_source, "carabineblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Carabina.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Carabina.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 101,7$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 101,7$.', 4500)
     end      
 end)
 
@@ -230,10 +230,10 @@ AddEventHandler('wc_winchesterbp', function()
 
         VORP.addItem(_source, "winchesterblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Winchester.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Winchester.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 166,15$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 166,15$.', 4500)
     end      
 end)
 
@@ -253,10 +253,10 @@ AddEventHandler('wc_boltbp', function()
 
         VORP.addItem(_source, "boltblueprint", 1)
 
-        TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato un progetto per Bolt Action.', 2000)        
+        TriggerClientEvent("vorp:TipBottom", _source, 'Has comprado los planos de Bolt Action.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 215,15$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 215,15$.', 4500)
     end      
 end)
 
@@ -279,7 +279,7 @@ AddEventHandler('wc_olioarmi', function()
         TriggerClientEvent("vorp:TipBottom", _source, 'Hai comprato olio per armi.', 2000)        
     
     else
-        TriggerClientEvent("vorp:TipBottom", _source, 'Ti servono 0,5$.', 4500)
+        TriggerClientEvent("vorp:TipBottom", _source, 'No tienes 0,5$.', 4500)
     end      
 end)
 

@@ -97,9 +97,9 @@ AddEventHandler("vanelicenze:documenti", function(target)
 	local count = VorpInv.getItemCount(source, "documento")
 		if count < 5 then
 			VorpInv.addItem(_source, 'documento',1)
-			TriggerClientEvent("vorp:TipRight", _source, "Hai validato il documento", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Has retirado papeles de documentación", 4000)
 		else
-			TriggerClientEvent("vorp:TipRight", _source, "Ne hai gia abbastanza", 4000)
+			TriggerClientEvent("vorp:TipRight", _source, "Ya tienes una", 4000)
 		end
 end)
 

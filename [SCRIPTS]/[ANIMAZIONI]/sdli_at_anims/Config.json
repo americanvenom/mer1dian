@@ -156,99 +156,99 @@
   // EMOTES
   "EmotesList": [
     {
-      "Name": "Saluta",
+      "Name": "Saludar",
       "Emote": -339257980
     },
     {
-      "Name": "Manda un bacio",
+      "Name": "Manda un beso",
       "Emote": 1927505461
     },
     {
-      "Name": "Annuire con braccia incrociate",
+      "Name": "Asentir con los brazos cruzados",
       "Emote": 1879954891
     },
     {
-      "Name": "Seguitemi!",
+      "Name": "Seguidme!",
       "Emote": 1115379199
     },
     {
-      "Name": "Supplica",
+      "Name": "Suplicar",
       "Emote": 164860528
     },
     {
-      "Name": "Spara in aria",
+      "Name": "Dispara al aire",
       "Emote": 1939251934
     },
     {
-      "Name": "Spara davanti",
+      "Name": "Disparar hacia delante",
       "Emote": -1639456476
     },
     {
-      "Name": "Applaudi",
+      "Name": "Aplaudir",
       "Emote": -221241824
     },
     {
-      "Name": "Disapprova",
+      "Name": "Desaprobar",
       "Emote": 1509171361
     },
     {
-      "Name": "Sei morto!",
+      "Name": "Estás muerto!",
       "Emote": 1256841324
     },
     {
-      "Name": "Fingi che ti sparano",
+      "Name": "Fingir ser disparado",
       "Emote": -110352861
     },
     {
-      "Name": "Arrabbiato",
+      "Name": "Enfadado",
       "Emote": 796723886
     },
     {
-      "Name": "Vittoria!",
+      "Name": "Victoria!",
       "Emote": -402959
     },
     {
-      "Name": "Che puzza!",
+      "Name": "Qué mal huele!",
       "Emote": -166523388
     },
     {
-      "Name": "Approvo!",
+      "Name": "Aprobar",
       "Emote": 425751659
     },
     {
-      "Name": "Sputa",
+      "Name": "Escupir",
       "Emote": -2106738342
     },
     {
-      "Name": "Osserva l'orizzonte",
+      "Name": "Observar al horizonte",
       "Emote": 935157006
     },
     {
-      "Name": "Indica 1",
+      "Name": "Indicar 1",
       "Emote": 1593752891
     },
     {
-      "Name": "Indica 2",
+      "Name": "Indicar 2",
       "Emote": 7918540
     },
     {
-      "Name": "Indica 3",
+      "Name": "Indicar 3",
       "Emote": 486225122
     },
     {
-      "Name": "Venite qui!",
+      "Name": "Ven aquí!",
       "Emote": 474409519
     },
     {
-      "Name": "Pesca",
+      "Name": "Pescar",
       "Emote": 1159716480
     },
     {
-      "Name": "Mostra muscoli",
+      "Name": "Mostrar músculo",
       "Emote": -773960361
     },
     {
-      "Name": "Conspirare",
+      "Name": "Conspirar",
       "Emote": 589481092
     },
     {
@@ -256,27 +256,27 @@
       "Emote": -1691237868
     },
     {
-      "Name": "Flirtare",
+      "Name": "Coquetear",
       "Emote": 831975651
     },
     {
-      "Name": "Saluto amichevole",
+      "Name": "Saludo amistoso",
       "Emote": 901097731
     },
     {
-      "Name": "Saluto cortese",
+      "Name": "Saluto cortés",
       "Emote": -2121881035
     },
     {
-      "Name": "Saluto con il cappello",
+      "Name": "Saludar con el sombrero",
       "Emote": -1457020913
     },
     {
-      "Name": "Salutare con rispetto",
+      "Name": "Salutare con respeto",
       "Emote": -1801715172
     },
     {
-      "Name": "Contento di vederti",
+      "Name": "Contento de verte",
       "Emote": 523585988
     },
     {
@@ -284,35 +284,35 @@
       "Emote": -462132925
     },
     {
-      "Name": "Indignato",
+      "Name": "Indignado",
       "Emote": 1802342943
     },
     {
-      "Name": "Schifo!",
+      "Name": "Mierda!",
       "Emote": -1118911493
     },
     {
-      "Name": "Silenzio",
+      "Name": "Silencio",
       "Emote": -1644757697
     },
     {
-      "Name": "Annuire",
+      "Name": "Asentir",
       "Emote": -822629770
     },
     {
-      "Name": "Deridere",
+      "Name": "Burlarse",
       "Emote": 803206066
     },
     {
-      "Name": "Negare",
+      "Name": "Negarse",
       "Emote": -653113914
     },
     {
-      "Name": "Applauso lento",
+      "Name": "Aplauso lento",
       "Emote": 1023735814
     },
     {
-      "Name": "Chi io?",
+      "Name": "Quién yo?",
       "Emote": 329631369
     },
     {
@@ -320,11 +320,11 @@
       "Emote": 445839715
     },
     {
-      "Name": "Fingere di piangere",
+      "Name": "Fingir llorar",
       "Emote": 246916594
     },
     {
-      "Name": "Piangere",
+      "Name": "Llorar",
       "Emote": 81347960
     },
     {
@@ -332,27 +332,27 @@
       "Emote": 1825177171
     },
     {
-      "Name": "Arrabbiato 1",
+      "Name": "Enfadado 1",
       "Emote": 354512356
     },
     {
-      "Name": "Arrabbiato 2",
+      "Name": "Enfadado 2",
       "Emote": 969312568
     },
     {
-      "Name": "Ti tengo d'occhio",
+      "Name": "Te estoy vigilando",
       "Emote": -553424129
     },
     {
-      "Name": "Sfida",
+      "Name": "Desafío",
       "Emote": 1533402397
     },
     {
-      "Name": "Arrabbiato 3",
+      "Name": "Enfadado 3",
       "Emote": 987239450
     },
     {
-      "Name": "Orgoglioso",
+      "Name": "Orgulloso",
       "Emote": -1252070669
     }
   ]

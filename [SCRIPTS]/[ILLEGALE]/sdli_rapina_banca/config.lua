@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Robbank1 = 'Premi [~e~Invio~q~] per rapinare la banca'
+Config.Robbank1 = 'Pulsa [~e~Enter~q~] para empezar a robar el banco'
 --Config.Robbank2 = 'Appuyez sur [~e~ENTER~q~] pour braquer la banque'
 --Config.Robbank3 = 'Press Enter to start robbing bank'
 

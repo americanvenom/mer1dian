@@ -7,7 +7,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
-    if (Vdist(coords.x, coords.y, coords.z, 3028.259, 562.6426, 46.05696) < 1.0) then  --YOUR CHORDS FOR MENU HERE
+    if (Vdist(coords.x, coords.y, coords.z, 3028.231, 563.3165, 45.71949) < 2.0) then  --YOUR CHORDS FOR MENU HERE
             DrawTxt("Presiona [~e~G~q~] para vender Alcohol.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("indiani:open")

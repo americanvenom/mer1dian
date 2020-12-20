@@ -22,7 +22,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
         local coords = GetEntityCoords(PlayerPedId())
     if (Vdist(coords.x, coords.y, coords.z, 1790.8, -818.7, 189.4) < 1.0) then  --YOUR CHORDS FOR MENU HERE
-            DrawTxt("Premi [~e~G~q~] per accedere al Saloon.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+            DrawTxt("Pulsa [~e~G~q~] para acceder al Saloon.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
             if IsControlJustReleased(0, 0x760A9C6F) then -- g
                 --TriggerEvent("saloon:open")
                 TriggerServerEvent('saloon:checkgroup')
@@ -41,10 +41,10 @@ Citizen.CreateThread(function()
 	local sexe =  IsPedMale(PlayerPedId())
     local checkbox2 = false
     WarMenu.CreateMenu('menu', "Saloon")
-    WarMenu.SetSubTitle('menu', 'Ricette')
+    WarMenu.SetSubTitle('menu', 'Recetas')
 	
-    WarMenu.CreateSubMenu('hgmake', 'menu', 'Bevande')
-	WarMenu.CreateSubMenu('hgmake2', 'menu', 'Cibi')
+    WarMenu.CreateSubMenu('hgmake', 'menu', 'Bebidas')
+	WarMenu.CreateSubMenu('hgmake2', 'menu', 'Comidas')
 
 
     while true do
@@ -56,8 +56,8 @@ Citizen.CreateThread(function()
         if WarMenu.IsMenuOpened('menu') then
 
             
-            if WarMenu.MenuButton('Bevande', 'hgmake') then end
-            if WarMenu.MenuButton('Cibi', 'hgmake2') then end	
+            if WarMenu.MenuButton('Bebidas', 'hgmake') then end
+            if WarMenu.MenuButton('Comidas', 'hgmake2') then end	
 
             WarMenu.Display()
 
@@ -73,7 +73,7 @@ Citizen.CreateThread(function()
 		
                 TriggerServerEvent("wc_wiskey")
             
-            elseif WarMenu.Button('Birra') then
+            elseif WarMenu.Button('Cerveza') then
             
                 TriggerServerEvent("wc_birra")
     
@@ -81,7 +81,7 @@ Citizen.CreateThread(function()
         
                 TriggerServerEvent("wc_rhum")
 
-            elseif WarMenu.Button('Sidro di Mele') then
+            elseif WarMenu.Button('Sidra de manzana') then
 
                 TriggerServerEvent('wc_sidro')
 
@@ -90,11 +90,11 @@ Citizen.CreateThread(function()
 			
         elseif WarMenu.IsMenuOpened('hgmake2') then
             
-            if WarMenu.Button('Stufato di Cervo') then
+            if WarMenu.Button('Estofado de ciervo') then
                 
                 TriggerServerEvent("wc_stufatodicervo")
 		
-            elseif WarMenu.Button('Stufato di Pesce') then
+            elseif WarMenu.Button('Estofado de pescado') then
             
                 TriggerServerEvent("wc_stufatodipesce")
             end

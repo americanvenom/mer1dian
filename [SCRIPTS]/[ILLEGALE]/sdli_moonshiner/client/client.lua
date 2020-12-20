@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
             --print(v.x,v.y,v.z)
             --print(tostring(GetDistanceBetweenCoords(x,y,z,v.x,v.y,v.z,true)))
             if GetDistanceBetweenCoords(x,y,z,v.x,v.y,v.z,false) < 2.0 then
-                DrawText3D(v.x, v.y, v.z + 1, "Premi G per preparare moonshine")
+                DrawText3D(v.x, v.y, v.z + 1, "Pulsa G para empezar a prerapar moonshine")
                 if IsControlJustReleased(0, 0x760A9C6F) then -- g
                     TriggerEvent("ranch:moonshinecl")
                 end
@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('still', "Distillatore")
+    WarMenu.CreateMenu('still', "Destilador")
 
     while true do
         local ped = GetPlayerPed(-1)
@@ -128,7 +128,7 @@ AddEventHandler('shiner:moonshine', function(type)
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
     
 
-    exports['progressBars']:startUI(30000, "Cucinando moonshine...")
+    exports['progressBars']:startUI(30000, "Preparando moonshine...")
     Wait(30000)
 
     if type == "original" then

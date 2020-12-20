@@ -15,7 +15,7 @@ AddEventHandler('woodcutter:checkjob', function()
         if Character.job ~= "Armaiolo" and stress < 80 then 
             TriggerClientEvent('art_woodcutter:comienzo',_source)
         else
-            TriggerClientEvent("vorp:TipRight", _source, "Sei affaticato! Torna quando ti sarai riposato", 4000)
+            TriggerClientEvent("vorp:TipRight", _source, "Estás cansado. Vuelve cuando hayas descansado", 4000)
         end
     end)
 end)
@@ -41,7 +41,7 @@ AddEventHandler('art_woodcutter:cobrar', function()
         if count1*2> 0 then VorpInv.addItem(_source, "listcedr", count1*2) end
         if count2*2 > 0 then VorpInv.addItem(_source, "listabe", count2*2) end
     else
-        TriggerClientEvent("vorp:TipRight", _source, 'Non hai abbastanza spazio nell\'inventario', 4000)
+        TriggerClientEvent("vorp:TipRight", _source, 'No tienes suficiente espacio de inventario', 4000)
     end
     
 end)
@@ -85,7 +85,7 @@ AddEventHandler("weaponsmith:checkp", function()
     if Character.job == 'Armaiolo' or Character.job == "CapoArmaiolo" then
 	    TriggerClientEvent('weaponsmith:openp',_source)
 	else
-		TriggerClientEvent("vorp:TipRight", _source, 'Non sei armaiolo', 4000)
+		TriggerClientEvent("vorp:TipRight", _source, 'No eres armero', 4000)
 	end	
 		
 end)
@@ -109,10 +109,10 @@ AddEventHandler('artwoodc:processoarmaiolo', function(pino, abete, cedro, item)
 
         VorpInv.addItem(_source, item, 1)
 
-        TriggerClientEvent("vorp:TipRight", _source, 'Materiale processato!', 5000)
+        TriggerClientEvent("vorp:TipRight", _source, 'Material procesado!', 5000)
 
     else
-        TriggerClientEvent("vorp:TipRight", _source, 'Non hai abbastanza materiali!', 5000)
+        TriggerClientEvent("vorp:TipRight", _source, 'No tienes suficientes materiales!', 5000)
         --NON ABBASTANZA MATERIALI
     end
 

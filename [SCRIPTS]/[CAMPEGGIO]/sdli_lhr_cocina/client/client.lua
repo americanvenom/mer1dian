@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
 		local campfire = DoesObjectOfTypeExistAtCoords(x, y, z, 1.5, GetHashKey("p_campfire02x"), true)
 		
 		if cauldron or campfire then 
-            TriggerEvent("vorp:Tip", "Premi G per cucinare", 100)
+            TriggerEvent("vorp:TipBottom", "Pulsa G para cocinar", 100)
 			if IsControlJustReleased(0, 0x760A9C6F) then -- g
 				TriggerEvent("def_cookfood:cookchad")
 			end
@@ -47,8 +47,8 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
-    WarMenu.CreateMenu('campfire', "Cucina")
-    WarMenu.SetSubTitle('campfire', 'Menù cucina')
+    WarMenu.CreateMenu('campfire', "Cocina")
+    WarMenu.SetSubTitle('campfire', 'Menú Cocina')
     WarMenu.CreateSubMenu('cook', 'campfire', 'Cibi')
     WarMenu.CreateSubMenu('cook2', 'campfire', 'Liquidi')
   
@@ -58,27 +58,27 @@ Citizen.CreateThread(function()
         local coords = GetEntityCoords(PlayerPedId())
 
         if WarMenu.IsMenuOpened('campfire') then
-            if WarMenu.MenuButton('Cucina carne', 'cook') then end
-            if WarMenu.MenuButton('Depura acqua', 'cook2') then
+            if WarMenu.MenuButton('Cocinar carne', 'cook') then end
+            if WarMenu.MenuButton('Depurar agua', 'cook2') then
             end
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('cook') then
-            if WarMenu.Button('Cucina bistecca di Cinghiale') then
+            if WarMenu.Button('Cocinar bistec de jabalí') then
 					TriggerServerEvent("def_cookfood:pork")
                     WarMenu.CloseMenu()
-            elseif WarMenu.Button('Cucina tacchino') then
+            elseif WarMenu.Button('Cocinar pavo') then
                     TriggerServerEvent("def_cookfood:tacchino")
                     WarMenu.CloseMenu()
-            elseif WarMenu.Button('Cucina carne di Alce') then
+            elseif WarMenu.Button('Cocinar carne de alce') then
                     TriggerServerEvent("def_cookfood:alce")
                     WarMenu.CloseMenu()
-            elseif WarMenu.Button('Cucina Bluegill') then
+            elseif WarMenu.Button('Cocinar Bluegill') then
                     TriggerServerEvent("def_cookfood:bluegill")
                     WarMenu.CloseMenu()
             end
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened('cook2') then 
-            if WarMenu.Button('Depura acqua') then
+            if WarMenu.Button('Depurar agua') then
                 TriggerServerEvent("def_cookfood:getwater")
                 WarMenu.CloseMenu()           
 
@@ -136,7 +136,7 @@ AddEventHandler('def_cookfood:clean', function()
     local playerPed = PlayerPedId()
 	cleanWater = true
     TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 27000, true, false, false, false)
-    exports['progressBars']:startUI(27000, "Bollendo acqua...")
+    exports['progressBars']:startUI(27000, "Hirviendo acqua...")
     Citizen.Wait(27000)
     ClearPedTasksImmediately(PlayerPedId())
 
@@ -152,7 +152,7 @@ AddEventHandler('def_cookfood:cookmeat', function()
 
     local playerPed = PlayerPedId()
     --TaskStartScenarioInPlace(playerPed, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 27000, true, false, false, false)
-    exports['progressBars']:startUI(27000, "Cucinando...")
+    exports['progressBars']:startUI(27000, "Cocinando...")
    -- Citizen.Wait(27000)
    -- ClearPedTasksImmediately(PlayerPedId())
 
@@ -243,7 +243,7 @@ AddEventHandler('ml_camping:Getwater', function()
     if canCollect and not isAlreadyCollecting then
         isAlreadyCollecting = true
         TaskStartScenarioInPlace(ped, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 27000, true, false, false, false)
-		exports['progressBars']:startUI(27000, "Raccogliendo acqua...")
+		exports['progressBars']:startUI(27000, "Recogiendo acqua...")
 		Citizen.Wait(27000)
 
         ClearPedTasksImmediately(ped)
@@ -254,6 +254,6 @@ AddEventHandler('ml_camping:Getwater', function()
       
     else
         Citizen.Wait(2000)
-        TriggerEvent("redemrp_notification:start", "Non puoi raccogliere acqua qui!", 3)
+        TriggerEvent("redemrp_notification:start", "¡No puedes recoger agua aquí!", 3)
     end
 end)

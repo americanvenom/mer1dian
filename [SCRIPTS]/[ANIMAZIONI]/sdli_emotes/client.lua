@@ -60,7 +60,7 @@ local wheel =
 				navAngle = 270,
 				minRadiusPercent = 0.05,
 				maxRadiusPercent = 0.2,
-				labels = {"Annulla \nanimazione", "Esci"},
+				labels = {"Anular \nanimación", "Salir"},
 				commands = {"cancel", ""}
 			},
 			{

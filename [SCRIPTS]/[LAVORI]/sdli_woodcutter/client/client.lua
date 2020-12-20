@@ -18,8 +18,8 @@ Citizen.CreateThread(function()
 end)
 
 local blips = {
-    { name = 'Raccolta Legna', sprite = 1904459580, x=-1500.8, y=-791.4, z=101.9},
-    { name = 'Processo Legna', sprite = 2107754879, x = -1827.6, y = -424.4, z= 160.7},
+    { name = 'Tala de madera', sprite = 1904459580, x=-1500.8, y=-791.4, z=101.9},
+    { name = 'Procesado de madera', sprite = 2107754879, x = -1827.6, y = -424.4, z= 160.7},
 }
 
 
@@ -474,7 +474,7 @@ Citizen.CreateThread(function()
         local pos = GetEntityCoords(PlayerPedId())
         if (Vdist(pos.x, pos.y, pos.z, -1816.9,-422.3,160.0) < 3.0) then
           --  DrawTxt("Premi [INVIO] per aprire il processo taglialegna", 0.3, 0.95, 0.4, 0.4, true, 255, 255, 255, 150, false)
-          DrawText3D(-1816.9,-422.3,160.0, "Premi [~e~INVIO~q~] per aprire il processo taglialegna")
+          DrawText3D(-1816.9,-422.3,160.0, "Pulsa [~e~ENTER~q~] para abrir el proceso de fabricaicón")
             if IsControlJustReleased(0, 0xC7B5340A) then
                 Wait(50)
                 TriggerServerEvent('weaponsmith:checkp')
@@ -491,27 +491,27 @@ end)
 
 Citizen.CreateThread(function() 
 
-    WarMenu.CreateMenu("processom", "Armaiolo")
+    WarMenu.CreateMenu("processom", "Armero")
     
     while true do
         Wait(0)
         if WarMenu.IsMenuOpened('processom') then
 
-            if WarMenu.Button("Crea calcio fucile standard") then
+            if WarMenu.Button("Crear culata de escopeta") then
                 TriggerServerEvent('artwoodc:processoarmaiolo', 0, 15, 0, "calciofucilestandard")
             
-            elseif WarMenu.Button("Crea calcio fucile migliorato") then
+            elseif WarMenu.Button("Crear culata de fusil") then
                 TriggerServerEvent('artwoodc:processoarmaiolo', 15, 15, 8, "calciofucilemigliorato")
 
-            elseif WarMenu.Button("Crea calcio pistola standard") then
+            elseif WarMenu.Button("Crea culata de pistola standard") then
 
                 TriggerServerEvent('artwoodc:processoarmaiolo', 10, 0, 0, "calciopistolastandard")
 
-            elseif WarMenu.Button("Crea calcio pistola migliorato") then
+            elseif WarMenu.Button("Crea culata de pistola mejorada") then
 
                 TriggerServerEvent('artwoodc:processoarmaiolo', 10, 10, 5, "calciopistolamigliorato")
                 
-            elseif WarMenu.Button("Chiudi") then
+            elseif WarMenu.Button("Salir") then
                 WarMenu.CloseMenu()
             end
             WarMenu.Display()
@@ -539,7 +539,7 @@ function animacion3pr()
 	local object = CreateObject("p_woodplane01x", x, y, z, true, true, true)
 	AttachEntityToEntity(object, PlayerPedId(), GetEntityBoneIndexByName(PlayerPedId(), "PH_R_Hand"), 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 0, 1, 0, 0, 1)
 	--TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('PROP_HUMAN_SACK_STORAGE_IN'), 7000, true, false, false, false)
-    exports['progressBars']:startUI(40000, 'Processando...')
+    exports['progressBars']:startUI(40000, 'Procesando...')
     Wait(40000)
 	DeleteObject(object)
 	ClearPedTasks(PlayerPedId())

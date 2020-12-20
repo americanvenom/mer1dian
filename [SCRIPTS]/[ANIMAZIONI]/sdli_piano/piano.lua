@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
         
         if IsPlayerNearCoords(-312.3, 799.01, 118.46) then
             if not play then 
-                TriggerEvent('vorp:TipBottom', "[G] Suona il pianoforte", 100)
+                TriggerEvent('vorp:TipBottom', "[G] Tocar el piano", 100)
             end 
             if IsControlJustPressed(0, 0x760A9C6F) then
                 play = true
@@ -22,7 +22,7 @@ Citizen.CreateThread(function()
         
         if IsPlayerNearCoords(1346.95, -1371.76, 80.49) then
             if not play then 
-                TriggerEvent('vorp:TipBottom', "[G] Suona il pianoforte", 100)
+                TriggerEvent('vorp:TipBottom', "[G] Tocar el piano", 100)
             end
             if IsControlJustPressed(0, 0x760A9C6F) then
                 play = true
@@ -33,7 +33,7 @@ Citizen.CreateThread(function()
 
         if IsPlayerNearCoords(1346.95, -1371.76, 80.49) then
             if not play then 
-                TriggerEvent('vorp:TipBottom', "[G] Suona il pianoforte", 100)
+                TriggerEvent('vorp:TipBottom', "[G] Tocar el piano", 100)
             end
             if IsControlJustPressed(0, 0x9959A6F0) then
                 play = true
@@ -43,7 +43,7 @@ Citizen.CreateThread(function()
         end
  if IsPlayerNearCoords(-312.3, 799.01, 118.46) then
             if not play then 
-                TriggerEvent('vorp:TipBottom', "[G] Suona il pianoforte", 100)
+                TriggerEvent('vorp:TipBottom', "[G] Tocar el piano", 100)
             end 
             if IsControlJustPressed(0, 0x9959A6F0) then
                 play = true
@@ -59,7 +59,7 @@ Citizen.CreateThread(function()
         Citizen.Wait(1)
         if play then
 
-            TriggerEvent('vorp:TipBottom', "[W] Smetti di suonare", 100)
+            TriggerEvent('vorp:TipBottom', "[W] Dejar de tocar", 100)
             if IsControlJustPressed(0, 0x8FD015D8) then
                 play = false
                 ClearPedTasks(GetPlayerPed())
