@@ -6,7 +6,7 @@ local user_job = ""
 
 Citizen.CreateThread(function() 
     while true do 
-        Wait(900000)
+        Wait(1800000)
         TriggerServerEvent('sdli_core:payCheck')
     end
 end)
@@ -153,16 +153,16 @@ AddEventHandler("sdlicore:getGroupFromServer", function(group, job)
 end)
 
 Citizen.CreateThread(function() 
-    WarMenu.CreateMenu("sdlicore_menu", "Menu' principale")
+    WarMenu.CreateMenu("sdlicore_menu", "Menú principal")
     WarMenu.SetMenuX('sdlicore_menu', 0.76) -- [0.0..1.0] top left corner
     WarMenu.SetMenuY('sdlicore_menu', 0.15) -- [0.0..1.0] top
     WarMenu.CreateSubMenu('sdlicore_adminmenu', "sdlicore_menu", "Menu admin")
-    WarMenu.CreateSubMenu("sdlicore_opzioniplayer", "sdlicore_menu", "Opzioni player")
-    WarMenu.CreateSubMenu('sdlicore_saloon', "sdlicore_menu", "Amministrazione saloon")
-    WarMenu.CreateSubMenu('sdlicore_armeria', "sdlicore_menu", "Amministrazione saloon")
-    WarMenu.CreateSubMenu('sdlicore_blackjack', "sdlicore_menu", "Amministrazione blackjack")
-    WarMenu.CreateSubMenu('sdlicore_capoindiano', "sdlicore_menu", "Menu indiani")
-    WarMenu.CreateSubMenu('sdlicore_giornale', "sdlicore_menu", "Menu giornalista")
+    WarMenu.CreateSubMenu("sdlicore_opzioniplayer", "sdlicore_menu", "Opciones de jugador")
+    WarMenu.CreateSubMenu('sdlicore_saloon', "sdlicore_menu", "Administrar saloon")
+    WarMenu.CreateSubMenu('sdlicore_armeria', "sdlicore_menu", "Administrar saloon")
+    WarMenu.CreateSubMenu('sdlicore_blackjack', "sdlicore_menu", "Administrar blackjack")
+    WarMenu.CreateSubMenu('sdlicore_capoindiano', "sdlicore_menu", "Menú facción indios")
+    WarMenu.CreateSubMenu('sdlicore_giornale', "sdlicore_menu", "Menu periodista")
     WarMenu.CreateSubMenu('sdlicore_medico', "sdlicore_menu", "Menu medico")
 
 
@@ -200,80 +200,80 @@ Citizen.CreateThread(function()
             elseif user_job == "CapoIndiano" then 
                 if WarMenu.MenuButton('> Capo tribu', "sdlicore_capoindiano") then end
             elseif user_job == "Giornalista" then
-                if WarMenu.MenuButton('> Menu giornalista', "sdlicore_giornale") then end
+                if WarMenu.MenuButton('> Menu periodista', "sdlicore_giornale") then end
             end
 
-            if WarMenu.Button("Menu vestiti") then
+            if WarMenu.Button("Menu ropa") then
 
                 TriggerEvent("vorp_clothesmenu")
             
-            elseif WarMenu.Button('Menu accampamento') then
+            elseif WarMenu.Button('Menu campamento') then
 
                 WarMenu.CloseMenu()
                 Wait(50)
                 TriggerEvent('lhrcampamentos:openmenu')
-            elseif WarMenu.Button("Mostra documento") then
+            elseif WarMenu.Button("Mostrar documento") then
 
                 TriggerEvent("menu:id:start")
 
-            elseif WarMenu.Button("Dai documento") then
+            elseif WarMenu.Button("Dar documento") then
 
                 TriggerEvent("menu:id:get")
 
-            elseif WarMenu.Button("Togli/Metti maschera") then
+            elseif WarMenu.Button("Ponerse máscara") then
 
                 ExecuteCommand("maschera")
 
-            elseif WarMenu.Button("Togli metti bandana") then 
+            elseif WarMenu.Button("Ponerse bandana") then 
 
                 TriggerEvent("menu:bandana:toggle")
                 
-            elseif WarMenu.Button("Loot player") then
+            elseif WarMenu.Button("Saquear jugador") then
 
                 TriggerEvent("vorp:lootplayercl")
 
-            elseif WarMenu.Button("Ispeziona player") then
+            elseif WarMenu.Button("Inspeccionar jugador") then
 
                 TriggerEvent("inspectplayer")
-                TriggerServerEvent('3dme:shareDisplay', "Fruga nelle tasche")
+                TriggerServerEvent('3dme:shareDisplay', "Rebusca en tus bolsillos")
 
-            elseif WarMenu.Button("Ispeziona carrozza") then
+            elseif WarMenu.Button("Inspeccionar carroza") then
 
                 TriggerEvent("inspectcart")
-                TriggerServerEvent('3dme:shareDisplay', "Fruga nel carretto")
+                TriggerServerEvent('3dme:shareDisplay', "Rebusca en el carro")
 
-            elseif WarMenu.Button("Ispeziona cavallo") then 
+            elseif WarMenu.Button("Inspeccionar caballo") then 
 
                 TriggerEvent("inspecthorse")
-                TriggerServerEvent('3dme:shareDisplay', "Fruga nella bisaccia")
+                TriggerServerEvent('3dme:shareDisplay', "Rebusca entre las alforjas")
 
-            elseif WarMenu.Button("Camminate ed emotes") then
+            elseif WarMenu.Button("Emotes") then
 
                 Wait(50)
 
                 TriggerEvent("atanims:openMenu", "")
                 WarMenu.CloseMenu()
 
-            elseif WarMenu.Button("Ricarica Skin") then
+            elseif WarMenu.Button("Recargar skin") then
 
                 ExecuteCommand("reloadcloths")               
             
             end
         elseif WarMenu.IsMenuOpened('sdlicore_adminmenu') then
 
-            if WarMenu.Button("Setta lavoro") then
-                local id = textEntry("Inserisci l'id del player")
+            if WarMenu.Button("Setear job") then
+                local id = textEntry("Introduce ID del jugador")
                 Wait(50)
-                local job = textEntry("Inserisci il lavoro")
+                local job = textEntry("Introduce nombre del job")
                 TriggerServerEvent("vorp:setJob",id,job)
             
-            elseif WarMenu.Button("Wipe player") then
+            elseif WarMenu.Button("Resetear jugador") then
 
-                local id = textEntry("Inserisci l'id")
-                TriggerServerEvent("vorp:wipePlayerDB", tonumber(id))
+                 local id = textEntry("Inserisci l'id")
+                 TriggerServerEvent("vorp:wipePlayer", tonumber(id))
             
-            elseif WarMenu.Button("Prova scenario") then
-                TriggerEvent("vorpinputs:getInput", "Prova", "Inserisci lo scenario", function(cb)
+            elseif WarMenu.Button("Prueba el escenario") then
+                TriggerEvent("vorpinputs:getInput", "Prueba", "Insertar escenario", function(cb)
                     local scenario = cb
                     if scnario ~= nil or scenario ~= "close" then
                         TaskStartScenarioInPlace(PlayerPedId(), GetHashKey(tostring(scenario)), 10000, true, false, false, false)
@@ -282,7 +282,7 @@ Citizen.CreateThread(function()
                     end
                 end)
             
-            elseif WarMenu.Button("Cancella veicolo") then
+            elseif WarMenu.Button("Eliminar vehículo") then
                TriggerEvent('delvehicle')
             end
             WarMenu.Display()
@@ -290,33 +290,33 @@ Citizen.CreateThread(function()
         elseif WarMenu.IsMenuOpened("sdlicore_saloon") then
          
 
-            if WarMenu.Button('Assumi dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            if WarMenu.Button('Contratar empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"Saloon")
-            elseif WarMenu.Button('Licenzia dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            elseif WarMenu.Button('Despedir empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"unemployed")
             end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened("sdlicore_armeria") then 
 
-            if WarMenu.Button('Assumi dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            if WarMenu.Button('Contratar empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"Armaiolo")
-            elseif WarMenu.Button('Licenzia dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            elseif WarMenu.Button('Despedir empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"unemployed")
             end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened("sdlicore_blackjack") then 
 
-            if WarMenu.Button('Assumi dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            if WarMenu.Button('Contratar empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"blackjack")
-            elseif WarMenu.Button('Licenzia dipendente') then
-                local id = textEntry("Inserisci l'id del player")
+            elseif WarMenu.Button('Despedir empleado') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"unemployed")
             end
 
@@ -324,18 +324,18 @@ Citizen.CreateThread(function()
             
         elseif WarMenu.IsMenuOpened("sdlicore_capoindiano") then 
 
-            if WarMenu.Button('Fai entrare nella tribu') then
-                local id = textEntry("Inserisci l'id del player")
+            if WarMenu.Button('Introducir en la tribu') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"Indiano")
-            elseif WarMenu.Button('Caccia dalla tribu') then
-                local id = textEntry("Inserisci l'id del player")
+            elseif WarMenu.Button('Echar de la tribu') then
+                local id = textEntry("Introduce ID del jugador")
                 TriggerServerEvent("vorp:setJob",id,"unemployed")
             end
 
             WarMenu.Display()
         elseif WarMenu.IsMenuOpened("sdlicore_giornale") then 
 
-            if WarMenu.Button("Crea nuovo articolo") then 
+            if WarMenu.Button("Crear un nuevo artículo") then 
                 TriggerEvent('requestMessage')
             --[[elseif WarMenu.Button("Cancella Articolo") then
                 TriggerEvent("vorpinputs:getInput", "Elimina", "Inserisci l'id dell'articolo da eliminare:", function(cb)
@@ -374,7 +374,7 @@ RegisterNetEvent("vorp:lootplayercl")
 AddEventHandler("vorp:lootplayercl", function() 
     local closestPlayer, closestDistance = GetClosestPlayer()
     if IsEntityDead(GetPlayerPed(closestPlayer)) and closestDistance < 2.0 and closestPlayer ~= -1 then
-        exports['progressBars']:startUI(10000, "Ispezionando cadavere...")
+        exports['progressBars']:startUI(10000, "Inspeccionado cadaver...")
         --anim
         TaskStartScenarioInPlace(PlayerPedId(), GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 10000, true, false, false, false)
         Wait(9800)
@@ -485,7 +485,7 @@ Citizen.CreateThread(function()
         local blip = N_0x554d9d53f696d002(1664425300, v.x, v.y, v.z)
         SetBlipSprite(blip, 1012165077, 1)
         SetBlipScale(blip, 0.2)
-        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Scuderia")
+        Citizen.InvokeNative(0x9CB1A1623062F402, blip, "Establo")
     end
 end)
 

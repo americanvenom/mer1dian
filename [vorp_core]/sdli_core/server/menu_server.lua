@@ -169,7 +169,7 @@ AddEventHandler("vorpinventory:inspectPlayer", function(target)
     }, function(ret)
         print(ret[1].inventory)
         local tableInv = {}
-        table.insert(tableInv, {Name="Soldi", Quantity = Character.money})
+        table.insert(tableInv, {Name="Dinero", Quantity = Character.money})
         for k,v in pairs(json.decode(ret[1].inventory)) do
             local _v = v
             TriggerEvent("vorpinventory:getLabelFromId", k, function(item)
@@ -199,7 +199,7 @@ AddEventHandler('sdli_core:payCheck', function()
     for k,v in pairs(paychecks) do 
         if v.group == Character.job then 
             TriggerEvent("vorp:addMoney", _source, 0, tonumber(v.paycheck)) -- LOOT SOLDI E GOLD
-            TriggerClientEvent("vorp:TipRight", _source, "Hai ricevuto lo stipendio da " .. v.group .. ": "  .. tostring(v.paycheck).."$", 4000)
+            TriggerClientEvent("vorp:TipRight", _source, "Recibiste el salario de " .. v.group .. ": "  .. tostring(v.paycheck).."$", 4000)
         end
     end
 

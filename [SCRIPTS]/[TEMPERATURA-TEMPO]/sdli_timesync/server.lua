@@ -1,8 +1,8 @@
-local h = 8
+local h = 6
 local m = 0
 local s = 0
 
-local rdr_seconds_per_real_second = 30
+local rdr_seconds_per_real_second = 30--30 segundos del juego es 1 segundo vida real
 local loopwhole = 1000 / rdr_seconds_per_real_second
 local looptime = loopwhole % 1 >= 0.5 and math.ceil(loopwhole) or math.floor(loopwhole)
 

@@ -13,7 +13,7 @@
     {
       "name": "Saint Denis", //Dont touch
       "hudName": "SAINT DENIS",
-      "blipName": "Banca di Saint Denis",
+      "blipName": "Banco de Saint Denis",
       "blipHash": -2128054417,
       "coords": {
         "x": 2644.088,
@@ -31,7 +31,7 @@
     {
       "name": "Blackwater", //Dont touch
       "hudName": "BLACKWATER",
-      "blipName": "Banca di Blackwater",
+      "blipName": "Banco de Blackwater",
       "blipHash": -2128054417,
       "coords": {
         "x": -813.1844,
@@ -50,7 +50,7 @@
     {
       "name": "Valentine", //Dont touch
       "hudName": "VALENTINE",
-      "blipName": "Banca di Valentine",
+      "blipName": "Banco de Valentine",
       "blipHash": -2128054417,
       "coords": {
         "x": -308.5024,
@@ -69,7 +69,7 @@
     {
       "name": "Rhodes", //Dont touch
       "hudName": "RHODES",
-      "blipName": "Banca di Rhodes",
+      "blipName": "Banco de Rhodes",
       "blipHash": -2128054417,
       "coords": {
         "x": 1292.6,

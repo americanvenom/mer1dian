@@ -4,7 +4,7 @@ TriggerEvent("getCore",function(core)
     VorpCore = core
 end)
 
-local weather = "Snow" -- default weather when starting up the server
+local weather = "Sunny" -- default weather when starting up the server
 
 RegisterServerEvent("vbw:changeweathersv")
 AddEventHandler("vbw:changeweathersv", function(weather2) 

@@ -6,9 +6,16 @@ Citizen.CreateThread(function()
         --Citizen.InvokeNative(0x4CC5F2FC1332577F, 1058184710) --aim
         Citizen.InvokeNative(0x4CC5F2FC1332577F, -66088566) --mp money
         --Citizen.InvokeNative(0x4CC5F2FC1332577F, 474191950) --minimap
-        -- DisplayRadar()
-        if IsPlayerFreeAiming(Ped) and IsPedWeaponReadyToShoot(PlayerPed) then
+        
+        if IsPedWalking(PlayerPed) or IsPedRunning(PlayerPed) or IsPedOnMount(PlayerPed) or IsPedInCombat(PlayerPed) or IsPedInMeleeCombat(PlayerPed) or IsPedInCover(PlayerPed) or IsPedOnVehicle(PlayerPed) then
+            DisplayRadar(false)
+        else
+            Wait(5000)
+            DisplayRadar(true)
+        end
 
+        if IsPlayerFreeAiming(Ped) and IsPedWeaponReadyToShoot(PlayerPed) then
+            DisplayRadar(false)
             weapon, weponhash = GetCurrentPedWeapon(PlayerPed, true)
             isBow = GetHashKey("WEAPON_BOW")
             if weponhash ~= isBow then                

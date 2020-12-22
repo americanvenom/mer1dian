@@ -22,27 +22,27 @@ Citizen.CreateThread(function()
     end
 end)
 
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if (IsControlJustPressed(0,0x26E9DC00))  then
+-- Citizen.CreateThread(function()
+--     while true do
+--         Citizen.Wait(0)
+--         if (IsControlJustPressed(0,0x26E9DC00))  then
 
-            local ped = PlayerPedId()
-            if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then
+--             local ped = PlayerPedId()
+--             if ( DoesEntityExist( ped ) and not IsEntityDead( ped ) ) then
     
-                RequestAnimDict( "mech_loco_m@generic@reaction@pointing@unarmed@stand" )
+--                 RequestAnimDict( "mech_loco_m@generic@reaction@pointing@unarmed@stand" )
     
-                while ( not HasAnimDictLoaded( "mech_loco_m@generic@reaction@pointing@unarmed@stand" ) ) do 
-                    Citizen.Wait( 100 )
-                end
+--                 while ( not HasAnimDictLoaded( "mech_loco_m@generic@reaction@pointing@unarmed@stand" ) ) do 
+--                     Citizen.Wait( 100 )
+--                 end
                 
              
-                TaskPlayAnim(ped, "mech_loco_m@generic@reaction@pointing@unarmed@stand", "point_fwd_0", 1.0, 8.0, 1500, 31, 0, true, 0, false, 0, false)
+--                 TaskPlayAnim(ped, "mech_loco_m@generic@reaction@pointing@unarmed@stand", "point_fwd_0", 1.0, 8.0, 1500, 31, 0, true, 0, false, 0, false)
                 
-            end
-        end
-    end
-end)
+--             end
+--         end
+--     end
+-- end)
 
 -- Citizen.CreateThread(function()
 --     RequestAnimDict('facials@gen_male@variations@normal')

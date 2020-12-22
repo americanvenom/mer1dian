@@ -11,13 +11,13 @@
   "costShirt": 0.90,
   "costSuspender": 0.20,
   "costVest": 0.90,
-  "costCoat": 4.0,
-  "costCoatClosed": 4.50,
+  "costCoat": 2.0,
+  "costCoatClosed": 2.50,
   "costPoncho": 1.20,
   "costCloak": 1.20,
   "costGlove": 0.50,
-  "costRingRh": 7.0,
-  "costRingLh": 7.0,
+  "costRingRh": 4.0,
+  "costRingLh": 4.0,
   "costBracelet": 1.90,
   "costGunbelt": 0.90,
   "costBelt": 0.60,
@@ -27,7 +27,7 @@
   "costSkirt": 0.60,
   "costChap": 0.40,
   "costBoots": 0.90,
-  "costSpurs": 3.20,
+  "costSpurs": 2.00,
   //end
 
   "Stores": [

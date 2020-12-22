@@ -1,121 +1,121 @@
 {
 
-  "PressToOpen": "Premi [~e~Spazio~q~] per accedere al negozio", // Título del Menú
-  "PressGuide": "Ruota <-[A] [D]-> | Zoom [W] o [S]",
-  "TitleMenuOutfitsUseBtn": "Indossa questo completo",
-  "TitleMenuOutfitsDeleteBtn": "Elimina questo completo",
+  "PressToOpen": "Pulsa [~e~Espacio~q~] para acceder a la tienda", // Título del Menú
+  "PressGuide": "Rotar <-[A] [D]-> | Cámaras [W] o [S]",
+  "TitleMenuOutfitsUseBtn": "Ponerse este outfit",
+  "TitleMenuOutfitsDeleteBtn": "Eliminar Outfit",
 
-  "TitleMenuClothes": "Camerino", // Título del Menú
-  "SubTitleMenuClothes": "Vesti il tuo personaggio", // Descripción del Menú
+  "TitleMenuClothes": "Vestidor", // Título del Menú
+  "SubTitleMenuClothes": "Viste a tu personaje", // Descripción del Menú
 
-  "NoExistValue": "Non esiste", // La opción que da cuando no hay opciones en algún apartado
+  "NoExistValue": "No hay", // La opción que da cuando no hay opciones en algún apartado
 
-  "NoMoney": "Non hai abbastanza soldi",
-  "SuccessfulBuy": "Hai pagato", // Muestra el dinero que te cobran
+  "NoMoney": "No tienes suficiente dinero",
+  "SuccessfulBuy": "Te han cobrado", // Muestra el dinero que te cobran
 
-  "TitleMenuOutfits": "I tuoi completi",
-  "SubTitleMenuOutfits": "Vestiti con un completo salvato in precedenza",
+  "TitleMenuOutfits": "Outfits",
+  "SubTitleMenuOutfits": "Vuelve a ponerte tu ropa guardada",
 
-  "PlaceHolderNewOutfit": "Dai un nome al tuo completo",
-  "ButtonNewOutfit": "Salva",
+  "PlaceHolderNewOutfit": "Si quieres guardar el outfit ponle nombre y guardalo",
+  "ButtonNewOutfit": "Guardar Outfit",
 
-  "MaskValue": "Maschera #",
-  "HatsValue": "Cappello #", // Las opciones del apartado de los sombreros
-  "GlassesValue": "Occhiali #", // Las opciones del apartado de los anteojos
-  "NeckwearValue": "Accessori per il collo #", // Las opciones del apartado de las prendas para el cuello
-  "TiesValue": "Cravatta #", // Las opciones del apartado de las corbatas
-  "ShirtsValue": "Camicia #", // Las opciones del apartado de las camisas
-  "SuspendersValue": "Bretelle #", // Las opciones del apartado de los tirantes
-  "VestsValue": "Gilet #", // Las opciones del apartado de los chalecos
-  "CoatsValue": "Soprabito #", // Las opciones del apartado de los abrigos
+  "MaskValue": "Máscara #",
+  "HatsValue": "Sombrero #", // Las opciones del apartado de los sombreros
+  "GlassesValue": "Anteojos #", // Las opciones del apartado de los anteojos
+  "NeckwearValue": "Prenda #", // Las opciones del apartado de las prendas para el cuello
+  "TiesValue": "Corbata #", // Las opciones del apartado de las corbatas
+  "ShirtsValue": "Camisa #", // Las opciones del apartado de las camisas
+  "SuspendersValue": "Tirantes #", // Las opciones del apartado de los tirantes
+  "VestsValue": "Chaleco #", // Las opciones del apartado de los chalecos
+  "CoatsValue": "Abrigo #", // Las opciones del apartado de los abrigos
   "PonchosValue": "Poncho #", // Las opciones del apartado de los ponchos
-  "CloaksValue": "Mantella #", // Las opciones del apartado de las capas
-  "GlovesValue": "Guanti #", // Las opciones del apartado de los guantes
-  "RingsValue": "Anello #", // Las opciones del apartado de los anillos
-  "BraceletsValue": "Braccialetto #", // Las opciones del apartado de las pulseras
-  "HolstersValue": "Cinturone #", // Las opciones del apartado de las cartucheras
-  "BeltsValue": "Cintura/Grembuile #", // Las opciones del apartado de los cinturones
-  "BucklesValue": "Fibbia #", // Las opciones del apartado de las hebillas
-  "PantsValue": "Pantalone #", // Las opciones del apartado de los pantalones
-  "SkirtsValue": "Gonna #", // Las opciones del apartado de las faldas
-  "ChapsValue": "Chaps #", // Las opciones del apartado de los zahones
-  "BootsValue": "Calzature #", // Las opciones del apartado de las botas
-  "SpursValue": "Speroni #", // Las opciones del apartado de las espuelas
-  "NoHatsValue": "Senza Cappello", // La opción que da cuando no hay opciones
-  "NoGlassesValue": "Senza Occhiali", // La opción que da cuando no hay opciones
-  "NoNeckwearValue": "Senza Accessori", // La opción que da cuando no hay opciones
-  "NoTiesValue": "Senza Cravatta", // La opción que da cuando no hay opciones
-  "NoShirtsValue": "Senza Camicia", // La opción que da cuando no hay opciones
-  "NoSuspendersValue": "Senza Bretelle", // La opción que da cuando no hay opciones
-  "NoVestsValue": "Senza Gilet", // La opción que da cuando no hay opciones
-  "NoCoatsValue": "Senza Soprabito", // La opción que da cuando no hay opciones
-  "NoPonchosValue": "Senza Poncho", // La opción que da cuando no hay opciones
-  "NoCloaksValue": "Senza Mantella", // La opción que da cuando no hay opciones
-  "NoGlovesValue": "Senza Guanti", // La opción que da cuando no hay opciones
-  "NoRingsValue": "Senza Anello", // La opción que da cuando no hay opciones
-  "NoBraceletsValue": "Senza Braccialetto", // La opción que da cuando no hay opciones
-  "NoHolstersValue": "Senza Cinturone", // La opción que da cuando no hay opciones
-  "NoBeltsValue": "Senza Cintura", // La opción que da cuando no hay opciones
-  "NoBucklesValue": "Senza Fibbia", // La opción que da cuando no hay opciones
-  "NoPantsValue": "Senza Pantalone", // La opción que da cuando no hay opciones
-  "NoSkirtsValue": "Senza Gonna", // La opción que da cuando no hay opciones
-  "NoChapsValue": "Senza Chaps", // La opción que da cuando no hay opciones
-  "NoBootsValue": "Senza Calzature", // La opción que da cuando no hay opciones
-  "NoSpursValue": "Senza Speroni", // La opción que da cuando no hay opciones
-  "NoMaskValue": "Senza Maschera", // La opción que da cuando no hay opciones
+  "CloaksValue": "Capa #", // Las opciones del apartado de las capas
+  "GlovesValue": "Guantes #", // Las opciones del apartado de los guantes
+  "RingsValue": "Anillo #", // Las opciones del apartado de los anillos
+  "BraceletsValue": "Pulsera #", // Las opciones del apartado de las pulseras
+  "HolstersValue": "Cartuchera #", // Las opciones del apartado de las cartucheras
+  "BeltsValue": "Cinturón #", // Las opciones del apartado de los cinturones
+  "BucklesValue": "Hebilla #", // Las opciones del apartado de las hebillas
+  "PantsValue": "Pantalón #", // Las opciones del apartado de los pantalones
+  "SkirtsValue": "Falda #", // Las opciones del apartado de las faldas
+  "ChapsValue": "Zahones #", // Las opciones del apartado de los zahones
+  "BootsValue": "Botas #", // Las opciones del apartado de las botas
+  "SpursValue": "Espuelas #", // Las opciones del apartado de las espuelas
+  "NoHatsValue": "Sin Sombrero", // La opción que da cuando no hay opciones
+  "NoGlassesValue": "Sin Anteojos", // La opción que da cuando no hay opciones
+  "NoNeckwearValue": "Cuello al descubierto", // La opción que da cuando no hay opciones
+  "NoTiesValue": "Sin Corbata", // La opción que da cuando no hay opciones
+  "NoShirtsValue": "Sin Camisa", // La opción que da cuando no hay opciones
+  "NoSuspendersValue": "Sin Tirantes", // La opción que da cuando no hay opciones
+  "NoVestsValue": "Sin Chaleco", // La opción que da cuando no hay opciones
+  "NoCoatsValue": "Sin Abrigo", // La opción que da cuando no hay opciones
+  "NoPonchosValue": "Sin Poncho", // La opción que da cuando no hay opciones
+  "NoCloaksValue": "Sin Capa", // La opción que da cuando no hay opciones
+  "NoGlovesValue": "Sin Guantes", // La opción que da cuando no hay opciones
+  "NoRingsValue": "Sin Anillo", // La opción que da cuando no hay opciones
+  "NoBraceletsValue": "Sin Pulsera", // La opción que da cuando no hay opciones
+  "NoHolstersValue": "Sin Cartuchera", // La opción que da cuando no hay opciones
+  "NoBeltsValue": "Sin Cinturón", // La opción que da cuando no hay opciones
+  "NoBucklesValue": "Sin Hebilla", // La opción que da cuando no hay opciones
+  "NoPantsValue": "Sin Pantalón", // La opción que da cuando no hay opciones
+  "NoSkirtsValue": "Sin Falda", // La opción que da cuando no hay opciones
+  "NoChapsValue": "Sin Zahones", // La opción que da cuando no hay opciones
+  "NoBootsValue": "Sin Botas", // La opción que da cuando no hay opciones
+  "NoSpursValue": "Sin Espuelas", // La opción que da cuando no hay opciones
+  "NoMaskValue": "Sin Máscara", // La opción que da cuando no hay opciones
 
-  "Hats": "Cappello",
-  "Glasses": "Occhiali",
-  "Masks": "Maschera",
-  "Neckwear": "Accessori collo",
-  "Ties": "Cravatta",
-  "Shirts": "Camicia",
-  "Suspenders": "Bretelle",
-  "Vests": "Gilet",
-  "Coats": "Soprabito",
-  "CoatsClosed": "Soprabito Chiuso",
-  "Ponchos": "Poncho",
-  "Cloaks": "Mantello",
-  "Gloves": "Guanti",
-  "RightRings": "Anello mano Destra",
-  "LeftRings": "Anello mano Sinistra",
-  "Bracelets": "Braccialetto",
-  "PrimaryHolsters": "Cinturone",
-  "Belts": "Cintura",
-  "Buckles": "Fibbia",
-  "SecondaryHolsters": "Fondina secundarias",
-  "Pants": "Pantaloni",
-  "Skirts": "Gonna",
-  "Chaps": "Chaps",
-  "Boots": "Calzature",
-  "Spurs": "Speroni",
+  "Hats": "Sombreros",
+  "Glasses": "Anteojos",
+  "Masks": "Máscaras",
+  "Neckwear": "Prendas para el cuello",
+  "Ties": "Corbatas",
+  "Shirts": "Camisas",
+  "Suspenders": "Tirantes",
+  "Vests": "Chalecos",
+  "Coats": "Abrigos",
+  "CoatsClosed": "Abrigos cerrados",
+  "Ponchos": "Ponchos",
+  "Cloaks": "Capas",
+  "Gloves": "Guantes",
+  "RightRings": "Anillos de la mano derecha",
+  "LeftRings": "Anillos de la mano izquierda",
+  "Bracelets": "Pulseras",
+  "PrimaryHolsters": "Cartucheras principales",
+  "Belts": "Cinturones",
+  "Buckles": "Hebillas",
+  "SecondaryHolsters": "Cartucheras secundarias",
+  "Pants": "Pantalones",
+  "Skirts": "Faldas",
+  "Chaps": "Zahones",
+  "Boots": "Botas",
+  "Spurs": "Espuelas",
 
-  "Finish": "Sei sicuro di confermare il tuo acquisto?", // Confirma la compra
+  "Finish": "Comprar Ropa", // Confirma la compra
 
   //Descripciones de los apartados del Menú de la ropa
-  "HatsDesc": "Scegli il Cappello, utili anche per basse temperature",
-  "GlassesDesc": "Scegli gli Occhiali",
-  "MasksDesc": "Scegli la Maschera",
-  "NeckwearDesc": "Scegli Accessori per il collo",
-  "TiesDesc": "Scegli Cravatta",
-  "ShirtsDesc": "Scegli Camicia, utili anche per basse temperature",
-  "SuspendersDesc": "Scegli le Bretelle",
-  "VestsDesc": "Scegli il Gilet, utile anche per basse temperature",
-  "CoatsDesc": "Scegli il Soprabito, utile anche per basse temperature",
-  "PonchosDesc": "Scegli il Poncho, utile anche per basse temperature",
-  "CloaksDesc": "Scegli la Mantella, utile anche per basse temperature",
-  "GlovesDesc": "Scegli Guanti",
-  "RightRingsDesc": "Scegli Anello della mano Destra",
-  "LeftRingsDesc": "Scegli Anello della mano Sinistra",
-  "BraceletsDesc": "Scegli Braccialetto",
-  "PrimaryHolstersDesc": "Scegli Cinturone",
-  "BeltsDesc": "Scegli Cintura",
-  "BucklesDesc": "Scegli Fibbia",
-  "SecondaryHolstersDesc": "Scegli Fondina",
-  "PantsDesc": "Scegli Pantalone, utile anche per basse temperature",
-  "SkirtsDesc": "Scegli Gonna",
-  "ChapsDesc": "Scegli Chaps",
-  "BootsDesc": "Scegli Calzature, utili anche per basse temperature",
-  "SpursDesc": "Scegli Speroni",
-  "FinishDesc": "Assicurati di aver fatto la scelta migliore."
+  "HatsDesc": "Elige el sombrero",
+  "GlassesDesc": "Elige los anteojos",
+  "MasksDesc": "Elige si quieres llevar máscara",
+  "NeckwearDesc": "Elige la prenda para el cuello",
+  "TiesDesc": "Elige la corbata",
+  "ShirtsDesc": "Elige la camisa",
+  "SuspendersDesc": "Elige los tirantes",
+  "VestsDesc": "Elige el chaleco",
+  "CoatsDesc": "Elige el abrigo",
+  "PonchosDesc": "Elige el poncho",
+  "CloaksDesc": "Elige la capa",
+  "GlovesDesc": "Elige los guantes",
+  "RightRingsDesc": "Elige los anillos de la mano derecha",
+  "LeftRingsDesc": "Elige los anillos de la mano izquierda",
+  "BraceletsDesc": "Elige la pulsera",
+  "PrimaryHolstersDesc": "Elige la cartuchera principal",
+  "BeltsDesc": "Elige el cinturón",
+  "BucklesDesc": "Elige la hebilla",
+  "SecondaryHolstersDesc": "Elige la cartuchera secundaria",
+  "PantsDesc": "Elige el pantalón",
+  "SkirtsDesc": "Elige la falda",
+  "ChapsDesc": "Elige los zahones",
+  "BootsDesc": "Elige las botas",
+  "SpursDesc": "Elige las espuelas",
+  "FinishDesc": "Asegurate de haber elegido todo bien."
 }

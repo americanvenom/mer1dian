@@ -8,8 +8,8 @@
   "Rooms": [
     {
       "Id": 17, // Poner una Id que no esté en uso | Put a non used Id
-      "Name": "Camera 2A", // Valentine
-      "Price": 50.0,
+      "Name": "Habitación 2A", // Valentine
+      "Price": 10.0,
       "DoorsStatus": [ -322.7286, 767.2573, 121.7059 ],
       "Doors": [
         [ -322.74942016602, 766.65637207031, 120.62321472168, 100.00 ]
@@ -21,8 +21,8 @@
     },
     {
       "Id": 18, // Poner una Id que no esté en uso | Put a non used Id
-      "Name": "Camera 2B", // Valentine
-      "Price": 50.0,
+      "Name": "Habitación 2B", // Valentine
+      "Price": 10.0,
       "DoorsStatus": [ -321.5221, 762.2973, 121.6815 ],
       "Doors": [
         [ -322.0837, 762.7338, 120.6229, 280.61566162109 ]
@@ -34,8 +34,8 @@
     },
     {
       "Id": -3, // Poner una Id que no esté en uso | Put a non used Id
-      "Name": "Camera 1", // Blackwater
-      "Price": 50.0,
+      "Name": "Habitación 1", // Blackwater
+      "Price": 10.0,
       "DoorsStatus": [ -818.63, -1323.6, 46.9 ],
       "Doors": [
         [ -818.6273, -1323.595, 46.89708, 270.01223754883 ]
@@ -47,8 +47,8 @@
     },
     {
       "Id": -4, // Poner una Id que no esté en uso | Put a non used Id
-      "Name": "Camera 1", // Strawberry
-      "Price": 50.0,
+      "Name": "Habitación 1", // Strawberry
+      "Price": 10.0,
       "DoorsStatus": [ -1820.96, -369.8, 165.5 ],
       "Doors": [
         [ -1820.96, -369.8047, 165.4982, 359.74084472656 ]
@@ -79,7 +79,7 @@
       "Id": 38658,
       "InteriorName": "lar_house_int",
       "Name": "Casa 1",
-      "Price": 3548.0,
+      "Price": 150.00,
       "DoorsStatus": [ 899.7, 265.8, 116.1 ],
       "Doors": [
         [ 899.7, 265.8, 116.1, 176.3 ]
@@ -91,7 +91,7 @@
       "Id": 56578,
       "InteriorName": "shack_dr_int",
       "Name": "Casa 4",
-      "Price": 1063.0,
+      "Price": 150.00,
       "DoorsStatus": [ -154.9, 1488.3, 116.3 ],
       "Doors": [
         [ -154.9, 1488.3, 116.3, 25.2 ]
@@ -103,7 +103,7 @@
       "Id": 25346,
       "InteriorName": "can_manor_int",
       "Name": "Casa 5",
-      "Price": 3357.0,
+      "Price": 150.00,
       "DoorsStatus": [ 2494.1, -419.8, 44.4 ],
       "Doors": [
         [ 2494.1, -419.8, 44.4, 233.7 ]
@@ -115,7 +115,7 @@
       "Id": 16130,
       "InteriorName": "gri_g2_shack_int",
       "Name": "Casa 8",
-      "Price": 1794.0,
+      "Price": 150.00,
       "DoorsStatus": [ -1958.7, 2159.7, 327.5 ],
       "Doors": [
         [ -1958.7, 2159.7, 327.5, 82.4 ]
@@ -127,7 +127,7 @@
       "Id": 49922,
       "InteriorName": "gri_g1_shack_int",
       "Name": "Casa 9",
-      "Price": 2827.0,
+      "Price": 150.00,
       "DoorsStatus": [ -1019.5, 1687.4, 244.3 ],
       "Doors": [
         [ -1019.5, 1687.4, 244.3, 18.0 ]
@@ -139,7 +139,7 @@
       "Id": 43266,
       "InteriorName": "mic_hideout_int",
       "Name": "Casa 10",
-      "Price": 2218.0,
+      "Price": 150.00,
       "DoorsStatus": [ -1495.0, 1247.1, 314.4 ],
       "Doors": [
         [ -1495.0, 1247.1, 314.4, 288.6 ]
@@ -151,7 +151,7 @@
       "Id": 36354,
       "InteriorName": "shack_bv_int",
       "Name": "Casa 12",
-      "Price": 3112.0,
+      "Price": 150.00,
       "DoorsStatus": [ -2460.0, 838.6, 146.5 ],
       "Doors": [
         [ -2460.0, 838.6, 146.5, 350.2 ]
@@ -163,7 +163,7 @@
       "Id": 33026,
       "InteriorName": "but_shack_int",
       "Name": "Casa 13",
-      "Price": 2479.0,
+      "Price": 150.00,
       "DoorsStatus": [ -2533.6, 1172.5, 226.0 ],
       "Doors": [
         [ -2533.6, 1172.5, 226.0, 318.2 ]
@@ -175,7 +175,7 @@
       "Id": 15362,
       "InteriorName": "cro_house_int",
       "Name": "Casa 15",
-      "Price": 5386.0,
+      "Price": 150.00,
       "DoorsStatus": [ 1117.0, 485.7, 97.4 ],
       "Doors": [
         [ 1117.0, 485.7, 97.4, 35.7 ]
@@ -187,7 +187,7 @@
       "Id": 8194,
       "InteriorName": "aur_shack01_int",
       "Name": "Casa 17",
-      "Price": 3281.0,
+      "Price": 150.00,
       "DoorsStatus": [ -2579.5, -1385.8, 149.4 ],
       "Doors": [
         [ -2579.5, -1385.8, 149.4, 5.2 ],
@@ -200,7 +200,7 @@
       "Id": 55298,
       "InteriorName": "din_house_int",
       "Name": "Casa 18",
-      "Price": 4498.0,
+      "Price": 150.00,
       "DoorsStatus": [ 215.2, 987.5, 190.9 ],
       "Doors": [
         [ 215.2, 987.5, 190.9, 254.7 ],
@@ -225,7 +225,7 @@
       "Id": 3586,
       "InteriorName": "m05_mine_int",
       "Name": "Casa 21",
-      "Price": 4563.0,
+      "Price": 150.0,
       "DoorsStatus": [ 2238.0, -141.6, 47.7 ],
       "Doors": [
         [ 2238.0, -141.6, 47.7, 125.0 ],
@@ -238,7 +238,7 @@
       "Id": 57090,
       "InteriorName": "grh_house_int",
       "Name": "Casa 22",
-      "Price": 3362.0,
+      "Price": 150.0,
       "DoorsStatus": [ -64.2, -394.2, 72.3 ],
       "Doors": [
         [ -64.2, -394.2, 72.3, 321.8 ]
@@ -251,7 +251,7 @@
       "Id": 23810,
       "InteriorName": "lof_outpost_int",
       "Name": "Casa 25",
-      "Price": 4624.0,
+      "Price": 150.0,
       "DoorsStatus": [ 1933.1, 1949.8, 266.2 ],
       "Doors": [
         [ 1933.1, 1949.8, 266.2, 171.4 ]
@@ -264,7 +264,7 @@
       "Id": 13570,
       "InteriorName": "shack_cwb_int",
       "Name": "Casa 26",
-      "Price": 3392.0,
+      "Price": 150.0,
       "DoorsStatus": [ 1981.1, 1195.0, 171.2 ],
       "Doors": [
         [ 1981.1, 1195.0, 171.2, 239.6 ]
@@ -277,7 +277,7 @@
       "Id": 32001,
       "InteriorName": "shack_cwb_int",
       "Name": "Casa 28",
-      "Price": 3777.0,
+      "Price": 150.0,
       "DoorsStatus": [ 1866.4, 581.1, 113.9 ],
       "Doors": [
         [ 1866.4, 581.1, 113.9, 342.5 ]
@@ -290,7 +290,7 @@
       "Id": 27138,
       "InteriorName": "man_cabin01_int",
       "Name": "Casa 31",
-      "Price": 3353.0,
+      "Price": 150.0,
       "DoorsStatus": [ -1976.3, -1664.8, 118.1 ],
       "Doors": [
         [ -1976.3, -1664.8, 118.1, 153.6 ]
@@ -303,7 +303,7 @@
       "Id": 43778,
       "InteriorName": "shack_it_01_int",
       "Name": "Casa 33",
-      "Price": 3664.0,
+      "Price": 150.0,
       "DoorsStatus": [ 2839.7, 1683.9, 129.5 ],
       "Doors": [
         [ 2839.7, 1683.9, 129.5, 72.6 ]
@@ -316,7 +316,7 @@
       "Id": 20226,
       "InteriorName": "mfr_cottage01_int",
       "Name": "Casa 34",
-      "Price": 4748.0,
+      "Price": 150.0,
       "DoorsStatus": [ -2369.3, -2390.9, 62.6 ],
       "Doors": [
         [ -2369.3, -2390.9, 62.6, 263.2 ]
@@ -329,7 +329,7 @@
       "Id": 22274,
       "InteriorName": "shack_pl_int",
       "Name": "Casa 36",
-      "Price": 2190.0,
+      "Price": 150.0,
       "DoorsStatus": [ 2543.0, 699.3, 80.8 ],
       "Doors": [
         [ 2543.0, 699.3, 80.8, 192.3  ]
@@ -342,7 +342,7 @@
       "Id": 13826,
       "InteriorName": "dai_farmhouse01_int",
       "Name": "Casa 39",
-      "Price": 5599.0,
+      "Price": 150.0,
       "DoorsStatus": [ 1376.2, -872.5, 70.2],
       "Doors": [
         [ 1376.2, -872.5, 70.2, 119.6  ],
@@ -356,7 +356,7 @@
       "Id": 49154,
       "InteriorName": "new_man_bronte",
       "Name": "Casa 42",
-      "Price": 100000.0,
+      "Price": 2000.0,
       "DoorsStatus": [ 2388.8, -1216.3, 47.3],
       "Doors": [
         [ 2388.8, -1216.3, 47.3, 95.1  ],
@@ -371,7 +371,7 @@
       "Id": 9218,
       "InteriorName": "shack_ai_int",
       "Name": "Casa 43",
-      "Price": 3051.0,
+      "Price": 200.0,
       "DoorsStatus": [ 3024.5, 1776.3, 84.3],
       "Doors": [
         [ 3024.5, 1776.3, 84.3, 342.6 ]
@@ -384,8 +384,8 @@
     {
       "Id": 34306,
       "InteriorName": "br_tre_house_cheat01",
-      "Name": "Capanna a Braithwaite Manor",
-      "Price": 2145.0,
+      "Name": "Cabaña de Braithwaite Manor",
+      "Price": 200.0,
       "DoorsStatus": [ 1115.467, -1989.276, 55.7 ],
       "Doors": [
         [ 1115.8677978516, -1989.7192382813, 54.376285552979, 115.13194274902 ]
@@ -396,8 +396,8 @@
     {
       "Id": 10754,
       "InteriorName": "rdl_house_wilchest",
-      "Name": "Capanna a Río del Lobo Rock",
-      "Price": 2136.0,
+      "Name": "Cabaña de Río del Lobo Rock",
+      "Price": 200.0,
       "DoorsStatus": [ -3481.58, -3468.89, 0.26 ],
       "Doors": [
         [ -3481.534, -3469.404, -0.8164485, 90.343109130859 ]
@@ -408,8 +408,8 @@
     {
       "Id": 14338,
       "InteriorName": "clean_abe",
-      "Name": "Casa vicino al fiume Kamassa",
-      "Price": 4983.0,
+      "Name": "Casa del río Kamassa",
+      "Price": 200.0,
       "DoorsStatus": [ 1791.67, -83.81, 56.86 ],
       "Doors": [
         [ 1792.0642089844, -83.22380065918, 55.798538208008, 266.74279785156 ]
@@ -420,8 +420,8 @@
     {
       "Id": 2,
       "InteriorName": "che_maincabin_occupied",
-      "Name": "Fattoria Window Rock",
-      "Price": 4274.0,
+      "Name": "Granja Window Rock",
+      "Price": 200.0,
       "DoorsStatus": [ -398.143, 1722.365, 216.4293 ],
       "Doors": [
         [ -398.64300537109, 1722.3649902344, 215.42929077148, 19.642013549805 ],
@@ -433,8 +433,8 @@
     {
       "Id": 22018,
       "InteriorName": "cat_house_propset",
-      "Name": "Capanna sul fiume Lannachee",
-      "Price": 4196.0,
+      "Name": "Cabaña en el río Lannachee",
+      "Price": 200.0,
       "DoorsStatus": [ 1322.48, -2280.04, 50.59 ],
       "Doors": [
         [ 1322.4514160156, -2279.4130859375, 49.522243499756, 305.11666870117 ],
@@ -446,8 +446,8 @@
     {
       "Id": 2306,
       "InteriorName": "vet_fishtrophy",
-      "Name": "Capanna al Lago O'Creagh's",
-      "Price": 2156.0,
+      "Name": "Cabaña del Lago O'Creagh's",
+      "Price": 150.0,
       "DoorsStatus": [ 1702.27, 1513.79, 147.92 ],
       "Doors": [
         [ 1697.4683837891, 1508.2376708984, 146.8824005127, 99.574020385742 ],
@@ -459,8 +459,8 @@
     {
       "Id": 23554,
       "InteriorName": "lt_murder_before",
-      "Name": "Capanna sulle pianure di Southfield",
-      "Price": 4528.0,
+      "Name": "Cabaña en Southfield Plains",
+      "Price": 200.0,
       "DoorsStatus": [ 1136.39, -977.3, 69.45 ],
       "Doors": [
         [ 1136.9982910156, -977.45391845703, 68.385864257813, 145.2996673584 ]
@@ -471,8 +471,8 @@
     {
       "Id": 24834,
       "InteriorName": "shb_p_mansion_01",
-      "Name": "Casa nella Palude",
-      "Price": 95000.0,
+      "Name": "Casa en el pantano",
+      "Price": 500.0,
       "DoorsStatus": [ 1891.66, -1858.4, 43.2 ],
       "Doors": [
         [ 1890.6436767578, -1859.1870117188, 42.147537231445, 49.99995803833 ],
@@ -485,8 +485,8 @@
     {
       "Id": 26114,
       "InteriorName": "shack_it_02_cheat01",
-      "Name": "Capanna nella Roanoke Valley",
-      "Price": 2692.0,
+      "Name": "Cabaña en el Valle de Roanoke",
+      "Price": 150.0,
       "DoorsStatus": [ 2627.75, 1693.87, 115.76 ],
       "Doors": [
         [ 2628.2214355469, 1694.3289794922, 114.66619110107, 258.48046875 ]
@@ -497,8 +497,8 @@
     {
       "Id": 27650,
       "InteriorName": "rad_house_int_medicine",
-      "Name": "Casa a Rhodes",
-      "Price": 3570.0,
+      "Name": "Casa de Rhodes",
+      "Price": 175.0,
       "DoorsStatus": [ 1113.98, -1304.82, 66.46 ],
       "Doors": [
         [ 1114.6071777344, -1305.0754394531, 65.41828918457, 195.23782348633 ],
@@ -510,8 +510,8 @@
     {
       "Id": 27906,
       "InteriorName": "col_cabin_lights_on",
-      "Name": "Capanna nella città Innevata",
-      "Price": 3330.0,
+      "Name": "Cabaña en la Ciudad Nevada",
+      "Price": 80.0,
       "DoorsStatus": [ -1348.19, 2435.88, 308.46 ],
       "Doors": [
         [ -1347.9483642578, 2435.2036132813, 307.49612426758, 72.000045776367 ],
@@ -523,8 +523,8 @@
     {
       "Id": 28162,
       "InteriorName": "adl_winter01_trapdoorclosed",
-      "Name": "Casa nella Neve",
-      "Price": 5280.0,
+      "Name": "Casa de la Nieve",
+      "Price": 70.0,
       "DoorsStatus": [ -556.81, 2699.32, 320.47 ],
       "Doors": [
         [ -556.41680908203, 2698.8635253906, 319.38018798828, 147.29988098145 ],
@@ -536,8 +536,8 @@
     {
       "Id": 28418,
       "InteriorName": "_car_house_int_before_ransack",
-      "Name": "Casa nella periferia di Valentine",
-      "Price": 5849.0,
+      "Name": "Casa a las afueras de Valentine",
+      "Price": 200.0,
       "DoorsStatus": [ 778.75, 848.85, 118.97 ],
       "Doors": [
         [ 778.96936035156, 849.52600097656, 117.91557312012, 287.41876220703 ],
@@ -549,8 +549,8 @@
     {
       "Id": 30722,
       "InteriorName": "shack_sc_int_pulp_novel",
-      "Name": "Capanna sul fiume Dakota",
-      "Price": 3396.0,
+      "Name": "Cabaña en el río Dakota",
+      "Price": 150.0,
       "DoorsStatus": [ -691.82, 1042.65, 135.07 ],
       "Doors": [
         [ -692.42681884766, 1042.9229736328, 134.02406311035, 305.10192871094 ]
@@ -561,8 +561,8 @@
     {
       "Id": 32514,
       "InteriorName": "loansharking_chair_col",
-      "Name": "Casa sul fiume Dakota",
-      "Price": 4861.0,
+      "Name": "Casa Dakota",
+      "Price": 150.0,
       "DoorsStatus": [ -609.25, -26.24, 86.02 ],
       "Doors": [
         [ -608.73846435547, -26.612947463989, 84.997634887695, 109.98304748535 ],
@@ -574,8 +574,8 @@
     {
       "Id": 39938,
       "InteriorName": "pro_worker_bedmade",
-      "Name": "Casa agricola a Big Valley",
-      "Price": 5512.0,
+      "Name": "Casa de campo en Big Valley",
+      "Price": 220.0,
       "DoorsStatus": [ -2591.13, 457.31, 147.06 ],
       "Doors": [
         [ -2590.8410644531, 457.83801269531, 146.01396179199, 260.43243408203 ],
@@ -599,8 +599,8 @@
     {
       "Id": 4610,
       "InteriorName": "han_int_tables_flipped",
-      "Name": "Casa sul fiume Little Creek",
-      "Price": 5356.0,
+      "Name": "Casa en el río Little Creek",
+      "Price": 150.0,
       "DoorsStatus": [ -2181.95, 716.08, 122.67 ],
       "Doors": [
         [ -2182.5109863281, 716.46356201172, 121.62875366211, 295.26788330078 ]
@@ -625,8 +625,8 @@
     {
       "Id": 53250,
       "InteriorName": "wat_int_chimneyfire",
-      "Name": "Capanna sul fiume Little Creek",
-      "Price": 3838.0,
+      "Name": "Cabaña en el río Little Creek",
+      "Price": 100.0,
       "DoorsStatus": [ -1815.78, 654.99, 131.92 ],
       "Doors": [
         [ -1815.1489257813, 654.96380615234, 130.88250732422, 210.68305969238 ]
@@ -637,8 +637,8 @@
     {
       "Id": 54786,
       "InteriorName": "six_table_static",
-      "Name": "Capanna nella foresta di Cumberland",
-      "Price": 3463.0,
+      "Name": "Cabaña en el bosque de Cumberland",
+      "Price": 120.0,
       "DoorsStatus": [ -66.55, 1235.65, 170.83 ],
       "Doors": [
         [ -67.303237915039, 1235.8376464844, 169.76470947266, 300.10238647461 ]
@@ -649,8 +649,8 @@
     {
       "Id": 56322,
       "InteriorName": "lak_dockhouse_undamaged",
-      "Name": "Capanna a Lakay",
-      "Price": 4388.0,
+      "Name": "Cabaña de Lakay",
+      "Price": 100.0,
       "DoorsStatus": [ 2234.78, -773.82, 43.59 ],
       "Doors": [
         [ 2235.0400390625, -774.42010498047, 42.523487091064, 86.271003723145 ],
@@ -663,8 +663,8 @@
     {
       "Id": 62722,
       "InteriorName": "hf_pulp_novel",
-      "Name": "Casetta vicino Emerald Station",
-      "Price": 3199.0,
+      "Name": "Casita Emerald Station",
+      "Price": 100.0,
       "DoorsStatus": [ 1887.61, 298.13, 77.1 ],
       "Doors": [
         [ 1888.1700439453, 297.95916748047, 76.076202392578, 180.0004119873 ]
@@ -675,8 +675,8 @@
     {
       "Id": 62978,
       "InteriorName": "ven_int_lights_on",
-      "Name": "Casa sul fiume Don Julio",
-      "Price": 4227.0,
+      "Name": "Casa Don Julio",
+      "Price": 50.0,
       "DoorsStatus": [ -3551.88, -3011.66, 11.87 ],
       "Doors": [
         [ -3552.3842773438, -3012.0998535156, 10.820337295532, 11.56501865387 ],
@@ -688,8 +688,8 @@
     {
       "Id": 64514,
       "InteriorName": "ple_house_int_cheatcode_01",
-      "Name": "Casetta a Cholla Springs",
-      "Price": 3117.0,
+      "Name": "Casita Cholla Springs",
+      "Price": 80.0,
       "DoorsStatus": [ -4366.43, -2415.81, 20.44 ],
       "Doors": [
         [ -4366.0122070313, -2416.3056640625, 19.423376083374, 104.93343353271 ]
@@ -700,8 +700,8 @@
     {
       "Id": 67330,
       "InteriorName": "sil_house_wilchest72",
-      "Name": "Casa a nord di Tumbleweed",
-      "Price": 3681.0,
+      "Name": "Casa norte de Tumbleweed",
+      "Price": 80.0,
       "DoorsStatus": [ -5551.83, -2400.77, -8.68 ],
       "Doors": [
         [ -5552.146484375, -2401.5205078125, -9.7140893936157, 19.643379211426 ],
@@ -713,8 +713,8 @@
     {
       "Id": 70146,
       "InteriorName": "shb_int_mp",
-      "Name": "Capanna a Big Valley",
-      "Price": 3237.0,
+      "Name": "Cabaña de Big Valley",
+      "Price": 75.0,
       "DoorsStatus": [ -2371.31, 474.91, 132.3 ],
       "Doors": [
         [ -2371.8505859375, 475.1383972168, 131.25, 0.0 ],
@@ -726,8 +726,8 @@
     {
       "Id": 72450,
       "InteriorName": "rocky_int_clean",
-      "Name": "Capanna vicino alla cascata Brandywine",
-      "Price": 3300.0,
+      "Name": "Cabaña cascada Brandywine",
+      "Price": 120.0,
       "DoorsStatus": [ 2989.21, 2193.15, 166.83 ],
       "Doors": [
         [ 2989.1081542969, 2193.7414550781, 165.73979187012, 249.73983764648 ],
@@ -739,8 +739,8 @@
     {
       "Id": 770,
       "InteriorName": "inn_lonnie_firelit",
-      "Name": "Capanna nella foresta di Eris Fields",
-      "Price": 3399.0,
+      "Name": "Cabaña del bosque Eris Fields",
+      "Price": 135.0,
       "DoorsStatus": [ 1626.71, -365.96, 75.95 ],
       "Doors": [
         [ 1627.2501220703, -366.25610351563, 74.909873962402, 179.95175170898 ]
@@ -751,8 +751,8 @@
     {
       "Id": 9986,
       "InteriorName": "intgroup_downes_before_move",
-      "Name": "Casa vicino alla cascata di Cumberland",
-      "Price": 4755.0,
+      "Name": "Casa de la cascada de Cumberland",
+      "Price": 110.0,
       "DoorsStatus": [ -818.0, 351.4, 98.13 ],
       "Doors": [
         [ -818.61383056641, 351.16165161133, 97.108840942383, 349.84243774414 ],
@@ -764,8 +764,8 @@
     {
       "Id": 72706,
       "InteriorName": "bra_mansion_alt",
-      "Name": "Casa del Governatore Walker",
-      "Price": 1000000.0,
+      "Name": "Casa del Governador",
+      "Price": 2000.0,
       "DoorsStatus": [ 1011.01, -1762.31, 47.63 ],
       "Doors": [
         [ 1012.2030029297, -1762.0412597656, 46.599708557129, 0.0 ], // Puerta Principal 1 Derecha desde dentro

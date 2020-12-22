@@ -39,7 +39,8 @@ Config.UpperEmotes =
 Config.UpperEmotes2 =
 {
 	[24] = { Name = "Llamar\npuerta", Dict = "WORLD_HUMAN_KNOCK_DOOR", Anim = "WORLD_HUMAN_KNOCK_DOOR", Dur = 200000, Type = -21 },
-	[25] = { Name = "Sentarse\nsuelo 1", Dict = "WORLD_HUMAN_FIRE_SIT", Anim = "WORLD_HUMAN_FIRE_SIT", Dur = 200000, Type = -21 }, --Bella
+	--[25] = { Name = "Sentarse\nsuelo 1", Dict = "WORLD_HUMAN_FIRE_SIT", Anim = "WORLD_HUMAN_FIRE_SIT", Dur = 200000, Type = -21 }, --Bella
+	[25] = { Name = "Sentarse normal", Dict = "PROP_CAMP_FIRE_SEATED_MALE_B__TRANS__SEAT_BENCH_MALE_A", Anim = "PROP_CAMP_FIRE_SEATED_MALE_B__TRANS__SEAT_BENCH_MALE_A", Dur = 200000, Type = -21 }, --Bella
 	[26] = { Name = "Esperar", Dict = "WORLD_HUMAN_WAITING_IMPATIENT", Anim = "WORLD_HUMAN_WAITING_IMPATIENT", Dur = 200000, Type = -21 },
 	[27] = { Name = "Apoyarse 1", Dict = "WORLD_HUMAN_SHOPKEEPER", Anim = "WORLD_HUMAN_SHOPKEEPER", Dur = 200000, Type = -21 },
 	[28] = { Name = "Apoyarse 2", Dict = "WORLD_HUMAN_SHOPKEEPER_CATALOG", Anim = "WORLD_HUMAN_SHOPKEEPER_CATALOG", Dur = 200000, Type = -21 },

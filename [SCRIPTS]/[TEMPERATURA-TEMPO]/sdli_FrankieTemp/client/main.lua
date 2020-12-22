@@ -39,7 +39,7 @@ end)
 
 Citizen.CreateThread(function() 
 	while true do 
-		Wait(60000)
+		Wait(900000)
 
 		if tonumber(roundtemp) <= -8 then
 			--TriggerEvent("redemrp_notification:start", "Stai congelando copriti al più pesto,altrimenti è la fine!", 5, "error")

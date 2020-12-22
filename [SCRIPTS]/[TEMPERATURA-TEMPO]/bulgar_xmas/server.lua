@@ -1,5 +1,5 @@
-local aktualnapogoda = "SNOW"
-local minuty = 1 --(25) Time To Change Weather 25 Min
+local aktualnapogoda = "SUNNY"
+local minuty = 45 --(25) Time To Change Weather 25 Min
 
 function changeweather()
 	local myTable = {"SUNNY", "SNOWLIGHT", "SNOW", "GROUNDBLIZZARD", "WHITEOUT", "SUNNY", "SUNNY", "SUNNY", "SNOW", "SUNNY", "SNOW"}

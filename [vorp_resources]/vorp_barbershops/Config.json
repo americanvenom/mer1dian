@@ -5,7 +5,7 @@
 
   "BarberShops": [
     {
-      "name": "Barbiere Saint Denis",
+      "name": "Barbero Saint Denis",
       "BlipIcon": -2090472724,
       "EnterShop": [ 2657.73, -1181.76, 53.27, 1.5 ],
       "ExitShop": [ 2658.06, -1181.47, 52.3, 259.55 ],
@@ -13,7 +13,7 @@
       "NPCModel": "S_M_M_Barber_01"
     },
     {
-      "name": "Barbiere Saint Denis",
+      "name": "Barbero Saint Denis",
       "BlipIcon": -2090472724,
       "EnterShop": [ 2655.25, -1182.22, 53.27, 1.5 ],
       "ExitShop": [ 265.53, -1180.11, 53.27, 0.28 ],
@@ -21,7 +21,7 @@
       "NPCModel": "U_M_M_ValBarber_01"
     },
     {
-      "name": "Barbiere Saint Denis",
+      "name": "Barbero Saint Denis",
       "BlipIcon": -2090472724,
       "EnterShop": [ 2653.65, -1182.20, 53.27, 1.5 ],
       "ExitShop": [ 2653.65, -1182.20, 53.27, 172.78 ],
@@ -29,7 +29,7 @@
       "NPCModel": "S_M_M_Barber_01"
     },
     {
-      "name": "Barbiere BlackWater",
+      "name": "Barbero BlackWater",
       "BlipIcon": -2090472724,
       "EnterShop": [ -815.95, -1366.35, 43.70, 1.5 ],
       "ExitShop": [ -815.31, -1366.03, 43.75, 268.81 ],
@@ -37,7 +37,7 @@
       "NPCModel": "S_M_M_Barber_01"
     },
     {
-      "name": "Barbiere Valentine",
+      "name": "Barbero Valentine",
       "BlipIcon": -2090472724,
       "EnterShop": [ -306.9, 814.30, 119.2, 1.5 ],
       "ExitShop": [ -307.26, 812.29, 118.99, 189.89 ],

@@ -24,3 +24,7 @@ Citizen.CreateThread(function()
 
     end
 end)
+
+RegisterCommand('hour', function(source,rawCommand)
+    print(GetClockHours())
+end)

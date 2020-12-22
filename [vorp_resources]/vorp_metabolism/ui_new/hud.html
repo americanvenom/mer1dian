@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Vorp Metabolism</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Water -->
+    <div class="pb-vorp-water">
+        <div class="water"></div>
+    </div>
+
+    <!-- Food -->
+    <div class="pb-vorp-food">
+        <div class="food"></div>
+    </div>
+	
+	<!-- Water Widescreen -->
+    <div class="pb-vorp-water-wide">
+        <div class="water-wide"></div>
+    </div>
+
+    <!-- Food Widescreen-->
+    <div class="pb-vorp-food-wide">
+        <div class="food-wide"></div>
+    </div>
+
+    <script type="text/javascript">
+		var scriptSrc = 'js/defaults.js';
+			if ($(window).width() == 1920)
+			scriptSrc = 'js/default.js';
+		else if ($(window).width() == 2560)
+			scriptSrc = 'js/widescreen.js';
+		var script = document.createElement('script');
+			script.src = scriptSrc;
+		var head = document.getElementsByTagName('head')[0];
+			head.appendChild(script);
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+</body>
+
+</html>
