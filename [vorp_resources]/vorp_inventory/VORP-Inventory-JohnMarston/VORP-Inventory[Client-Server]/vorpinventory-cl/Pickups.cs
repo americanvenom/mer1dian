@@ -360,7 +360,7 @@ namespace vorpinventory_cl
         {
             Debug.WriteLine("Prompt creado");
             PickPrompt = Function.Call<int>((Hash)0x04F97DE45A519419);
-            long str = Function.Call<long>(Hash._CREATE_VAR_STRING, 10, "LITERAL_STRING", "Raccogli");
+            long str = Function.Call<long>(Hash._CREATE_VAR_STRING, 10, "LITERAL_STRING", "Recoger");
             Function.Call((Hash)0x5DD02A8318420DD7, PickPrompt, str);
             Function.Call((Hash)0xB5352B7494A08258, PickPrompt, 0xF84FA74F);
             Function.Call((Hash)0x8A0FB4D03A630D21, PickPrompt, false);

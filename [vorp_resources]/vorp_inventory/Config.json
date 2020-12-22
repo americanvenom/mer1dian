@@ -35,7 +35,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Canna Da Pesca",
+            "Name": "Caña de pesca",
             "HashName": "WEAPON_FISHINGROD",
             "WeaponModel": "w_melee_fishingpole02",
             "Price": 100.0,
@@ -43,7 +43,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Coltello da Caccia",
+            "Name": "Cuchillo de caza",
             "HashName": "WEAPON_MELEE_KNIFE",
             "WeaponModel": "w_melee_knife02",
             "Price": 100.0,
@@ -55,7 +55,7 @@
             ]
         },
         {
-            "Name": "Coltello da Caccia Guerra Civile",
+            "Name": "Cuchillo de caza de Guerra Civil",
             "HashName": "WEAPON_MELEE_KNIFE_CIVIL_WAR",
             "WeaponModel": "w_melee_knife16",
             "Price": 100.0,
@@ -63,7 +63,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Coltello da Caccia Mandibola",
+            "Name": "Cuchillo de caza artesano",
             "HashName": "WEAPON_MELEE_KNIFE_JAWBONE",
             "WeaponModel": "w_melee_knife03",
             "Price": 100.0,
@@ -71,7 +71,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Coltello Da Minatore",
+            "Name": "Cuchillo de minero",
             "HashName": "WEAPON_MELEE_KNIFE_MINER",
             "WeaponModel": "w_melee_knife14",
             "Price": 100.0,
@@ -79,7 +79,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Coltello a Doppia Lama Inciso ",
+            "Name": "Cuchillo con gravado doble hoja",
             "HashName": "WEAPON_MELEE_KNIFE_VAMPIRE",
             "WeaponModel": "w_melee_knife18",
             "Price": 100.0,
@@ -87,7 +87,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Mannaia",
+            "Name": "Cuchillo de carnicero",
             "HashName": "WEAPON_MELEE_CLEAVER",
             "WeaponModel": "w_melee_hatchet02",
             "Price": 100.0,
@@ -95,7 +95,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Ascia",
+            "Name": "Hacha",
             "HashName": "WEAPON_MELEE_HATCHET",
             "WeaponModel": "w_melee_hatchet01",
             "Price": 100.0,
@@ -103,7 +103,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Ascia a Doppia Punta",
+            "Name": "Hacha de doble punta",
             "HashName": "WEAPON_MELEE_HATCHET_DOUBLE_BIT",
             "WeaponModel": "w_melee_hatchet06",
             "Price": 100.0,
@@ -111,7 +111,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Ascia da Taglio",
+            "Name": "Hacha de corte",
             "HashName": "WEAPON_MELEE_HATCHET_HEWING",
             "WeaponModel": "w_melee_hatchet05",
             "Price": 100.0,
@@ -119,7 +119,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Ascia da Caccia",
+            "Name": "Hacha de caza",
             "HashName": "WEAPON_MELEE_HATCHET_HUNTER",
             "WeaponModel": "w_melee_hatchet07",
             "Price": 100.0,
@@ -127,7 +127,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Ascia Vichinga",
+            "Name": "Hacha vikinga",
             "HashName": "WEAPON_MELEE_HATCHET_VIKING",
             "WeaponModel": "w_melee_hatchet04",
             "Price": 100.0,
@@ -147,7 +147,7 @@
             "CompsHash": []
         },
         {
-            "Name": "Coltelli da Lancio",
+            "Name": "Cuchillo arrojadizos",
             "HashName": "WEAPON_THROWN_THROWING_KNIVES",
             "WeaponModel": "w_melee_knife05",
             "Price": 100.0,
@@ -347,7 +347,7 @@
             ]
         },
         {
-            "Name": "Revolver a Doppia Azione",
+            "Name": "Revolver de doble acción",
             "HashName": "WEAPON_REVOLVER_DOUBLEACTION",
             "WeaponModel": "w_revolver_doubleaction01",
             "Price": 100.0,
@@ -403,7 +403,7 @@
             ]
         },
         {
-            "Name": "Fucile Varmint",
+            "Name": "Fusil Varmint",
             "HashName": "WEAPON_RIFLE_VARMINT",
             "WeaponModel": "w_repeater_pumpaction01",
             "Price": 100.0,
@@ -427,7 +427,7 @@
             ]
         },
         {
-            "Name": "Ripetitore Winchester",
+            "Name": "Repetidora Winchester",
             "HashName": "WEAPON_REPEATER_WINCHESTER",
             "WeaponModel": "w_repeater_winchester01",
             "Price": 100.0,
@@ -451,7 +451,7 @@
             ]
         },
         {
-            "Name": "Ripetitore Henry",
+            "Name": "Repetidora Henry",
             "HashName": "WEAPON_REPEATER_HENRY",
             "WeaponModel": "w_repeater_henry01",
             "Price": 100.0,
@@ -475,7 +475,7 @@
             ]
         },
         {
-            "Name": "Ripetitore Evans",
+            "Name": "Repetidora Evans",
             "HashName": "WEAPON_REPEATER_EVANS",
             "WeaponModel": "w_repeater_evans01",
             "Price": 100.0,
@@ -499,7 +499,7 @@
             ]
         },
         {
-            "Name": "Carabina a Ripetizione",
+            "Name": "Carabina de repetición",
             "HashName": "WEAPON_REPEATER_CARBINE",
             "WeaponModel": "w_repeater_carbine01",
             "Price": 100.0,
@@ -524,7 +524,7 @@
             ]
         },
         {
-            "Name": "Fucile Rolling Block",
+            "Name": "Fusil Rolling Block",
             "HashName": "WEAPON_SNIPERRIFLE_ROLLINGBLOCK",
             "WeaponModel": "w_rifle_rollingblock01",
             "Price": 100.0,
@@ -554,7 +554,7 @@
             ]
         },
         {
-            "Name": "Fucile Carcano",
+            "Name": "Fusil Carcano",
             "HashName": "WEAPON_SNIPERRIFLE_CARCANO",
             "WeaponModel": "w_rifle_carcano01",
             "Price": 100.0,
@@ -586,7 +586,7 @@
             ]
         },
         {
-            "Name": "Fucile Springfield",
+            "Name": "Fusil Springfield",
             "HashName": "WEAPON_RIFLE_SPRINGFIELD",
             "WeaponModel": "w_rifle_springfield01",
             "Price": 100.0,
@@ -616,7 +616,7 @@
             ]
         },
         {
-            "Name": "Fucile Boltaction",
+            "Name": "Fusil Boltaction",
             "HashName": "WEAPON_RIFLE_BOLTACTION",
             "WeaponModel": "w_rifle_boltaction01",
             "Price": 100.0,
@@ -641,7 +641,7 @@
             ]
         },
         {
-            "Name": "Fucile a Pompa Semi-Automatico",
+            "Name": "Escopeta semi-automática",
             "HashName": "WEAPON_SHOTGUN_SEMIAUTO",
             "WeaponModel": "w_shotgun_semiauto01",
             "Price": 100.0,
@@ -667,7 +667,7 @@
             ]
         },
         {
-            "Name": "Fucile a Canne Mozze",
+            "Name": "Escopeta doble cañón",
             "HashName": "WEAPON_SHOTGUN_SAWEDOFF",
             "WeaponModel": "w_shotgun_sawed01",
             "Price": 100.0,
@@ -694,7 +694,7 @@
             ]
         },
         {
-            "Name": "Fucile a Pompa a Ripetizone",
+            "Name": "Escopeta repetidora",
             "HashName": "WEAPON_SHOTGUN_REPEATING",
             "WeaponModel": "w_shotgun_repeating01",
             "Price": 100.0,
@@ -720,7 +720,7 @@
             ]
         },
         {
-            "Name": "Fucile a Pompa",
+            "Name": "Escopeta",
             "HashName": "WEAPON_SHOTGUN_PUMP",
             "WeaponModel": "w_shotgun_pumpaction01",
             "Price": 100.0,
@@ -749,7 +749,7 @@
             ]
         },
         {
-            "Name": "Doppietta",
+            "Name": "Escopeta doble cañón",
             "HashName": "WEAPON_SHOTGUN_DOUBLEBARREL",
             "WeaponModel": "w_shotgun_doublebarrel01",
             "Price": 100.0,
@@ -778,7 +778,7 @@
             ]
         },
         {
-            "Name": "Fotocamera",
+            "Name": "Cámara fotográfica",
             "HashName": "WEAPON_KIT_CAMERA",
             "WeaponModel": "p_camerabox01x",
             "Price": 100.0,

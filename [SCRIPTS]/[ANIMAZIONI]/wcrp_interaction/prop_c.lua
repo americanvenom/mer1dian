@@ -495,9 +495,9 @@ end)
 --Cigarette
 RegisterNetEvent('prop:cigarettes')
 AddEventHandler('prop:cigarettes', function() 
-    FPrompt("Smetti di Fumare", 0x3B24C470, false)
-    LMPrompt("Fuma", 0x07B8BEAF, false)
-    EPrompt("Cambia Posa", 0xD51B784F, false)
+    FPrompt("Dejar de fumar", 0x3B24C470, false)
+    LMPrompt("Fumar", 0x07B8BEAF, false)
+    EPrompt("Cambiar pose", 0xD51B784F, false)
     --ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)
@@ -803,7 +803,7 @@ AddEventHandler('prop:cigar', function()
 
     PlaySoundFrontend("Core_Full", "Consumption_Sounds", true, 0)
     --ExecuteCommand('close')
-    FPrompt('Smetti di Fumare', 0x3B24C470, false)
+    FPrompt('Dejar de fumar', 0x3B24C470, false)
 
     local prop_name = 'P_CIGAR01X'
     local ped = PlayerPedId()
@@ -870,9 +870,9 @@ end)
 --Pipe
 RegisterNetEvent('prop:pipe')
 AddEventHandler('prop:pipe', function() 
-    FPrompt("Riponi", 0x3B24C470, false) --Put Away
-    LMPrompt("Fuma", 0x07B8BEAF, false) --Use
-    EPrompt("Cambia Posa", 0xD51B784F, false) --Pose
+    FPrompt("Guardar", 0x3B24C470, false) --Put Away
+    LMPrompt("Fumar", 0x07B8BEAF, false) --Use
+    EPrompt("Camibar pose", 0xD51B784F, false) --Pose
     --ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)
@@ -967,7 +967,7 @@ end)
 RegisterNetEvent('prop:fan')
 AddEventHandler('prop:fan', function() 
     FPrompt("Metti Via", 0x3B24C470, false)
-    LMPrompt("Cambia Posa", 0x07B8BEAF, false)
+    LMPrompt("Camibar pose", 0x07B8BEAF, false)
     --ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)

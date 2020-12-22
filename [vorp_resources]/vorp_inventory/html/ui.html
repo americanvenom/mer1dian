@@ -16,7 +16,7 @@
     <script type="text/javascript" src="js/jquery.dialog.min.js"></script>
 
     <div id="inventoryHud">
-        <div id="title">Bisaccia</div> <!-- >Bisaccia< -->
+        <div id="title">Inventario</div> <!-- >Bisaccia< -->
 
         <div id="inventoryElement">
         </div>
@@ -85,8 +85,8 @@
                         disableInventory(3000);
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantità",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -117,8 +117,8 @@
                         disableInventory(3000);
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantità",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -149,8 +149,8 @@
                         disableInventory(3000);
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantita",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -194,8 +194,8 @@
                         disableInventory(3000);
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantità",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -227,8 +227,8 @@
                         disableInventory(3000); //500
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantità",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -260,8 +260,8 @@
                         disableInventory(3000);
                         if (itemData.type != "item_weapon") {
                             dialog.prompt({
-                                title: "Quantità",
-                                button: "Accetta",
+                                title: "Cantidad",
+                                button: "Aceptar",
                                 required: true,
                                 item: itemData,
                                 type: itemData.type,
@@ -300,7 +300,7 @@
                     $("#inventoryHud").fadeIn();
                     $(".controls").remove();
 
-                    $("#inventoryHud").append("<div class='controls'><div class='controls-center'><input type='text' id='search' placeholder='Cerca'/><button id='close'>Chiudi</button></div></div>");
+                    $("#inventoryHud").append("<div class='controls'><div class='controls-center'><input type='text' id='search' placeholder='Cerca'/><button id='close'>Cerrar</button></div></div>");
 
                     $("#search").bind('input', function() {
                         searchFor = $("#search").val().toLowerCase();
@@ -448,8 +448,8 @@
 
         function selectPlayerToGive(data) {
             dialog.prompt({
-                title: "Seleziona giocatore",
-                button: "Conferma",
+                title: "Selecciona jugador",
+                button: "Confrimar",
                 required: false,
                 item: data,
                 type: data.type,
@@ -467,8 +467,8 @@
         function dropGetHowMany(item, type, hash, id) {
             if (type != "item_weapon") {
                 dialog.prompt({
-                    title: "Quantità",
-                    button: "Accetta",
+                    title: "Cantidad",
+                    button: "Aceptar",
                     required: true,
                     item: item,
                     type: type,
@@ -497,8 +497,8 @@
         function giveGetHowMany(item, type, hash, id) {
             if (type != "item_weapon") {
                 dialog.prompt({
-                    title: "Quantità",
-                    button: "Accetta",
+                    title: "Cantidad",
+                    button: "Aceptar",
                     required: false,
                     item: item,
                     type: type,
@@ -528,8 +528,8 @@
 
         function giveGetHowManyMoney() {
             dialog.prompt({
-                title: "Quantità",
-                button: "Accetta",
+                title: "Cantidad",
+                button: "Aceptar",
                 required: true,
                 item: "money",
                 type: "item_money",
@@ -587,7 +587,7 @@
                 }
                 if (item.usable) {
                     data.push({
-                        text: "Usa",
+                        text: "Usar",
                         action: function() {
                             $.post("http://vorp_inventory/UseItem", JSON.stringify({
                                 item: item.name,
@@ -602,14 +602,14 @@
 
                 if (item.canRemove) {
                     data.push({
-                        text: "Dai",
+                        text: "Dar",
                         action: function() {
                             giveGetHowMany(item.name, item.type, item.hash, item.id);
                         }
                     });
 
                     data.push({
-                        text: "Getta",
+                        text: "Soltar",
                         action: function() {
                             dropGetHowMany(item.name, item.type, item.hash, item.id);
                         }
@@ -627,15 +627,15 @@
                     function() {
                         switch(item.label) {
                             case "WEAPON_MELEE_KNIFE":
-                                OverSetTitle("Coltello")
+                                OverSetTitle("Cuchillo")
                             break;
 
                             case "WEAPON_KIT_CAMERA":
-                                OverSetTitle("Macchina Fotografica")
+                                OverSetTitle("Cámara fotográfica")
                             break;
 
                             case "WEAPON_MELEE_DAVY_LANTERN":
-                                OverSetTitle("Lanterna")
+                                OverSetTitle("Linterna")
                             break;
 
                             case "WEAPON_MELEE_MACHETE":
@@ -643,23 +643,23 @@
                             break;
 
                             case "WEAPON_MELEE_LANTERN_ELECTRIC":
-                                OverSetTitle("Lanterna Elettrica")
+                                OverSetTitle("Linterna Elettrica")
                             break;
 
                             case "WEAPON_MELEE_TORCH":
-                                OverSetTitle("Torcia")
+                                OverSetTitle("Antorcha")
                             break;
 
                             case "WEAPON_FISHINGROD":
-                                OverSetTitle("Canna Da Pesca")
+                                OverSetTitle("Caña de pescar")
                             break;
 
                             case "WEAPON_THROWN_THROWING_KNIVES":
-                                OverSetTitle("Coltelli Da Lancio")
+                                OverSetTitle("Cuchillos arrojadizos")
                             break;
 
                             case "WEAPON_LASSO":
-                                OverSetTitle("Lasso")
+                                OverSetTitle("Lazo")
                             break;
 
                             case "WEAPON_THROWN_TOMAHAWK":
@@ -684,31 +684,31 @@
 
 
                             case "WEAPON_REPEATER_CARBINE":
-                                OverSetTitle("Carabina a Ripetizione")
+                                OverSetTitle("Carabina de repetición")
                             break;
 
 
 
                             case "WEAPON_REPEATER_EVANS":
-                                OverSetTitle("Ripetitore Evans")
+                                OverSetTitle("Repetidora Evans")
                             break;
 
 
 
                             case "WEAPON_REPEATER_HENRY":
-                                OverSetTitle("Ripetitore Henry")
+                                OverSetTitle("Repetidora Henry")
                             break;
 
 
 
                             case "WEAPON_RIFLE_VARMINT":
-                                OverSetTitle("Fuicile Varmint")
+                                OverSetTitle("Fusil Varmint")
                             break;
 
 
 
                             case "WEAPON_REPEATER_WINCHESTER":
-                                OverSetTitle("Ripetitore Winchester")
+                                OverSetTitle("Repetidora Winchester")
                             break;
 
 
@@ -720,7 +720,7 @@
 
 
                             case "WEAPON_REVOLVER_DOUBLEACTION":
-                                OverSetTitle("Revolver Doppia Azione ")
+                                OverSetTitle("Revolver doble acción")
                             break;
 
 
@@ -736,43 +736,43 @@
 
 
                             case "WEAPON_RIFLE_BOLTACTION":
-                                OverSetTitle("Fucile Boltaction")
+                                OverSetTitle("Fusil Boltaction")
                             break;
 
 
 
                             case "WEAPON_SNIPERRIFLE_CARCANO":
-                                OverSetTitle("Fucile Carcano")
+                                OverSetTitle("Fusil Carcano")
                             break;
 
 
 
                             case "WEAPON_SNIPERRIFLE_ROLLINGBLOCK":
-                                OverSetTitle("Fucile Rollingblock")
+                                OverSetTitle("Fusil Rollingblock")
                             break;
 
 
 
                             case "WEAPON_RIFLE_SPRINGFIELD":
-                                OverSetTitle("Fucile Springfield")
+                                OverSetTitle("Fusil Springfield")
                             break;
 
 
 
                             case "WEAPON_SHOTGUN_DOUBLEBARREL":
-                                OverSetTitle("Doppietta")
+                                OverSetTitle("Escopeta doble cañón")
                             break;
 
 
 
                             case "WEAPON_SHOTGUN_PUMP":
-                                OverSetTitle("Fucile a Pompa")
+                                OverSetTitle("Escopeta")
                             break;
 
 
 
                             case "WEAPON_SHOTGUN_REPEATING":
-                                OverSetTitle("Fucile a Pompa Automatico")
+                                OverSetTitle("Escopeta repetidora")
                             break;
 
 
@@ -784,7 +784,7 @@
 
 
                             case "WEAPON_THROWN_DYNAMITE":
-                                OverSetTitle("Dynamite")
+                                OverSetTitle("Dinamita")
                             break;
 
 
@@ -794,11 +794,11 @@
 
 
                             case "WEAPON_MELEE_HATCHET":
-                                OverSetTitle("Accetta")
+                                OverSetTitle("Hacha")
                             break;
 
                             case "WEAPON_SHOTGUN_SAWEDOFF":
-                                OverSetTitle("Fucile a pompa sawedoff")
+                                OverSetTitle("Escopeta recortada")
                             break;
 
                             default:
@@ -816,7 +816,7 @@
 
             //AddMoney
             var m_item = "money";
-            var m_label = "Dollari";
+            var m_label = "Dólares";
 
 
             $("#inventoryElement").append("<div data-label='" + m_label + "' style='background-image: url(\"img/items/" + m_item + ".png\"), url(img/bgitem.png); background-size: 60px 60px, 80px 80px; background-repeat: no-repeat; background-position: center;' id='item-" + m_item + "' class='item'><div class='text'></div></div>")
@@ -824,14 +824,14 @@
             var data = [];
 
             data.push({
-                text: "Dai denaro",
+                text: "Dar dinero",
                 action: function() {
                     giveGetHowManyMoney();
                 }
             });
 
             data.push({
-                text: "Getta denaro",
+                text: "Tirar dinero",
                 action: function() {
                     dropGetHowMany(m_item, "item_money", "asd", 0);
                 }

@@ -16,7 +16,7 @@ AddEventHandler("vane:deposita_item", function (k,qt)
 	local count = VorpInv.getItemCount(source, k)
 		if count >= qt then
 			VorpInv.subItem(source,k,qt)
-			TriggerClientEvent("vorp:TipRight", source, "hai depositato x"..qt.." di "..k, 4000)
+			TriggerClientEvent("vorp:TipRight", source, "has depositado x"..qt.." di "..k, 4000)
 				exports.ghmattimysql:execute('SELECT inventory FROM house', {
 				--['@idhouse'] = {v.name}
 				},function(inret)
@@ -35,7 +35,7 @@ AddEventHandler("vane:deposita_item", function (k,qt)
 		
 			
 		else
-			TriggerClientEvent("vorp:TipRight", source, "Quantità non valida", 4000)
+			TriggerClientEvent("vorp:TipRight", source, "Cantidad", 4000)
 		end
 end) 
 
@@ -47,7 +47,7 @@ AddEventHandler("vane:acquista", function (v)
 	mo = user.money
 		if mo >= v.price then	
 		TriggerEvent("vorp:removeMoney", source, 0, v.price);
-		TriggerClientEvent("vorp:TipRight", source, "Hai acquistato l\'immobile", 4000)
+		TriggerClientEvent("vorp:TipRight", source, "Has comprado la propiedad", 4000)
 			exports.ghmattimysql:execute('UPDATE house SET owner = @owner, avaiable = 0 WHERE idhouse = @idhouse', {
 			['@idhouse'] = {v.name},
 			['@owner'] = {ow}

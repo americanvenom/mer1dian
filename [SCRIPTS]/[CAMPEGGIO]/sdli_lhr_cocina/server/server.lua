@@ -21,9 +21,9 @@ AddEventHandler("def_cookfood:pork", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_cinghiale", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "¡Has cocinado la carne!", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
+           TriggerClientEvent("vorp:TipBottom", source, "Necesitas carne cruda", 3000)
         end
     end)
 
@@ -41,9 +41,9 @@ AddEventHandler("def_cookfood:tacchino", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_tacchino", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "¡Has cocinado la carne!", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
+           TriggerClientEvent("vorp:TipBottom", source, "Necesitas carne cruda", 3000)
         end
     end)
 
@@ -61,9 +61,9 @@ AddEventHandler("def_cookfood:alce", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_alce", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "¡Has cocinado la carne!", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
+           TriggerClientEvent("vorp:TipBottom", source, "Necesitas carne cruda", 3000)
         end
     end)
 
@@ -81,9 +81,9 @@ AddEventHandler("def_cookfood:bluegill", function(name, weapon)
           Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"consumable_bluegill", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Cotto!", "¡Has cocinado la carne!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "¡Has cocinado la carne!", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Necesitas carne cruda", "menu_textures", "cross", 3000)
+           TriggerClientEvent("vorp:TipBottom", source, "Necesitas carne cruda", 3000)
         end
     end)
 --end)
@@ -98,7 +98,7 @@ AddEventHandler("RegisterUsableItem:cookedmeat", function(source)
     local _source = source
     TriggerClientEvent("theranch_cooking:setPHealth", _source)
     VorpInv.subItem(_source, "cookedmeat", 1)
-    TriggerClientEvent("redemrp_notification:start", _source, "Hai mangiato", 3, "success")
+    TriggerClientEvent("redemrp_notification:start", _source, "Ya has comido", 3, "success")
 end)
 
 
@@ -109,7 +109,7 @@ AddEventHandler("theranch_cooking:setHealthS", function(source, target)
         TriggerClientEvent("theranch_cooking:setHealthC", target)
     end)
     VorpInv.subItem(_source, "mbandage", 1)
-    TriggerClientEvent("redemrp_notification:start", _source, "Hai mangiato", 3, "success")
+    TriggerClientEvent("redemrp_notification:start", _source, "Ya has comido", 3, "success")
 end)
 
 ---------------------------------------ACQUA--------------------------------------------------
@@ -131,9 +131,9 @@ AddEventHandler("def_cookfood:getwater", function(name, weapon)
             Citizen.Wait(26000)
 		  
             VorpInv.addItem(_source,"acqua", 1)
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~t6~Depurato!", "Hai depurato l'acqua!", "generic_textures", "tick", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "Has depurado el agua!", 3000)
         else
-            TriggerClientEvent("vorp:NotifyLeft", _source, "~e~Errore!", "Hai bisogno di acqua sporca", "menu_textures", "cross", 3000)
+            TriggerClientEvent("vorp:TipBottom", source, "Necesitas agua sucia", 3000)
         end
 end)
 
@@ -147,9 +147,9 @@ AddEventHandler("collect", function()
 
     if VorpInv.getItemCount(source, "emptybottle") > 0 then
         VorpInv.addItem(source,"dirtywater", 1)
-        TriggerClientEvent("vorp:NotifyLeft", source, "~t6~Ottimo!", "Hai raccolto acqua sporca!", "generic_textures", "tick", 3000)
+        TriggerClientEvent("vorp:TipBottom", source, "Has recogido agua sucia!", 3000)
         VorpInv.subItem(source,"emptybottle", 1)
     else
-        TriggerClientEvent("vorp:NotifyLeft", source, "~t6~Ottimo!", "Non hai una bottiglia vuota!", "generic_textures", "tick", 3000)
+        TriggerClientEvent("vorp:TipBottom", source, "No tienes una botella vacía!", 3000)
     end
 end)

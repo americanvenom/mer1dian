@@ -1,10 +1,10 @@
 {
-    "TakeFromFloor": "Raccogli",
-    "fullInventory": "Possiedi il numero massimo di oggetti",
-    "fullInventoryGive": "La persona possiede il numero massimo di oggetti  ",
-    "TryExploits": "Non puoi superare il limite",
+    "TakeFromFloor": "Recoger",
+    "fullInventory": "Posee el número máximo de artículos",
+    "fullInventoryGive": "La persona posee un número máximo de artículos ",
+    "TryExploits": "No puedes superar el límite",
 
-    "NotEnoughMoney": "Non hai abbastanza soldi",
-    "YouPaid": "Hai pagato {0}$ a {1}",
-    "YouReceived": "Hai ricevuto {0}$ da {1}"
+    "NotEnoughMoney": "No tienes suficiente dinero",
+    "YouPaid": "Has pagado {0}$ a {1}",
+    "YouReceived": "Has recibido {0}$ de {1}"
 }
