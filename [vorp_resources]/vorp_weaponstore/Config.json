@@ -187,7 +187,7 @@
       "Name": "Revolver doble acción",
       "HashName": "WEAPON_REVOLVER_DOUBLEACTION",
       "WeaponModel": "w_revolver_doubleaction01",
-      "Price": 20,
+      "Price": 18,
       "AmmoHash": [ //Máximo de balas
         {
           "AMMO_REVOLVER": 0.02
@@ -213,7 +213,7 @@
       "Name": "Fusil Varmint",
       "HashName": "WEAPON_RIFLE_VARMINT",
       "WeaponModel": "w_repeater_pumpaction01",
-      "Price": 42,
+      "Price": 24,
       "AmmoHash": [
         {
           "AMMO_22": 0.02
@@ -238,7 +238,7 @@
       "Name": "Repetidora Evans", 
       "HashName": "WEAPON_REPEATER_EVANS",
       "WeaponModel": "w_repeater_evans01",
-      "Price": 52,
+      "Price": 33.20,
       "AmmoHash": [ //Máximo de balas
         {
           "AMMO_REPEATER": 0.03
@@ -261,7 +261,7 @@
       "Name": "Escopeta recortada",
       "HashName": "WEAPON_SHOTGUN_SAWEDOFF",
       "WeaponModel": "w_shotgun_sawed01",
-      "Price": 72,
+      "Price": 26.40,
       "AmmoHash": [ //Máximo de balas
         {
           "AMMO_SHOTGUN": 0.03

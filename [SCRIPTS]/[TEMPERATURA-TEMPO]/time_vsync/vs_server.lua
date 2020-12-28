@@ -35,8 +35,7 @@ AvailableWeatherTypes = {
     "THUNDERSTORM", 
     "WHITEOUT",
 }
-CurrentWeather = "SUNNY
-"
+CurrentWeather = "SUNNY"
 local baseTime = 0
 local timeOffset = 0
 local freezeTime = false
